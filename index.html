@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A comprehensive resource for Dialectical Behavior Therapy (DBT). Learn skills like Thinking Traps, Lemons to Lemonade, Radical Acceptance, and Self-Soothe.">
+  <meta name="author" content="Your Name">
+  <title>DBT Resource</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles */
+    .hero-bg {
+      background: linear-gradient(135deg, #6a0dad, #3b82f6);
+      animation: gradient-move 8s infinite alternate;
+    }
+    @keyframes gradient-move {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .hover-glow:hover {
+      box-shadow: 0 4px 30px rgba(106, 13, 173, 0.8);
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans">
+  <!-- Header -->
+  <header class="hero-bg text-center py-12">
+    <div class="fade-in">
+      <h1 class="text-5xl font-extrabold text-white">DBT Resource</h1>
+      <p class="text-lg mt-4 text-gray-300">Empowering skills for emotional wellness through Dialectical Behavior Therapy.</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-6">
+      <a href="index.html" class="hover:text-purple-400">Home</a>
+      <a href="modules/mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
+      <a href="modules/distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
+      <a href="modules/emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
+      <a href="modules/interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12">
+    <section class="text-center">
+      <h2 class="text-4xl font-bold text-purple-400">Welcome to Your Path of Wellness</h2>
+      <p class="text-lg mt-4 text-gray-400 max-w-2xl mx-auto">
+        Explore a comprehensive guide to Dialectical Behavior Therapy (DBT). Learn techniques to manage emotions, build resilience, and improve relationships.
+      </p>
+      <a href="complete-dbt.html" class="mt-8 inline-block bg-purple-500 hover-glow text-white text-lg px-6 py-3 rounded-full">Start Learning</a>
+    </section>
+
+    <section class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Cards for modules -->
+      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+        <h3 class="text-xl font-bold text-white">Mindfulness</h3>
+        <p class="mt-2 text-gray-400">Learn to stay present and focused with foundational DBT mindfulness skills.</p>
+        <a href="modules/mindfulness.html" class="text-purple-400 mt-4 inline-block">Explore Mindfulness →</a>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+        <h3 class="text-xl font-bold text-white">Distress Tolerance</h3>
+        <p class="mt-2 text-gray-400">Discover strategies to handle crises and embrace Radical Acceptance.</p>
+        <a href="modules/distress-tolerance.html" class="text-purple-400 mt-4 inline-block">Explore Distress Tolerance →</a>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+        <h3 class="text-xl font-bold text-white">Emotion Regulation</h3>
+        <p class="mt-2 text-gray-400">Understand emotions and learn to regulate them effectively.</p>
+        <a href="modules/emotion-regulation.html" class="text-purple-400 mt-4 inline-block">Explore Emotion Regulation →</a>
+      </div>
+      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+        <h3 class="text-xl font-bold text-white">Interpersonal Skills</h3>
+        <p class="mt-2 text-gray-400">Build stronger relationships with effective communication strategies.</p>
+        <a href="modules/interpersonal.html" class="text-purple-400 mt-4 inline-block">Explore Interpersonal Skills →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 DBT Resource. Designed for impact and accessibility.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

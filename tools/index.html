@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore tools and resources to support your DBT practice. Interactive mood trackers, printable worksheets, and skill reminders to help you stay on track.">
+  <meta name="author" content="Your Name">
+  <title>DBT Tools & Resources</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles */
+    .section-title {
+      @apply text-3xl font-bold text-purple-400 mb-6;
+    }
+    .tool-card {
+      @apply p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;
+    }
+    .hover-highlight:hover {
+      color: #6a0dad;
+      transition: color 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-300 font-sans">
+  <!-- Header -->
+  <header class="bg-purple-600 text-white py-8">
+    <div class="container mx-auto px-4">
+      <h1 class="text-4xl font-extrabold">DBT Tools & Resources</h1>
+      <p class="mt-2 text-lg">Interactive tools and resources to support your Dialectical Behavior Therapy practice.</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 flex justify-center space-x-6">
+      <a href="../index.html" class="hover:text-purple-400">Home</a>
+      <a href="../modules/mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
+      <a href="../modules/distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
+      <a href="../modules/emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
+      <a href="../modules/interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-12">
+    <section>
+      <h2 class="section-title">Explore DBT Tools</h2>
+      <p class="text-lg text-gray-400 mb-8">
+        Enhance your DBT practice with tools designed to help you apply and track skills in everyday life. From interactive trackers to printable worksheets, we’ve got you covered.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title">Available Tools</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Mood Tracker -->
+        <div class="tool-card">
+          <h3 class="text-xl font-bold text-white">Mood Tracker</h3>
+          <p class="mt-2 text-gray-400">
+            Log and monitor your emotions daily to identify patterns and triggers.
+          </p>
+          <a href="mood-tracker.html" class="hover-highlight mt-4 inline-block">Use the Mood Tracker →</a>
+        </div>
+
+        <!-- Printable Worksheets -->
+        <div class="tool-card">
+          <h3 class="text-xl font-bold text-white">Printable Worksheets</h3>
+          <p class="mt-2 text-gray-400">
+            Download and print DBT worksheets to practice skills offline.
+          </p>
+          <a href="worksheets.html" class="hover-highlight mt-4 inline-block">Explore Worksheets →</a>
+        </div>
+
+        <!-- Skill Reminders -->
+        <div class="tool-card">
+          <h3 class="text-xl font-bold text-white">Skill Reminders</h3>
+          <p class="mt-2 text-gray-400">
+            Set up daily or situational reminders to practice DBT skills.
+          </p>
+          <a href="skill-reminders.html" class="hover-highlight mt-4 inline-block">Set Reminders →</a>
+        </div>
+
+        <!-- Guided Practices -->
+        <div class="tool-card">
+          <h3 class="text-xl font-bold text-white">Guided Practices</h3>
+          <p class="mt-2 text-gray-400">
+            Follow along with guided exercises for mindfulness and self-soothing.
+          </p>
+          <a href="guided-practices.html" class="hover-highlight mt-4 inline-block">Start a Practice →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 DBT Resource. Supporting your journey to emotional wellness.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
