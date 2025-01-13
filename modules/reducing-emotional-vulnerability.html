@@ -32,10 +32,36 @@
 
   <!-- Navigation -->
   <nav class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto px-4 flex justify-center space-x-6">
-      <a href="../index.html" class="hover:text-purple-400">Home</a>
-      <a href="mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
-      <a href="emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <!-- Site Title -->
+        <a href="../index.html" class="text-2xl font-bold text-purple-400">DBT Resource</a>
+
+        <!-- Hamburger Menu -->
+        <button id="menu-toggle" class="block md:hidden text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+
+        <!-- Desktop Navigation Links -->
+        <div id="menu" class="hidden md:flex space-x-6">
+          <a href="../index.html" class="hover:text-purple-400">Home</a>
+          <a href="mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
+          <a href="distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
+          <a href="emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
+          <a href="interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-2">
+        <a href="../index.html" class="block text-center hover:text-purple-400">Home</a>
+        <a href="mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
+        <a href="distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
+        <a href="emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
+        <a href="interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
+      </div>
     </div>
   </nav>
 
