@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background with subtle gradient -->
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f3f4f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e5e7eb;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Decorative pattern -->
+    <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#4f46e5" opacity="0.1"/>
+    </pattern>
+  </defs>
+
+  <!-- Main background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Decorative pattern overlay -->
+  <rect width="1200" height="630" fill="url(#dots)"/>
+
+  <!-- Main content container -->
+  <g transform="translate(100, 150)">
+    <!-- Title -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#1f2937">
+      The DBT Resource
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="60" font-family="Arial, sans-serif" font-size="36" fill="#4f46e5">
+      Tools for Emotional Wellness
+    </text>
+
+    <!-- Decorative elements -->
+    <g transform="translate(0, 100)">
+      <!-- Stylized icons representing core DBT concepts -->
+      <g transform="translate(0, 0)">
+        <circle cx="30" cy="30" r="25" fill="#4f46e5" opacity="0.8"/>
+        <circle cx="100" cy="30" r="25" fill="#4f46e5" opacity="0.6"/>
+        <circle cx="170" cy="30" r="25" fill="#4f46e5" opacity="0.4"/>
+        <circle cx="240" cy="30" r="25" fill="#4f46e5" opacity="0.2"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom bar with URL -->
+  <g transform="translate(100, 550)">
+    <text x="0" y="0" font-family="Arial, sans-serif" font-size="24" fill="#6b7280">
+      thedbtresource.com
+    </text>
+  </g>
+</svg>
