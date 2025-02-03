@@ -1,5 +1,22 @@
-User-agent: *
-Disallow:
+# robots.txt for thedbtresource.com
+# Last updated: 2025-01-18
 
+# Allow all robots full access
+User-agent: *
+Allow: /
+
+# Main sections
+Allow: /modules/
+Allow: /thinking-traps/
+Allow: /tools/
+
+# Important files
+Allow: /sitemap.xml
+Allow: /index.html
+
+# Sitemap location
 Sitemap: https://thedbtresource.com/sitemap.xml
+
+# Crawl-delay directive (optional, helps prevent server overload)
+Crawl-delay: 1
 

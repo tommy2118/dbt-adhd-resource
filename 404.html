@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | The DBT Resource</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply bg-gray-900 text-gray-300 font-sans;
+          font-family: 'Inter', sans-serif;
+        }
+        canvas {
+          @apply bg-gray-800 rounded-lg shadow-lg;
+        }
+      }
+      @layer components {
+        .btn {
+          @apply px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-500 transition-colors font-semibold;
+        }
+        .link {
+          @apply text-purple-400 hover:text-purple-300 transition-colors;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="min-h-screen flex flex-col">
+      <header class="bg-gray-900 text-white py-4 border-b border-gray-700">
+        <div class="container mx-auto px-4">
+          <a href="index.html" class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors">
+            The DBT Resource
+          </a>
+        </div>
+      </header>
+
+      <main class="flex-grow container mx-auto px-4 py-16">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold text-purple-400 mb-6">Oops! Page Not Found</h1>
+          <p class="text-xl mb-8">
+            While we help you find your way back, why not try this mindfulness game?
+          </p>
+          
+          <!-- Game Container -->
+          <div class="mb-12">
+            <canvas id="gameCanvas" width="400" height="400" class="mx-auto mb-4"></canvas>
+            <p class="text-lg mb-4">Use arrow keys or WASD to move the square and collect the circles.</p>
+            <p class="text-lg mb-4">Score: <span id="score">0</span></p>
+            <button id="restartGame" class="btn">Restart Game</button>
+          </div>
+
+          <!-- Helpful Links -->
+          <div class="bg-gray-800 rounded-lg p-8 shadow-lg">
+            <h2 class="text-2xl font-bold text-purple-400 mb-6">Find Your Way Back</h2>
+            <div class="grid md:grid-cols-2 gap-6 text-left">
+              <div>
+                <h3 class="font-semibold text-lg mb-4">Core DBT Skills</h3>
+                <ul class="space-y-2">
+                  <li><a href="modules/mindfulness.html" class="link">Mindfulness</a></li>
+                  <li><a href="modules/distress-tolerance.html" class="link">Distress Tolerance</a></li>
+                  <li><a href="modules/emotion-regulation.html" class="link">Emotion Regulation</a></li>
+                  <li><a href="modules/interpersonal.html" class="link">Interpersonal Skills</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-semibold text-lg mb-4">Popular Resources</h3>
+                <ul class="space-y-2">
+                  <li><a href="thinking-traps/index.html" class="link">Thinking Traps Guide</a></li>
+                  <li><a href="modules/crisis-survival.html" class="link">Crisis Survival Skills</a></li>
+                  <li><a href="modules/self-soothe.html" class="link">Self-Soothing Techniques</a></li>
+                  <li><a href="index.html" class="link">Home Page</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2025 The DBT Resource</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      // Game Setup
+      const canvas = document.getElementById('gameCanvas');
+      const ctx = canvas.getContext('2d');
+      const scoreElement = document.getElementById('score');
+      const restartButton = document.getElementById('restartGame');
+
+      // Game variables
+      let player = {
+        x: canvas.width / 2,
+        y: canvas.height / 2,
+        size: 20,
+        speed: 5
+      };
+
+      let circles = [];
+      let score = 0;
+      let keys = {};
+
+      // Create initial circles
+      function createCircles() {
+        circles = [];
+        for (let i = 0; i < 5; i++) {
+          circles.push({
+            x: Math.random() * (canvas.width - 20) + 10,
+            y: Math.random() * (canvas.height - 20) + 10,
+            radius: 10,
+            color: `hsl(${Math.random() * 360}, 70%, 70%)`
+          });
+        }
+      }
+
+      // Game loop
+      function gameLoop() {
+        // Clear canvas
+        ctx.fillStyle = '#1F2937';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // Update player position based on input
+        if (keys['ArrowLeft'] || keys['a']) player.x -= player.speed;
+        if (keys['ArrowRight'] || keys['d']) player.x += player.speed;
+        if (keys['ArrowUp'] || keys['w']) player.y -= player.speed;
+        if (keys['ArrowDown'] || keys['s']) player.y += player.speed;
+
+        // Keep player in bounds
+        player.x = Math.max(player.size/2, Math.min(canvas.width - player.size/2, player.x));
+        player.y = Math.max(player.size/2, Math.min(canvas.height - player.size/2, player.y));
+
+        // Draw player
+        ctx.fillStyle = '#9F7AEA';
+        ctx.fillRect(player.x - player.size/2, player.y - player.size/2, player.size, player.size);
+
+        // Draw and check circles
+        circles.forEach((circle, index) => {
+          ctx.beginPath();
+          ctx.arc(circle.x, circle.y, circle.radius, 0, Math.PI * 2);
+          ctx.fillStyle = circle.color;
+          ctx.fill();
+          ctx.closePath();
+
+          // Check collision
+          const dx = player.x - circle.x;
+          const dy = player.y - circle.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < player.size/2 + circle.radius) {
+            circles.splice(index, 1);
+            score += 10;
+            scoreElement.textContent = score;
+
+            // Add new circle
+            circles.push({
+              x: Math.random() * (canvas.width - 20) + 10,
+              y: Math.random() * (canvas.height - 20) + 10,
+              radius: 10,
+              color: `hsl(${Math.random() * 360}, 70%, 70%)`
+            });
+          }
+        });
+
+        requestAnimationFrame(gameLoop);
+      }
+
+      // Event listeners
+      window.addEventListener('keydown', e => keys[e.key] = true);
+      window.addEventListener('keyup', e => keys[e.key] = false);
+
+      restartButton.addEventListener('click', () => {
+        score = 0;
+        scoreElement.textContent = score;
+        createCircles();
+        player.x = canvas.width / 2;
+        player.y = canvas.height / 2;
+      });
+
+      // Start game
+      createCircles();
+      gameLoop();
+    </script>
+  </body>
+</html> 
