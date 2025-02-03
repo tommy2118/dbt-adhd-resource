@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An exhaustive guide to Thinking Traps (cognitive distortions) and how to challenge them using DBT techniques.">
+  <meta name="keywords" content="thinking traps, cognitive distortions, DBT, cognitive behavioral therapy, mental health, emotional wellness">
+  <meta name="author" content="The DBT Resource">
+  <title>Thinking Traps - The DBT Resource</title>
+  <!-- Google Fonts for improved typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom Tailwind CSS layers -->
+  <style type="text/tailwindcss">
+    @layer base {
+      body {
+        @apply bg-gray-900 text-gray-300 font-sans;
+        font-family: 'Inter', sans-serif;
+      }
+    }
+    @layer components {
+      .section-title {
+        @apply text-3xl md:text-4xl font-bold text-purple-400 mb-6;
+      }
+      .category-card {
+        @apply p-8 bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg shadow-lg transform transition-all duration-300;
+      }
+      .category-card:hover {
+        @apply shadow-xl scale-105;
+      }
+      .trap-item {
+        @apply bg-gray-700 rounded-lg p-6 mb-4 last:mb-0 transform transition-all duration-300;
+      }
+      .trap-item:hover {
+        @apply bg-gray-600 scale-105;
+      }
+      .quick-guide-icon {
+        @apply bg-purple-500 rounded-full p-2 mr-4 flex-shrink-0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with gradient background and centered text -->
+  <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 relative overflow-hidden">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-4">Thinking Traps</h1>
+      <p class="text-xl md:text-2xl">Identify, understand, and challenge cognitive distortions that affect emotions and behaviors.</p>
+    </div>
+  </header>
+
+  <!-- Sticky Navigation with hover effects -->
+  <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50 shadow-lg">
+    <div class="container mx-auto px-4">
+      <div class="flex items-center justify-between">
+        <a href="../../index.html" class="text-2xl font-bold text-purple-400 hover:underline">The DBT Resource</a>
+        <div class="hidden md:flex space-x-8">
+          <a href="../../index.html" class="hover:text-purple-400 hover:underline">Home</a>
+          <a href="../modules/mindfulness.html" class="hover:text-purple-400 hover:underline">Mindfulness</a>
+          <a href="../modules/distress-tolerance.html" class="hover:text-purple-400 hover:underline">Distress Tolerance</a>
+          <a href="../modules/emotion-regulation.html" class="hover:text-purple-400 hover:underline">Emotion Regulation</a>
+          <a href="../modules/interpersonal.html" class="hover:text-purple-400 hover:underline">Interpersonal Skills</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="container mx-auto px-4 py-16">
+    <section class="max-w-6xl mx-auto">
+      <h2 class="section-title">Understanding Thinking Traps</h2>
+      <p class="text-xl text-gray-300 mb-12 leading-relaxed">
+        Thinking traps are patterns of thought that can distort our view of reality and lead to unnecessary emotional distress.
+        Explore each category below to learn how to identify and challenge these common cognitive distortions.
+      </p>
+
+      <!-- Categories Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <!-- Perception Distortions -->
+        <div class="category-card">
+          <h3 class="text-2xl font-bold text-purple-400 mb-6">Perception Distortions</h3>
+          <div class="space-y-4">
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">All-or-Nothing Thinking</h4>
+              <p class="text-gray-300 text-lg mb-3">Seeing things in black and white categories without middle ground</p>
+              <a href="all-or-nothing.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Catastrophizing</h4>
+              <p class="text-gray-300 text-lg mb-3">Assuming the worst possible outcome will happen</p>
+              <a href="catastrophizing.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Mind Reading</h4>
+              <p class="text-gray-300 text-lg mb-3">Assuming you know what others are thinking without evidence</p>
+              <a href="mind-reading.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expectation Traps -->
+        <div class="category-card">
+          <h3 class="text-2xl font-bold text-purple-400 mb-6">Expectation Traps</h3>
+          <div class="space-y-4">
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Should Statements</h4>
+              <p class="text-gray-300 text-lg mb-3">Holding rigid rules about how things "should" or "must" be</p>
+              <a href="should-statements.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Fortune Telling</h4>
+              <p class="text-gray-300 text-lg mb-3">Predicting negative outcomes without evidence</p>
+              <a href="fortune-telling.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Fallacy of Change</h4>
+              <p class="text-gray-300 text-lg mb-3">Expecting others to change to suit our needs</p>
+              <a href="fallacy-of-change.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Attribution Errors in a full-width row -->
+        <div class="category-card md:col-span-2">
+          <h3 class="text-2xl font-bold text-purple-400 mb-6">Attribution Errors</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Personalization</h4>
+              <p class="text-gray-300 text-lg mb-3">Taking responsibility for things outside your control</p>
+              <a href="personalization.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Overgeneralization</h4>
+              <p class="text-gray-300 text-lg mb-3">Drawing broad conclusions from a single event</p>
+              <a href="overgeneralization.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+
+            <div class="trap-item">
+              <h4 class="text-xl font-semibold text-white mb-2">Labeling</h4>
+              <p class="text-gray-300 text-lg mb-3">Attaching fixed labels to yourself or others based on behavior</p>
+              <a href="labeling.html" class="inline-block text-purple-400 hover:text-purple-300">
+                Learn more about this trap →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Guide Box -->
+      <div class="bg-gray-800 rounded-lg p-8">
+        <h3 class="text-2xl font-bold text-purple-400 mb-6">How to Use This Guide</h3>
+        <div class="space-y-6 text-lg">
+          <div class="flex items-start">
+            <div class="quick-guide-icon">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Browse through the descriptions to identify which thinking traps feel familiar to you.
+            </p>
+          </div>
+
+          <div class="flex items-start">
+            <div class="quick-guide-icon">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Click through to learn more about each trap and discover strategies to challenge them.
+            </p>
+          </div>
+
+          <div class="flex items-start">
+            <div class="quick-guide-icon">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/>
+              </svg>
+            </div>
+            <p class="text-gray-300">
+              Practice identifying these patterns in your daily thoughts to build awareness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto text-center">
+      <p class="text-lg">&copy; 2025 The DBT Resource. Helping you rethink your thinking.</p>
+      <div class="mt-6 flex justify-center space-x-8">
+        <a href="#" class="hover:text-purple-400 hover:underline">About</a>
+        <a href="#" class="hover:text-purple-400 hover:underline">Contact</a>
+        <a href="#" class="hover:text-purple-400 hover:underline">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Smooth scrolling for anchor links -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+

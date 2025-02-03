@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A comprehensive guide to Fortune Telling, a common cognitive distortion where you predict negative outcomes without sufficient evidence. Learn how to identify, understand, and challenge fortune telling using DBT techniques."
+    />
+    <meta
+      name="keywords"
+      content="Fortune Telling, cognitive distortions, DBT, mental health, cognitive restructuring, emotional wellness"
+    />
+    <meta name="author" content="The DBT Resource" />
+    <title>Fortune Telling: A Detailed Guide | The DBT Resource</title>
+    <!-- Google Fonts for improved typography -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      @layer base {
+        body {
+          @apply bg-gray-900 text-gray-300 font-sans;
+          font-family: 'Inter', sans-serif;
+        }
+        a {
+          @apply text-purple-400 hover:text-purple-300 transition-colors;
+        }
+      }
+      @layer components {
+        .section-title {
+          @apply text-3xl md:text-4xl font-bold text-purple-400 mb-6;
+        }
+        .content-section {
+          @apply mb-12;
+        }
+        .info-box {
+          @apply bg-gray-800 p-6 rounded-lg shadow-lg;
+        }
+        .highlight {
+          @apply text-purple-400 font-semibold;
+        }
+        .thinking-trap-nav {
+          @apply bg-gray-800 border-t border-gray-700 py-4;
+        }
+        .thinking-trap-menu {
+          @apply grid grid-cols-1 md:grid-cols-3 gap-4 max-w-6xl mx-auto px-4;
+        }
+        .trap-category {
+          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105;
+        }
+        .trap-list {
+          @apply mt-2 space-y-2;
+        }
+        .trap-link {
+          @apply block text-gray-300 hover:text-purple-400 transition-colors duration-200 py-1;
+        }
+        .current-trap {
+          @apply text-purple-400 font-semibold;
+        }
+        .nav-indicator {
+          @apply flex items-center justify-between text-sm text-gray-400 mt-4;
+        }
+        .nav-arrow {
+          @apply flex items-center hover:text-purple-400 transition-colors duration-200;
+        }
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @layer components {
+        .mobile-category-content {
+          overflow: hidden;
+          transition: all 0.3s ease-in-out;
+        }
+        .mobile-category-button svg {
+          transition: transform 0.3s ease;
+        }
+        .rotate-180 {
+          transform: rotate(180deg);
+        }
+      }
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L29EXB8PZ7');
+    </script>
+  </head>
+  <body>
+    <!-- Header with Logo -->
+    <header class="bg-gray-900 text-white py-4 border-b border-gray-700">
+      <div class="container mx-auto px-4">
+        <a
+          href="../index.html"
+          class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors"
+          >The DBT Resource</a
+        >
+      </div>
+    </header>
+
+    <!-- Primary Navigation -->
+    <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50 border-b border-gray-700">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <!-- Desktop Navigation -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="../index.html" class="hover:text-purple-400 transition-colors">Home</a>
+            <a href="../modules/mindfulness.html" class="hover:text-purple-400 transition-colors">Mindfulness</a>
+            <a href="../modules/distress-tolerance.html" class="hover:text-purple-400 transition-colors">Distress Tolerance</a>
+            <a href="../modules/emotion-regulation.html" class="hover:text-purple-400 transition-colors">Emotion Regulation</a>
+            <a href="../modules/interpersonal.html" class="hover:text-purple-400 transition-colors">Interpersonal Skills</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button" class="lg:hidden text-white focus:outline-none" aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path class="menu-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+              <path class="menu-close hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden bg-gray-800 fixed inset-0 z-40 transform translate-x-full transition-transform duration-300 ease-in-out overflow-y-auto">
+      <div class="pt-16 pb-6 px-4">
+        <!-- Main Navigation Links -->
+        <div class="space-y-2 mb-8 border-b border-gray-700 pb-6">
+          <a href="../index.html" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors">Home</a>
+          <a href="../modules/mindfulness.html" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors">Mindfulness</a>
+          <a href="../modules/distress-tolerance.html" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors">Distress Tolerance</a>
+          <a href="../modules/emotion-regulation.html" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors">Emotion Regulation</a>
+          <a href="../modules/interpersonal.html" class="block py-2 text-gray-300 hover:text-purple-400 transition-colors">Interpersonal Skills</a>
+        </div>
+
+        <!-- Thinking Traps Categories -->
+        <div class="space-y-4">
+          <a href="index.html" class="block text-white font-semibold">Thinking Traps</a>
+          <!-- Perception Distortions -->
+          <div class="mobile-category">
+            <button class="mobile-category-button w-full flex justify-between items-center text-purple-400 py-2">
+              <span class="font-semibold">Perception Distortions</span>
+              <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mobile-category-content hidden pl-4 space-y-2 pt-2">
+              <a href="all-or-nothing.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">All-or-Nothing Thinking</a>
+              <a href="catastrophizing.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Catastrophizing</a>
+              <a href="mind-reading.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Mind Reading</a>
+            </div>
+          </div>
+          <!-- Expectation Traps -->
+          <div class="mobile-category">
+            <button class="mobile-category-button w-full flex justify-between items-center text-purple-400 py-2">
+              <span class="font-semibold">Expectation Traps</span>
+              <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mobile-category-content hidden pl-4 space-y-2 pt-2">
+              <a href="should-statements.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Should Statements</a>
+              <a href="fortune-telling.html" class="block py-1 text-purple-400 font-semibold">Fortune Telling</a>
+              <a href="fallacy-of-change.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Fallacy of Change</a>
+            </div>
+          </div>
+          <!-- Attribution Errors -->
+          <div class="mobile-category">
+            <button class="mobile-category-button w-full flex justify-between items-center text-purple-400 py-2">
+              <span class="font-semibold">Attribution Errors</span>
+              <svg class="w-4 h-4 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </button>
+            <div class="mobile-category-content hidden pl-4 space-y-2 pt-2">
+              <a href="personalization.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Personalization</a>
+              <a href="overgeneralization.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Overgeneralization</a>
+              <a href="labeling.html" class="block py-1 text-gray-300 hover:text-purple-400 transition-colors">Labeling</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Secondary Navigation (Thinking Traps) -->
+    <nav class="hidden lg:block bg-gray-800 border-b border-gray-700 py-4">
+      <div class="container mx-auto px-4">
+        <a href="index.html" class="text-white font-semibold">Thinking Traps</a>
+        <div class="grid grid-cols-3 gap-8">
+          <!-- Perception Distortions -->
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Perception Distortions</h3>
+            <div class="space-y-2">
+              <a href="all-or-nothing.html" class="block text-gray-300 hover:text-purple-400 transition-colors">All-or-Nothing Thinking</a>
+              <a href="catastrophizing.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Catastrophizing</a>
+              <a href="mind-reading.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Mind Reading</a>
+            </div>
+          </div>
+          <!-- Expectation Traps -->
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Expectation Traps</h3>
+            <div class="space-y-2">
+              <a href="should-statements.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Should Statements</a>
+              <a href="fortune-telling.html" class="block text-purple-400 font-semibold">Fortune Telling</a>
+              <a href="fallacy-of-change.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Fallacy of Change</a>
+            </div>
+          </div>
+          <!-- Attribution Errors -->
+          <div>
+            <h3 class="text-lg font-semibold text-purple-400 mb-3">Attribution Errors</h3>
+            <div class="space-y-2">
+              <a href="personalization.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Personalization</a>
+              <a href="overgeneralization.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Overgeneralization</a>
+              <a href="labeling.html" class="block text-gray-300 hover:text-purple-400 transition-colors">Labeling</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-16">
+      <!-- Table of Contents -->
+      <div class="mb-12">
+        <h2 class="section-title">In This Guide</h2>
+        <ul class="list-disc list-inside text-lg">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#understanding">Understanding Fortune Telling</a></li>
+          <li><a href="#manifestations">Common Manifestations</a></li>
+          <li><a href="#impact">Impact on Mental Health</a></li>
+          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
+          <li><a href="#exercises">Practical Exercises</a></li>
+          <li><a href="#conclusion">Conclusion</a></li>
+        </ul>
+      </div>
+
+      <!-- Introduction Section -->
+      <section id="introduction" class="content-section">
+        <h2 class="section-title">Introduction</h2>
+        <p class="text-xl leading-relaxed mb-4">
+          Fortune Telling is a cognitive distortion in which you predict negative outcomes without sufficient evidence. This guide examines how fortune telling operates, the effects it can have on your emotional health, and strategies to reframe these predictions using DBT techniques.
+        </p>
+      </section>
+
+      <!-- Understanding Fortune Telling -->
+      <section id="understanding" class="content-section">
+        <h2 class="section-title">Understanding Fortune Telling</h2>
+        <div class="info-box">
+          <p class="text-lg mb-4">
+            <span class="highlight">Definition:</span> Fortune Telling involves anticipating negative outcomes and assuming they are inevitable, often without any concrete evidence.
+          </p>
+          <p class="text-lg mb-4">
+            <span class="highlight">How It Works:</span> When you engage in fortune telling, your mind fixates on worst-case scenarios. This distorted thinking filters out any positive or neutral evidence, reinforcing a negative outlook.
+          </p>
+          <p class="text-lg">
+            <span class="highlight">Why It Matters:</span> By constantly predicting negative outcomes, you can increase anxiety and stress, potentially limiting your willingness to engage in new experiences.
+          </p>
+        </div>
+      </section>
+
+      <!-- Common Manifestations -->
+      <section id="manifestations" class="content-section">
+        <h2 class="section-title">Common Manifestations</h2>
+        <div class="info-box">
+          <ul class="list-disc list-inside text-lg">
+            <li><strong>Negative Predictions:</strong> Believing that a minor setback will spiral into disaster.</li>
+            <li><strong>Doomsday Scenarios:</strong> Imagining catastrophic outcomes without evidence.</li>
+            <li><strong>Avoidance:</strong> Skipping opportunities or challenges to avoid the possibility of negative results.</li>
+            <li><strong>Self-Fulfilling Prophecy:</strong> The belief in an inevitable negative outcome may influence your behavior and increase the likelihood of that outcome.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Impact on Mental Health -->
+      <section id="impact" class="content-section">
+        <h2 class="section-title">Impact on Mental Health</h2>
+        <div class="info-box">
+          <p class="text-lg mb-4">
+            Engaging in fortune telling can heighten anxiety, stress, and feelings of helplessness. The persistent expectation of negative outcomes not only affects your mood but can also reduce your confidence in making decisions and trying new things.
+          </p>
+          <p class="text-lg">
+            Over time, this distorted thinking pattern can contribute to chronic anxiety and even depressive symptoms.
+          </p>
+        </div>
+      </section>
+
+      <!-- DBT Techniques & Strategies -->
+      <section id="dbt-techniques" class="content-section">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <div class="info-box">
+          <p class="text-lg mb-4">
+            <span class="highlight">1. Mindfulness:</span> Notice when you begin to predict negative outcomes. Acknowledge these thoughts without judgment.
+          </p>
+          <p class="text-lg mb-4">
+            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your predictions by asking:
+            <ul class="list-disc list-inside ml-6">
+              <li>What evidence do I have that this negative outcome is certain?</li>
+              <li>What are alternative, more balanced possibilities?</li>
+              <li>Have there been times when things turned out better than expected?</li>
+            </ul>
+          </p>
+          <p class="text-lg mb-4">
+            <span class="highlight">3. Behavioral Experiments:</span> Test your predictions by taking small risks. Compare the actual outcome to your feared scenario.
+          </p>
+          <p class="text-lg">
+            <span class="highlight">4. Radical Acceptance:</span> Accept that uncertainty is a part of life and that you cannot control every outcome.
+          </p>
+        </div>
+      </section>
+
+      <!-- Practical Exercises -->
+      <section id="exercises" class="content-section">
+        <h2 class="section-title">Practical Exercises</h2>
+        <div class="info-box">
+          <p class="text-lg mb-4">
+            Try these exercises to challenge your fortune-telling thoughts:
+          </p>
+          <ol class="list-decimal list-inside text-lg">
+            <li>
+              <strong>Thought Log:</strong> Record instances when you predict negative outcomes. Note the situation, your prediction, and a more balanced interpretation.
+            </li>
+            <li>
+              <strong>Evidence Search:</strong> For each negative prediction, write down factual evidence that challenges the inevitability of that outcome.
+            </li>
+            <li>
+              <strong>Exposure Exercise:</strong> Deliberately engage in activities that trigger your fortune-telling. Reflect on how the actual results compare to your predictions.
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section id="conclusion" class="content-section">
+        <h2 class="section-title">Conclusion</h2>
+        <div class="info-box">
+          <p class="text-lg">
+            Fortune Telling can trap you in a cycle of negative expectations and heightened anxiety. By practicing mindfulness, cognitive restructuring, and accepting uncertainty, you can challenge these predictions and create a more balanced outlook. Remember, embracing the unknown is a step toward personal growth.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto text-center">
+        <p class="text-lg">&copy; 2025 The DBT Resource. Helping you rethink your thinking.</p>
+        <div class="mt-6 flex justify-center space-x-8">
+          <a href="#" class="hover:text-purple-400">About</a>
+          <a href="#" class="hover:text-purple-400">Contact</a>
+          <a href="#" class="hover:text-purple-400">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu functionality
+      const mobileMenuButton = document.getElementById('mobile-menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const menuOpenIcon = mobileMenuButton.querySelector('.menu-open');
+      const menuCloseIcon = mobileMenuButton.querySelector('.menu-close');
+
+      function toggleMobileMenu() {
+        const isOpen = mobileMenu.classList.contains('translate-x-0');
+        if (isOpen) {
+          mobileMenu.classList.remove('translate-x-0');
+          mobileMenu.classList.add('translate-x-full');
+          menuOpenIcon.classList.remove('hidden');
+          menuCloseIcon.classList.add('hidden');
+          document.body.style.overflow = '';
+        } else {
+          mobileMenu.classList.add('translate-x-0');
+          mobileMenu.classList.remove('translate-x-full');
+          menuOpenIcon.classList.add('hidden');
+          menuCloseIcon.classList.remove('hidden');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      mobileMenuButton.addEventListener('click', toggleMobileMenu);
+
+      // Close mobile menu when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!mobileMenu.contains(e.target) &&
+            !mobileMenuButton.contains(e.target) &&
+            mobileMenu.classList.contains('translate-x-0')) {
+          toggleMobileMenu();
+        }
+      });
+
+      // Mobile category toggles
+      document.querySelectorAll('.mobile-category-button').forEach(button => {
+        button.addEventListener('click', () => {
+          const content = button.nextElementSibling;
+          const arrow = button.querySelector('svg');
+          arrow.classList.toggle('rotate-180');
+          content.classList.toggle('hidden');
+        });
+      });
+
+      // Mark current page in navigation
+      document.addEventListener('DOMContentLoaded', () => {
+        const currentPath = window.location.pathname;
+        const currentPage = currentPath.split('/').pop();
+        document.querySelectorAll('a').forEach(link => {
+          if (link.getAttribute('href') === currentPage) {
+            link.classList.add('text-purple-400', 'font-semibold');
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
+
