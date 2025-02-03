@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A comprehensive guide to Should Statements, a common cognitive distortion where you impose rigid rules on yourself and others. Learn how to identify, understand, and challenge should statements using DBT techniques."
+      content="A comprehensive guide to Filtering, a cognitive distortion where you focus solely on negatives while ignoring positives. Learn how to identify, understand, and challenge this trap using DBT techniques."
     />
     <meta
       name="keywords"
-      content="Should Statements, cognitive distortions, DBT, mental health, cognitive restructuring, emotional wellness"
+      content="Filtering, cognitive distortions, DBT, mindfulness, cognitive restructuring, mental health, positive thinking"
     />
     <meta name="author" content="The DBT Resource" />
-    <title>Should Statements: A Detailed Guide | The DBT Resource</title>
+    <title>Filtering: A Detailed Guide | The DBT Resource</title>
     <!-- Google Fonts for improved typography -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -49,7 +49,7 @@
           @apply grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4;
         }
         .trap-category {
-          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105;
+          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105 relative;
         }
         .trap-list {
           @apply mt-2 space-y-2;
@@ -66,6 +66,10 @@
         .nav-arrow {
           @apply flex items-center hover:text-purple-400 transition-colors duration-200;
         }
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @layer components {
         .mobile-category-content {
           overflow: hidden;
           transition: all 0.3s ease-in-out;
@@ -79,7 +83,6 @@
         }
       }
     </style>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
     <script>
@@ -96,8 +99,9 @@
         <a
           href="../index.html"
           class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors"
-          >The DBT Resource</a
         >
+          The DBT Resource
+        </a>
       </div>
     </header>
 
@@ -145,6 +149,7 @@
         <!-- Thinking Traps Categories (Mobile) -->
         <div class="space-y-4">
           <a href="index.html" class="block text-white font-semibold">Thinking Traps</a>
+          <!-- (Mobile category details would be similar to previous pages.) -->
         </div>
       </div>
     </div>
@@ -211,7 +216,7 @@
               <a href="jumping-to-conclusions.html" class="trap-link">Jumping to Conclusions</a>
               <a href="magnification-minimization.html" class="trap-link">Magnification &amp; Minimization</a>
               <a href="control-fallacies.html" class="trap-link">Control Fallacies</a>
-              <a href="heavens-reward-fallacy.html" class="trap-link">Heaven's Reward Fallacy</a>
+              <a href="heavens-reward-fallacy.html" class="trap-link">Heaven’s Reward Fallacy</a>
               <a href="just-world-fallacy.html" class="trap-link">Just World Fallacy</a>
             </div>
           </div>
@@ -226,7 +231,7 @@
         <h2 class="section-title">In This Guide</h2>
         <ul class="list-disc list-inside text-lg">
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Should Statements</a></li>
+          <li><a href="#understanding">Understanding Filtering</a></li>
           <li><a href="#manifestations">Common Manifestations</a></li>
           <li><a href="#impact">Impact on Mental Health</a></li>
           <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
@@ -239,22 +244,22 @@
       <section id="introduction" class="content-section">
         <h2 class="section-title">Introduction</h2>
         <p class="text-xl leading-relaxed mb-4">
-          Should Statements are a type of cognitive distortion where you impose rigid rules or expectations on yourself and others. These statements can set unrealistic standards and foster feelings of guilt, frustration, and disappointment when they are not met.
+          Filtering is a cognitive distortion where you focus exclusively on negative details while ignoring or discounting positive ones. This guide explores how filtering shapes our perception, the consequences it may have on mental health, and how DBT strategies can help restore a balanced perspective.
         </p>
       </section>
 
-      <!-- Understanding Should Statements -->
+      <!-- Understanding Filtering -->
       <section id="understanding" class="content-section">
-        <h2 class="section-title">Understanding Should Statements</h2>
+        <h2 class="section-title">Understanding Filtering</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Should Statements involve internalized commands or expectations that dictate how things must be, often leading to self-criticism when reality falls short.
+            <span class="highlight">Definition:</span> Filtering is the tendency to hone in on negative aspects of a situation—be it an event, a person, or an experience—while overlooking any positive elements.
           </p>
           <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you use should statements, you set an all-or-nothing standard. If the conditions are not perfect, you may feel like you've failed, which can result in negative self-talk and emotional distress.
+            <span class="highlight">How It Works:</span> Even in scenarios that contain both positive and negative aspects, filtering causes your mind to zero in on the negatives. This skewed focus can result in an imbalanced interpretation of events.
           </p>
           <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> Relying on should statements can trap you in a cycle of perfectionism and self-blame, undermining your self-esteem and hindering personal growth.
+            <span class="highlight">Why It Matters:</span> By magnifying the negative and minimizing the positive, filtering can reinforce pessimistic thought patterns, ultimately contributing to feelings of hopelessness and low self-worth.
           </p>
         </div>
       </section>
@@ -264,10 +269,10 @@
         <h2 class="section-title">Common Manifestations</h2>
         <div class="info-box">
           <ul class="list-disc list-inside text-lg">
-            <li><strong>Perfectionism:</strong> Believing that anything less than perfect is unacceptable.</li>
-            <li><strong>Guilt and Shame:</strong> Feeling intense guilt or shame when you or others fall short of these expectations.</li>
-            <li><strong>Self-Criticism:</strong> Harsh internal dialogue that focuses on what "should" have been done differently.</li>
-            <li><strong>Rigid Rules:</strong> Holding yourself to inflexible standards that leave little room for mistakes or growth.</li>
+            <li><strong>Selective Attention:</strong> Only noticing adverse details while ignoring positive elements.</li>
+            <li><strong>Negativity Bias:</strong> Believing that negative aspects outweigh any positive feedback or experiences.</li>
+            <li><strong>Overemphasis on Criticism:</strong> Focusing on minor faults or mistakes rather than achievements.</li>
+            <li><strong>Distorted Self-Image:</strong> Forming a self-perception based solely on negative experiences.</li>
           </ul>
         </div>
       </section>
@@ -277,11 +282,14 @@
         <h2 class="section-title">Impact on Mental Health</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            Should Statements can create an environment of constant self-judgment, leading to heightened anxiety and depression. The gap between your expectations and reality may foster chronic dissatisfaction and erode your self-worth.
+            Filtering can significantly distort your view of yourself and the world, leading to:
           </p>
-          <p class="text-lg">
-            Over time, the stress of trying to meet impossible standards can affect your overall well-being, both emotionally and physically.
-          </p>
+          <ul class="list-disc list-inside text-lg">
+            <li>Heightened anxiety and depression</li>
+            <li>Lower self-esteem and persistent negative self-talk</li>
+            <li>Inability to appreciate successes or positive events</li>
+            <li>Strained relationships due to a focus on faults</li>
+          </ul>
         </div>
       </section>
 
@@ -290,22 +298,25 @@
         <h2 class="section-title">DBT Techniques & Strategies</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            <span class="highlight">1. Mindfulness:</span> Observe your inner dialogue and become aware of when you use should statements. Notice the emotions and thoughts that arise without judgment.
+            Dialectical Behavior Therapy (DBT) provides tools to counteract filtering by encouraging a more balanced, mindful perspective:
           </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your should statements by asking:
-            <ul class="list-disc list-inside ml-6">
-              <li>Is this expectation realistic?</li>
-              <li>What evidence do I have that contradicts this rigid rule?</li>
-              <li>How can I reframe this thought to be more compassionate and flexible?</li>
-            </ul>
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">3. Behavioral Experiments:</span> Test your beliefs by intentionally allowing imperfections. Notice how your experience and self-esteem are affected when you let go of rigid expectations.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">4. Radical Acceptance:</span> Accept that life is inherently imperfect. Embrace the idea that mistakes are opportunities for growth rather than failures.
-          </p>
+          <ul class="list-disc list-inside text-lg mb-4">
+            <li>
+              <span class="highlight">Mindfulness:</span> Cultivate awareness of your thoughts and feelings in the present moment without judgment. Notice when you begin to focus solely on negatives.
+            </li>
+            <li>
+              <span class="highlight">Check the Facts:</span> Actively seek evidence that challenges your negative focus. Write down both positive and negative aspects of the situation.
+            </li>
+            <li>
+              <span class="highlight">Dialectical Thinking:</span> Acknowledge that most situations are complex, containing both good and bad elements.
+            </li>
+            <li>
+              <span class="highlight">Radical Acceptance:</span> Embrace the full spectrum of experiences, recognizing that imperfections are a natural part of life.
+            </li>
+            <li>
+              <span class="highlight">Self-Validation:</span> Validate your emotional experience while also reminding yourself of positive attributes and accomplishments.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -314,17 +325,17 @@
         <h2 class="section-title">Practical Exercises</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            Try these exercises to counteract should statements:
+            Try these exercises to combat filtering:
           </p>
           <ol class="list-decimal list-inside text-lg">
             <li>
-              <strong>Thought Log:</strong> Record moments when you catch yourself using "should" statements. Write down the thought, the situation, and then reframe it with a more balanced perspective.
+              <strong>Balanced Thought Record:</strong> Keep a journal where, for each negative event, you list three positive aspects or achievements alongside any challenges.
             </li>
             <li>
-              <strong>Self-Compassion Practice:</strong> When you notice a should statement, pause and offer yourself a compassionate response. Ask, "What would I say to a friend in this situation?"
+              <strong>Mindfulness Meditation:</strong> Spend 10 minutes daily practicing mindfulness to observe your thoughts without bias—acknowledge both the negative and the positive.
             </li>
             <li>
-              <strong>Expectation Audit:</strong> List the expectations you hold for yourself and others. Evaluate which ones are realistic and which ones might be contributing to undue stress.
+              <strong>Evidence Gathering:</strong> When you catch yourself filtering, take a moment to jot down evidence that disproves your exclusively negative view.
             </li>
           </ol>
         </div>
@@ -335,7 +346,7 @@
         <h2 class="section-title">Conclusion</h2>
         <div class="info-box">
           <p class="text-lg">
-            Should Statements can create unnecessary pressure and self-criticism. By practicing mindfulness, cognitive restructuring, and radical acceptance, you can learn to replace rigid "should" thinking with more compassionate and realistic perspectives. Remember, personal growth comes from embracing imperfections and celebrating progress.
+            Filtering narrows your view of reality by focusing solely on the negative, which can fuel feelings of inadequacy and hopelessness. By applying DBT techniques such as mindfulness, dialectical thinking, and evidence checking, you can gradually shift toward a more balanced and realistic outlook. With practice, you’ll learn to recognize and counteract filtering, opening up space for more positive, constructive thoughts.
           </p>
         </div>
       </section>
@@ -379,16 +390,7 @@
 
       mobileMenuButton.addEventListener('click', toggleMobileMenu);
 
-      // Close mobile menu when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) &&
-            !mobileMenuButton.contains(e.target) &&
-            mobileMenu.classList.contains('translate-x-0')) {
-          toggleMobileMenu();
-        }
-      });
-
-      // Mobile category toggles
+      // Mobile category toggles (if applicable)
       document.querySelectorAll('.mobile-category-button').forEach(button => {
         button.addEventListener('click', () => {
           const content = button.nextElementSibling;
@@ -409,7 +411,7 @@
         const toggleButton = document.getElementById(category.toggleId);
         const content = document.getElementById(category.contentId);
         const icon = document.getElementById(category.iconId);
-        if (toggleButton) {
+        if(toggleButton) {
           toggleButton.addEventListener('click', () => {
             content.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');

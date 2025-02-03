@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="A comprehensive guide to Should Statements, a common cognitive distortion where you impose rigid rules on yourself and others. Learn how to identify, understand, and challenge should statements using DBT techniques."
+      content="A comprehensive guide to Control Fallacies, a cognitive distortion where you feel excessively responsible for events beyond your control or powerless over things you can influence. Learn how to challenge this trap using DBT techniques."
     />
     <meta
       name="keywords"
-      content="Should Statements, cognitive distortions, DBT, mental health, cognitive restructuring, emotional wellness"
+      content="Control Fallacies, cognitive distortions, DBT, mindfulness, wise mind, radical acceptance, mental health"
     />
     <meta name="author" content="The DBT Resource" />
-    <title>Should Statements: A Detailed Guide | The DBT Resource</title>
+    <title>Control Fallacies: A Detailed Guide | The DBT Resource</title>
     <!-- Google Fonts for improved typography -->
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -49,7 +49,7 @@
           @apply grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4;
         }
         .trap-category {
-          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105;
+          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105 relative;
         }
         .trap-list {
           @apply mt-2 space-y-2;
@@ -66,6 +66,10 @@
         .nav-arrow {
           @apply flex items-center hover:text-purple-400 transition-colors duration-200;
         }
+      }
+    </style>
+    <style type="text/tailwindcss">
+      @layer components {
         .mobile-category-content {
           overflow: hidden;
           transition: all 0.3s ease-in-out;
@@ -79,7 +83,6 @@
         }
       }
     </style>
-
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
     <script>
@@ -96,8 +99,9 @@
         <a
           href="../index.html"
           class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors"
-          >The DBT Resource</a
         >
+          The DBT Resource
+        </a>
       </div>
     </header>
 
@@ -145,6 +149,7 @@
         <!-- Thinking Traps Categories (Mobile) -->
         <div class="space-y-4">
           <a href="index.html" class="block text-white font-semibold">Thinking Traps</a>
+          <!-- (Mobile categories follow the same structure as previous pages) -->
         </div>
       </div>
     </div>
@@ -211,7 +216,7 @@
               <a href="jumping-to-conclusions.html" class="trap-link">Jumping to Conclusions</a>
               <a href="magnification-minimization.html" class="trap-link">Magnification &amp; Minimization</a>
               <a href="control-fallacies.html" class="trap-link">Control Fallacies</a>
-              <a href="heavens-reward-fallacy.html" class="trap-link">Heaven's Reward Fallacy</a>
+              <a href="heavens-reward-fallacy.html" class="trap-link">Heaven’s Reward Fallacy</a>
               <a href="just-world-fallacy.html" class="trap-link">Just World Fallacy</a>
             </div>
           </div>
@@ -226,10 +231,10 @@
         <h2 class="section-title">In This Guide</h2>
         <ul class="list-disc list-inside text-lg">
           <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Should Statements</a></li>
+          <li><a href="#understanding">Understanding Control Fallacies</a></li>
           <li><a href="#manifestations">Common Manifestations</a></li>
           <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
+          <li><a href="#dbt-techniques">DBT Techniques &amp; Strategies</a></li>
           <li><a href="#exercises">Practical Exercises</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
         </ul>
@@ -239,22 +244,22 @@
       <section id="introduction" class="content-section">
         <h2 class="section-title">Introduction</h2>
         <p class="text-xl leading-relaxed mb-4">
-          Should Statements are a type of cognitive distortion where you impose rigid rules or expectations on yourself and others. These statements can set unrealistic standards and foster feelings of guilt, frustration, and disappointment when they are not met.
+          Control Fallacies refer to the tendency to feel overly responsible for events outside your control or to feel completely powerless over aspects that you can influence. This guide explains how these distorted beliefs develop, how they affect your mental well-being, and provides DBT strategies to regain a balanced perspective.
         </p>
       </section>
 
-      <!-- Understanding Should Statements -->
+      <!-- Understanding Control Fallacies -->
       <section id="understanding" class="content-section">
-        <h2 class="section-title">Understanding Should Statements</h2>
+        <h2 class="section-title">Understanding Control Fallacies</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Should Statements involve internalized commands or expectations that dictate how things must be, often leading to self-criticism when reality falls short.
+            <span class="highlight">Definition:</span> Control Fallacies occur when you either assume too much responsibility for events beyond your influence or, conversely, feel utterly powerless over aspects that you could change.
           </p>
           <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you use should statements, you set an all-or-nothing standard. If the conditions are not perfect, you may feel like you've failed, which can result in negative self-talk and emotional distress.
+            <span class="highlight">How It Works:</span> This distortion may manifest as guilt for things you couldn’t possibly control or a sense of hopelessness when facing challenges, even when you have options to affect change.
           </p>
           <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> Relying on should statements can trap you in a cycle of perfectionism and self-blame, undermining your self-esteem and hindering personal growth.
+            <span class="highlight">Why It Matters:</span> Relying on these distorted beliefs can lead to chronic stress, anxiety, and a diminished sense of self-efficacy, as you either bear an excessive burden of responsibility or surrender your ability to act.
           </p>
         </div>
       </section>
@@ -264,10 +269,10 @@
         <h2 class="section-title">Common Manifestations</h2>
         <div class="info-box">
           <ul class="list-disc list-inside text-lg">
-            <li><strong>Perfectionism:</strong> Believing that anything less than perfect is unacceptable.</li>
-            <li><strong>Guilt and Shame:</strong> Feeling intense guilt or shame when you or others fall short of these expectations.</li>
-            <li><strong>Self-Criticism:</strong> Harsh internal dialogue that focuses on what "should" have been done differently.</li>
-            <li><strong>Rigid Rules:</strong> Holding yourself to inflexible standards that leave little room for mistakes or growth.</li>
+            <li><strong>Excessive Responsibility:</strong> Feeling guilty or at fault for events that are beyond your control.</li>
+            <li><strong>Helplessness:</strong> Believing that nothing you do will change the outcome, even when action is possible.</li>
+            <li><strong>Perfectionism:</strong> Trying to control every detail in order to avoid perceived failure or criticism.</li>
+            <li><strong>Overgeneralization:</strong> Concluding that you have no control in most situations, leading to passivity or anxiety.</li>
           </ul>
         </div>
       </section>
@@ -277,35 +282,41 @@
         <h2 class="section-title">Impact on Mental Health</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            Should Statements can create an environment of constant self-judgment, leading to heightened anxiety and depression. The gap between your expectations and reality may foster chronic dissatisfaction and erode your self-worth.
+            Control Fallacies can result in:
           </p>
-          <p class="text-lg">
-            Over time, the stress of trying to meet impossible standards can affect your overall well-being, both emotionally and physically.
-          </p>
+          <ul class="list-disc list-inside text-lg">
+            <li>Heightened stress and anxiety from bearing excessive responsibility</li>
+            <li>A diminished sense of agency, leading to feelings of helplessness</li>
+            <li>Increased self-criticism and perfectionism</li>
+            <li>Interpersonal difficulties stemming from unrealistic expectations of control</li>
+          </ul>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
       <section id="dbt-techniques" class="content-section">
-        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <h2 class="section-title">DBT Techniques &amp; Strategies</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            <span class="highlight">1. Mindfulness:</span> Observe your inner dialogue and become aware of when you use should statements. Notice the emotions and thoughts that arise without judgment.
+            DBT offers practical tools to address Control Fallacies:
           </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your should statements by asking:
-            <ul class="list-disc list-inside ml-6">
-              <li>Is this expectation realistic?</li>
-              <li>What evidence do I have that contradicts this rigid rule?</li>
-              <li>How can I reframe this thought to be more compassionate and flexible?</li>
-            </ul>
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">3. Behavioral Experiments:</span> Test your beliefs by intentionally allowing imperfections. Notice how your experience and self-esteem are affected when you let go of rigid expectations.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">4. Radical Acceptance:</span> Accept that life is inherently imperfect. Embrace the idea that mistakes are opportunities for growth rather than failures.
-          </p>
+          <ul class="list-disc list-inside text-lg mb-4">
+            <li>
+              <span class="highlight">Mindfulness:</span> Practice observing your thoughts and feelings without immediately trying to control or judge them.
+            </li>
+            <li>
+              <span class="highlight">Wise Mind Integration:</span> Balance emotional impulses with rational thinking to assess what you can realistically influence.
+            </li>
+            <li>
+              <span class="highlight">Reality Testing:</span> Evaluate whether your perceived responsibility matches the actual level of control you have in a situation.
+            </li>
+            <li>
+              <span class="highlight">Opposite Action:</span> When feelings of excessive responsibility or powerlessness arise, engage in actions that challenge these extremes.
+            </li>
+            <li>
+              <span class="highlight">Radical Acceptance:</span> Accept that some events are beyond your control, which can help reduce unwarranted guilt and anxiety.
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -314,17 +325,17 @@
         <h2 class="section-title">Practical Exercises</h2>
         <div class="info-box">
           <p class="text-lg mb-4">
-            Try these exercises to counteract should statements:
+            Try these exercises to gain a more balanced sense of control:
           </p>
           <ol class="list-decimal list-inside text-lg">
             <li>
-              <strong>Thought Log:</strong> Record moments when you catch yourself using "should" statements. Write down the thought, the situation, and then reframe it with a more balanced perspective.
+              <strong>Responsibility Audit:</strong> List situations where you felt overly responsible. Evaluate which aspects were within your control and which were not.
             </li>
             <li>
-              <strong>Self-Compassion Practice:</strong> When you notice a should statement, pause and offer yourself a compassionate response. Ask, "What would I say to a friend in this situation?"
+              <strong>Control Journal:</strong> Record instances where you successfully influenced outcomes. Reflect on the actions you took and their realistic impact.
             </li>
             <li>
-              <strong>Expectation Audit:</strong> List the expectations you hold for yourself and others. Evaluate which ones are realistic and which ones might be contributing to undue stress.
+              <strong>Mindfulness Meditation:</strong> Spend a few minutes daily observing your thoughts without trying to change them, noticing when feelings of undue control arise.
             </li>
           </ol>
         </div>
@@ -335,7 +346,7 @@
         <h2 class="section-title">Conclusion</h2>
         <div class="info-box">
           <p class="text-lg">
-            Should Statements can create unnecessary pressure and self-criticism. By practicing mindfulness, cognitive restructuring, and radical acceptance, you can learn to replace rigid "should" thinking with more compassionate and realistic perspectives. Remember, personal growth comes from embracing imperfections and celebrating progress.
+            Control Fallacies can skew your perception of responsibility and power, leading to excessive guilt or helplessness. By applying DBT techniques such as mindfulness, reality testing, and Wise Mind integration, you can learn to recognize and balance these extremes—empowering you to take appropriate action without overburdening yourself.
           </p>
         </div>
       </section>
@@ -379,15 +390,6 @@
 
       mobileMenuButton.addEventListener('click', toggleMobileMenu);
 
-      // Close mobile menu when clicking outside
-      document.addEventListener('click', (e) => {
-        if (!mobileMenu.contains(e.target) &&
-            !mobileMenuButton.contains(e.target) &&
-            mobileMenu.classList.contains('translate-x-0')) {
-          toggleMobileMenu();
-        }
-      });
-
       // Mobile category toggles
       document.querySelectorAll('.mobile-category-button').forEach(button => {
         button.addEventListener('click', () => {
@@ -409,7 +411,7 @@
         const toggleButton = document.getElementById(category.toggleId);
         const content = document.getElementById(category.contentId);
         const icon = document.getElementById(category.iconId);
-        if (toggleButton) {
+        if(toggleButton) {
           toggleButton.addEventListener('click', () => {
             content.classList.toggle('hidden');
             icon.classList.toggle('rotate-180');
