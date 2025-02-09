@@ -48,111 +48,108 @@
   </head>
   <body class="bg-gray-900 text-gray-300 font-sans">
     <!-- Header -->
-    <header class="hero-bg text-center py-12">
-      <div class="fade-in">
-        <h1 class="text-5xl font-extrabold text-white">The DBT Resource</h1>
-        <p class="text-lg mt-4 text-gray-300">Empowering skills for emotional wellness through Dialectical Behavior Therapy.</p>
+    <header class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-16 relative overflow-hidden">
+      <div class="container mx-auto px-4 text-center">
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4">The DBT Resource</h1>
+        <p class="text-xl md:text-2xl">Empowering skills for emotional wellness through Dialectical Behavior Therapy.</p>
       </div>
     </header>
 
-  <!-- Navigation -->
-  <nav class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <!-- Site Title -->
-        <a href="index.html" class="text-2xl font-bold text-purple-400">The DBT Resource</a>
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50 shadow-lg">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center justify-between">
+          <a href="index.html" class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors">The DBT Resource</a>
+          
+          <!-- Desktop Navigation Links -->
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="hover:text-purple-400 hover:underline">Home</a>
+            <a href="modules/mindfulness.html" class="hover:text-purple-400 hover:underline">Mindfulness</a>
+            <a href="modules/distress-tolerance.html" class="hover:text-purple-400 hover:underline">Distress Tolerance</a>
+            <a href="modules/emotion-regulation.html" class="hover:text-purple-400 hover:underline">Emotion Regulation</a>
+            <a href="modules/interpersonal.html" class="hover:text-purple-400 hover:underline">Interpersonal Skills</a>
+          </div>
 
-        <!-- Hamburger Menu -->
-        <button id="menu-toggle" class="block md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
-
-        <!-- Desktop Navigation Links -->
-        <div id="menu" class="hidden md:flex space-x-6">
-          <a href="index.html" class="hover:text-purple-400">Home</a>
-          <a href="modules/mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
-          <a href="modules/distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
-          <a href="modules/emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
-          <a href="modules/interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
+          <!-- Hamburger Menu -->
+          <button id="menu-toggle" class="block md:hidden text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
+          <a href="index.html" class="block text-center hover:text-purple-400">Home</a>
+          <a href="modules/mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
+          <a href="modules/distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
+          <a href="modules/emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
+          <a href="modules/interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
         </div>
       </div>
+    </nav>
 
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-2">
-        <a href="index.html" class="block text-center hover:text-purple-400">Home</a>
-        <a href="modules/mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
-        <a href="modules/distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
-        <a href="modules/emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
-        <a href="modules/interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <section class="text-center">
+        <h2 class="text-4xl font-bold text-purple-400">Welcome to Your Path of Wellness</h2>
+        <p class="text-lg mt-4 text-gray-400 max-w-2xl mx-auto">
+          Explore a comprehensive guide to Dialectical Behavior Therapy (DBT). Learn techniques to manage emotions, build resilience, and improve relationships.
+        </p>
+        <a href="complete-dbt.html" class="mt-8 inline-block bg-purple-500 hover-glow text-white text-lg px-6 py-3 rounded-full">Start Learning</a>
+      </section>
+
+      <section class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Cards for modules -->
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">Mindfulness</h3>
+          <p class="mt-2 text-gray-400">Learn to stay present and focused with foundational DBT mindfulness skills.</p>
+          <a href="modules/mindfulness.html" class="text-purple-400 mt-4 inline-block">Explore Mindfulness →</a>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">Distress Tolerance</h3>
+          <p class="mt-2 text-gray-400">Discover strategies to handle crises and embrace Radical Acceptance.</p>
+          <a href="modules/distress-tolerance.html" class="text-purple-400 mt-4 inline-block">Explore Distress Tolerance →</a>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">Emotion Regulation</h3>
+          <p class="mt-2 text-gray-400">Understand emotions and learn to regulate them effectively.</p>
+          <a href="modules/emotion-regulation.html" class="text-purple-400 mt-4 inline-block">Explore Emotion Regulation →</a>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">Interpersonal Skills</h3>
+          <p class="mt-2 text-gray-400">Build stronger relationships with effective communication strategies.</p>
+          <a href="modules/interpersonal.html" class="text-purple-400 mt-4 inline-block">Explore Interpersonal Skills →</a>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">DBT Tools</h3>
+          <p class="mt-2 text-gray-400">Practice DBT skills with tools like coping plans and self-soothe strategies.</p>
+          <a href="tools/index.html" class="text-purple-400 mt-4 inline-block">Explore DBT Tools →</a>
+        </div>
+        <div class="p-6 bg-gray-800 rounded-lg hover-glow">
+          <h3 class="text-xl font-bold text-white">Thinking Traps</h3>
+          <p class="mt-2 text-gray-400">Discover common cognitive distortions and learn to challenge negative thoughts.</p>
+          <a href="thinking-traps/index.html" class="text-purple-400 mt-4 inline-block">Explore Thinking Traps →</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+      <div class="container mx-auto text-center">
+        <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
       </div>
-    </div>
-  </nav>
+    </footer>
 
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12">
-    <section class="text-center">
-      <h2 class="text-4xl font-bold text-purple-400">Welcome to Your Path of Wellness</h2>
-      <p class="text-lg mt-4 text-gray-400 max-w-2xl mx-auto">
-        Explore a comprehensive guide to Dialectical Behavior Therapy (DBT). Learn techniques to manage emotions, build resilience, and improve relationships.
-      </p>
-      <a href="complete-dbt.html" class="mt-8 inline-block bg-purple-500 hover-glow text-white text-lg px-6 py-3 rounded-full">Start Learning</a>
-    </section>
+    <!-- Mobile Menu Script -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-    <section class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <!-- Cards for modules -->
-      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
-        <h3 class="text-xl font-bold text-white">Mindfulness</h3>
-        <p class="mt-2 text-gray-400">Learn to stay present and focused with foundational DBT mindfulness skills.</p>
-        <a href="modules/mindfulness.html" class="text-purple-400 mt-4 inline-block">Explore Mindfulness →</a>
-      </div>
-      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
-        <h3 class="text-xl font-bold text-white">Distress Tolerance</h3>
-        <p class="mt-2 text-gray-400">Discover strategies to handle crises and embrace Radical Acceptance.</p>
-        <a href="modules/distress-tolerance.html" class="text-purple-400 mt-4 inline-block">Explore Distress Tolerance →</a>
-      </div>
-      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
-        <h3 class="text-xl font-bold text-white">Emotion Regulation</h3>
-        <p class="mt-2 text-gray-400">Understand emotions and learn to regulate them effectively.</p>
-        <a href="modules/emotion-regulation.html" class="text-purple-400 mt-4 inline-block">Explore Emotion Regulation →</a>
-      </div>
-      <div class="p-6 bg-gray-800 rounded-lg hover-glow">
-        <h3 class="text-xl font-bold text-white">Interpersonal Skills</h3>
-        <p class="mt-2 text-gray-400">Build stronger relationships with effective communication strategies.</p>
-        <a href="modules/interpersonal.html" class="text-purple-400 mt-4 inline-block">Explore Interpersonal Skills →</a>
-      </div>
-    </section>
-  </main>
-
-  <!-- Thinking Traps Section -->
-
-  <section class="bg-gray-800 text-center py-12">
-    <div class="container mx-auto">
-      <h2 class="text-2xl font-bold text-purple-400 mt-8">Thinking Traps</h2>
-      <p class="text-lg mt-4 text-gray-400 max-w-2xl mx-auto">
-        Discover common cognitive distortions and learn to challenge negative thoughts with evidence-based strategies.
-      </p>
-      <a href="thinking-traps/index.html" class="mt-8 inline-block bg-purple-500 hover-glow text-white text-lg px-6 py-3 rounded-full">Explore Thinking Traps</a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
-    </div>
-  </footer>
-
-  <!-- Mobile Menu Script -->
-  <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
-
-    menuToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
-  </script>
-</body>
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
 
