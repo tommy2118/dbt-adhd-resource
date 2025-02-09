@@ -25,6 +25,15 @@
         }
       }
     </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+  gtag('config', 'G-L29EXB8PZ7');
+</script>
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
@@ -42,7 +51,7 @@
           <p class="text-xl mb-8">
             While we help you find your way back, why not try this mindfulness game?
           </p>
-          
+
           <!-- Game Container -->
           <div class="mb-12">
             <canvas id="gameCanvas" width="400" height="400" class="mx-auto mb-4"></canvas>
@@ -185,4 +194,4 @@
       gameLoop();
     </script>
   </body>
-</html> 
+</html>
