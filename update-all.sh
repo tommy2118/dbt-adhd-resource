@@ -4,6 +4,10 @@
 echo "Building CSS..."
 npm run build
 
+# Fix navigation and header issues
+echo "Fixing navigation and headers..."
+node js/fix-nav-headers.js
+
 # Update the headers to match the hero style
 echo "Updating headers..."
 node js/update-all-headers.js
