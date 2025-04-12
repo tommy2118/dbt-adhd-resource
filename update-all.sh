@@ -4,6 +4,10 @@
 echo "Building CSS..."
 npm run build
 
+# Update the headers to match the hero style
+echo "Updating headers..."
+node js/update-all-headers.js
+
 # Run the update scripts
 echo "Updating module pages..."
 node js/update-modules.js
