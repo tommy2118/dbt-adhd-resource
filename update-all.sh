@@ -12,6 +12,14 @@ node js/fix-nav-headers.js
 echo "Standardizing module pages..."
 node js/fix-module-structure.js
 
+# Standardize thinking trap pages
+echo "Standardizing thinking trap pages..."
+node js/fix-thinking-traps.js
+
+# Fix module navigation
+echo "Fixing module navigation..."
+node js/fix-module-navigation.js
+
 # Update the headers to match the hero style
 echo "Updating headers..."
 node js/update-all-headers.js
@@ -22,6 +30,10 @@ node js/update-modules.js
 
 echo "Updating thinking trap pages..."
 node js/update-thinking-traps.js
+
+# Final build
+echo "Final CSS build..."
+npm run build
 
 echo "All pages have been updated!"
 echo "You can now commit the changes and push to GitHub Pages."
