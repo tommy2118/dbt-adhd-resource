@@ -65,6 +65,10 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -139,7 +143,7 @@
 
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
-      <section class="text-center max-w-4xl mx-auto mb-20">
+      <section class="text-center max-w-4xl mx-auto mb-12">
         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-white">
           Welcome to Your Path of Wellness
         </h2>
@@ -147,9 +151,17 @@
           Explore a comprehensive guide to Dialectical Behavior Therapy (DBT). Learn techniques to manage emotions, build resilience, and improve relationships.
         </p>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Feature Cards -->
-      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" aria-label="DBT Skills Modules">
+      <section class="card-grid" aria-label="DBT Skills Modules">
         <article class="feature-card">
           <h3 class="text-2xl font-bold mb-4">Mindfulness</h3>
           <p class="text-gray-300 mb-6">Learn to stay present and focused with foundational DBT mindfulness skills.</p>
@@ -205,6 +217,14 @@
           </a>
         </article>
 
+        <article class="feature-card spotlight-card bg-gradient-to-r from-purple-900 to-indigo-900 border-l-4 border-purple-500">
+          <h3 class="text-2xl font-bold mb-4">Complete DBT Guide</h3>
+          <p class="text-gray-200 mb-6">Access our comprehensive guide to all DBT skills in one place. Perfect for beginners and those looking to deepen their practice.</p>
+          <a href="complete-dbt.html" class="cta-button inline-block">
+            Start Your Journey
+          </a>
+        </article>
+
         <article class="feature-card">
           <h3 class="text-2xl font-bold mb-4">Thinking Traps</h3>
           <p class="text-gray-300 mb-6">Discover common cognitive distortions and learn to challenge negative thoughts.</p>
@@ -227,6 +247,7 @@
 
     <!-- Scripts -->
     <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>
 

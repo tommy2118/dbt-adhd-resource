@@ -1,0 +1,277 @@
+/* 
+ * Enhanced Design System for DBT ADHD Resource
+ * Compatible with GitHub Pages deployment
+ */
+
+/* Typography improvements */
+:root {
+  /* Typography */
+  --heading-font: 'Fraunces', serif;
+  --body-font: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  /* Colors - enhanced but keeping core palette */
+  --primary-color: #9333EA;
+  --primary-light: #A855F7;
+  --primary-dark: #7E22CE;
+  --secondary-color: #4F46E5;
+  --accent-warm: #F97316;
+  
+  /* Text colors */
+  --text-color: #F8FAFC;
+  --text-muted: #94A3B8;
+  
+  /* Background colors */
+  --bg-color: #0F172A;
+  --nav-bg: #1E293B;
+  --card-bg: #1E293B;
+  
+  /* Spacing system */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 5rem;
+}
+
+/* Base Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  line-height: 1.2;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+/* Enhanced Navigation */
+.nav-link {
+  position: relative;
+  color: var(--text-muted);
+  transition: color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.nav-link[aria-current="page"] {
+  color: var(--primary-light);
+  font-weight: 600;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary-color);
+  transition: width 0.2s ease;
+}
+
+.nav-link[aria-current="page"]::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: var(--text-color);
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Enhanced card styles */
+.feature-card {
+  background-color: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border-top: 3px solid var(--primary-color);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  border-top-color: var(--primary-light);
+}
+
+/* Content section improvements */
+.content-section {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.content-section h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.content-section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+/* Enhanced buttons */
+.cta-button {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+  background: var(--primary-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* Key information boxes */
+.key-info {
+  background: rgba(147, 51, 234, 0.1);
+  border-left: 4px solid var(--primary-color);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.key-info h4 {
+  color: var(--primary-light);
+  margin-bottom: 0.5rem;
+}
+
+/* Reading progress bar */
+.reading-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: transparent;
+  z-index: 9999;
+}
+
+.reading-progress-bar {
+  height: 4px;
+  background: var(--primary-color);
+  width: 0%;
+}
+
+/* Improved accessibility */
+:focus-visible {
+  outline: 3px solid var(--primary-light);
+  outline-offset: 2px;
+  border-radius: 0.25rem;
+}
+
+/* Card grid layout */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Spotlight card (larger) */
+.spotlight-card {
+  grid-column: 1 / -1;
+}
+
+@media (min-width: 768px) {
+  .spotlight-card {
+    grid-column: span 2;
+  }
+}
+
+/* Section divider */
+.section-divider {
+  height: 60px;
+  width: 100%;
+  position: relative;
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+.section-divider svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* Thinking Trap styles */
+.trap-item {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+  margin-bottom: 1rem;
+}
+
+.trap-item:hover {
+  transform: translateY(-2px);
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.trap-item h4 {
+  font-family: var(--heading-font);
+}
+
+.card-grid .trap-item {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-grid .trap-item a {
+  margin-top: auto;
+  display: inline-flex;
+  align-items: center;
+}
+
+.card-grid .trap-item a:hover {
+  text-decoration: underline;
+}
+
+.card-grid .trap-item a::after {
+  content: "→";
+  margin-left: 0.25rem;
+  transition: transform 0.2s ease;
+}
+
+.card-grid .trap-item a:hover::after {
+  transform: translateX(4px);
+}

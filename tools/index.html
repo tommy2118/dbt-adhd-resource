@@ -5,106 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Interactive DBT tools and resources including mood trackers, worksheets, skill reminders, and cope ahead planning. Practice and track your DBT skills effectively.">
     <title>DBT Tools & Resources</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply bg-gray-900 text-gray-300 font-sans;
-          font-family: 'Inter', sans-serif;
-        }
-        a {
-          @apply text-purple-400 hover:text-purple-300 transition-colors;
-        }
-      }
-      @layer components {
-        .section-title {
-          @apply text-3xl md:text-4xl font-bold text-purple-400 mb-6;
-        }
-        .content-section {
-          @apply mb-12;
-        }
-        .info-box {
-          @apply bg-gray-800 p-6 rounded-lg shadow-lg;
-        }
-        .highlight {
-          @apply text-purple-400 font-semibold;
-        }
-        .tool-card {
-          @apply bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
-        }
-        .coming-soon {
-          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-        }
-      }
-      @keyframes pulse {
-        0%, 100% { opacity: 1; }
-        50% { opacity: 0.5; }
-      }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L29EXB8PZ7');
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-L29EXB8PZ7');
-</script>
-<body class="bg-gray-900 text-gray-300 font-sans">
+<body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
+    <!-- Navigation -->
+    <div class="nav-container fixed w-full z-50 top-0">
+      <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
+            The DBT Resource
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../modules/mindfulness.html" class="nav-link">Mindfulness</a>
+            <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
+            <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
+            <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
+            <a href="../thinking-traps/index.html" class="nav-link">Thinking Traps</a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden p-2 rounded-lg hover:bg-gray-700 transition-colors" 
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                  aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden py-4">
+          <div class="flex flex-col space-y-4">
+            <a href="../index.html" class="nav-link px-4 py-2 rounded-lg">Home</a>
+            <a href="../modules/mindfulness.html" class="nav-link px-4 py-2 rounded-lg">Mindfulness</a>
+            <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
+            <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
+            <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
+            <a href="../thinking-traps/index.html" class="nav-link px-4 py-2 rounded-lg">Thinking Traps</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
           DBT Tools & Resources
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          DBT Tools & Resources
-            Interactive tools to support your DBT practice and emotional wellness journey.
+          Interactive tools to support your DBT practice and emotional wellness journey.
         </p>
       </div>
     </header>
 
-    <nav class="bg-gray-800 text-white py-4 sticky top-0 z-50 shadow-lg">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between">
-                <a href="../index.html" class="text-2xl font-bold text-purple-400 hover:text-purple-300 transition-colors">The DBT Resource</a>
-                
-                <!-- Desktop Navigation Links -->
-                <div class="hidden md:flex space-x-8">
-                    <a href="../index.html" class="hover:text-purple-400 hover:underline">Home</a>
-                    <a href="../modules/mindfulness.html" class="hover:text-purple-400 hover:underline">Mindfulness</a>
-                    <a href="../modules/distress-tolerance.html" class="hover:text-purple-400 hover:underline">Distress Tolerance</a>
-                    <a href="../modules/emotion-regulation.html" class="hover:text-purple-400 hover:underline">Emotion Regulation</a>
-                    <a href="../modules/interpersonal.html" class="hover:text-purple-400 hover:underline">Interpersonal Skills</a>
-                </div>
-
-                <!-- Hamburger Menu -->
-                <button id="menu-toggle" class="block md:hidden text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
-            
-            <!-- Mobile Menu -->
-            <div id="mobile-menu" class="hidden md:hidden mt-4 space-y-2">
-                <a href="../index.html" class="block text-center hover:text-purple-400">Home</a>
-                <a href="../modules/mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
-                <a href="../modules/distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
-                <a href="../modules/emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
-                <a href="../modules/interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
-            </div>
-        </div>
-    </nav>
-
     <main class="container mx-auto px-4 py-12">
         <!-- Introduction Section -->
-        <section class="text-center mb-16">
+        <section class="content-section text-center mb-16">
             <h2 class="section-title">Practice Your DBT Skills</h2>
-            <p class="text-lg text-gray-400 max-w-3xl mx-auto">
+            <p class="text-lg text-gray-400 max-w-3xl mx-auto mb-4">
                 Our interactive tools help you apply DBT skills in real-life situations. From tracking moods to planning ahead for challenges, 
                 these resources support your journey toward emotional wellness.
             </p>
+            <div class="key-info">
+                <h4>Key Takeaway</h4>
+                <p class="text-gray-300">Consistent practice with DBT tools helps turn theoretical knowledge into practical skills you can use in challenging moments.</p>
+            </div>
         </section>
 
         <!-- Featured Tool Section -->
@@ -112,7 +94,7 @@
             <div class="bg-gradient-to-r from-purple-900 to-indigo-900 rounded-lg p-8 mb-12">
                 <h2 class="text-3xl font-bold text-white mb-4">Cope Ahead Planning</h2>
                 <p class="text-lg text-gray-300 mb-6">Create structured plans to prepare for challenging situations using DBT skills.</p>
-                <a href="cope-ahead-plan.html" class="inline-block bg-purple-500 text-white px-6 py-3 rounded-full hover:bg-purple-600 transition-colors">
+                <a href="cope-ahead-plan.html" class="cta-button inline-block">
                     Create Your Plan →
                 </a>
             </div>
@@ -121,9 +103,9 @@
         <!-- Tools Grid Section -->
         <section class="content-section">
             <h2 class="section-title">Interactive Tools</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="card-grid">
                 <!-- Mood Tracker -->
-                <div class="tool-card">
+                <div class="feature-card">
                     <div class="flex justify-between items-start">
                         <h3 class="text-xl font-bold text-white">Mood Tracker</h3>
                         <span class="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-800 coming-soon">
@@ -134,7 +116,7 @@
                 </div>
 
                 <!-- Worksheets -->
-                <div class="tool-card">
+                <div class="feature-card">
                     <div class="flex justify-between items-start">
                         <h3 class="text-xl font-bold text-white">DBT Worksheets</h3>
                         <span class="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-800 coming-soon">
@@ -145,7 +127,7 @@
                 </div>
 
                 <!-- Skill Reminders -->
-                <div class="tool-card">
+                <div class="feature-card">
                     <div class="flex justify-between items-start">
                         <h3 class="text-xl font-bold text-white">Skill Reminders</h3>
                         <span class="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-800 coming-soon">
@@ -160,9 +142,9 @@
         <!-- Guided Practices Section -->
         <section class="content-section">
             <h2 class="section-title">Guided Practices</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="card-grid">
                 <!-- Mindfulness Exercises -->
-                <div class="tool-card">
+                <div class="feature-card">
                     <div class="flex justify-between items-start">
                         <h3 class="text-xl font-bold text-white">Mindfulness Exercises</h3>
                         <span class="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-800 coming-soon">
@@ -173,7 +155,7 @@
                 </div>
 
                 <!-- Progress Tracking -->
-                <div class="tool-card">
+                <div class="feature-card">
                     <div class="flex justify-between items-start">
                         <h3 class="text-xl font-bold text-white">Progress Tracking</h3>
                         <span class="inline-flex items-center px-3 py-1 text-sm font-medium rounded-full bg-purple-100 text-purple-800 coming-soon">
@@ -198,22 +180,8 @@
         </div>
     </footer>
 
-    <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const mobileMenu = document.getElementById("mobile-menu");
-
-        menuToggle.addEventListener("click", () => {
-            mobileMenu.classList.toggle("hidden");
-        });
-
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!mobileMenu.contains(e.target) && 
-                !menuToggle.contains(e.target) && 
-                !mobileMenu.classList.contains('hidden')) {
-                mobileMenu.classList.add('hidden');
-            }
-        });
-    </script>
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
 </body>
 </html>

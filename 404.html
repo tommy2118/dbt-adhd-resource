@@ -5,26 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found | The DBT Resource</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply bg-gray-900 text-gray-300 font-sans;
-          font-family: 'Inter', sans-serif;
-        }
-        canvas {
-          @apply bg-gray-800 rounded-lg shadow-lg;
-        }
-      }
-      @layer components {
-        .btn {
-          @apply px-6 py-3 bg-purple-600 text-white rounded-lg hover:bg-purple-500 transition-colors font-semibold;
-        }
-        .link {
-          @apply text-purple-400 hover:text-purple-300 transition-colors;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900<script src="https://cdn.tailwindcss.com"></script>family=Inter:wght@400;500;600;700<script src="https://cdn.tailwindcss.com"></script>display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
   <script>
@@ -193,5 +178,8 @@
       createCircles();
       gameLoop();
     </script>
-  </body>
+      <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
+</body>
 </html>

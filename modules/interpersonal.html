@@ -12,6 +12,10 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -84,18 +88,30 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-    <section>
+    <section class="content-section">
       <h2 class="section-title">Overview of Interpersonal Effectiveness</h2>
-      <p class="text-lg text-gray-400 mb-8">
+      <p class="text-lg text-gray-400 mb-4">
         Interpersonal Effectiveness skills help you balance your needs, relationships, and self-respect. These skills are essential for clear communication, healthy boundaries, and meaningful connections.
       </p>
+      <div class="key-info">
+        <h4>Key Takeaway</h4>
+        <p class="text-gray-300">Effective interpersonal skills allow you to maintain both your relationships and your self-respect while getting your needs met in appropriate ways.</p>
+      </div>
     </section>
 
-    <section>
+    <!-- Section Divider -->
+    <div class="section-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+        <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+      </svg>
+    </div>
+
+    <section class="content-section">
       <h2 class="section-title">Explore Interpersonal Effectiveness Skills</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card-grid">
         <!-- DEAR MAN -->
-        <div class="skill-card">
+        <div class="feature-card">
           <h3 class="text-xl font-bold text-white">DEAR MAN</h3>
           <p class="mt-2 text-gray-400">
             A structured method for assertively asking for what you need or saying no.
@@ -104,7 +120,7 @@
         </div>
 
         <!-- GIVE -->
-        <div class="skill-card">
+        <div class="feature-card">
           <h3 class="text-xl font-bold text-white">GIVE</h3>
           <p class="mt-2 text-gray-400">
             A relationship skill focused on showing respect and maintaining harmony.
@@ -113,7 +129,7 @@
         </div>
 
         <!-- FAST -->
-        <div class="skill-card">
+        <div class="feature-card">
           <h3 class="text-xl font-bold text-white">FAST</h3>
           <p class="mt-2 text-gray-400">
             A skill to uphold your self-respect during interpersonal interactions.
@@ -134,5 +150,6 @@
 
     <!-- Scripts -->
     <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

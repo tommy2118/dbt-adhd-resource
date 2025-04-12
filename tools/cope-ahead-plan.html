@@ -6,23 +6,11 @@
         <meta name="description" content="Create effective Cope Ahead Plans using DBT skills. Learn to prepare for challenging situations and build emotional resilience.">
         <meta name="keywords" content="cope ahead plan, DBT skills, emotional preparation, mental health, stress management">
         <title>Cope Ahead Plan - The DBT Resource</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style>
-            @keyframes fadeIn {
-                from { opacity: 0; }
-                to { opacity: 1; }
-            }
-            .fade-in {
-                animation: fadeIn 0.5s ease-in;
-            }
-            .section-card {
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
-            }
-            .section-card:hover {
-                transform: translateY(-2px);
-                box-shadow: 0 4px 20px rgba(106, 13, 173, 0.2);
-            }
-        </style>
+        <link rel="stylesheet" href="/dist/output.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/enhancements/design-system.css">
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
         <script>
@@ -47,53 +35,66 @@
     </header>
 
         <!-- Navigation -->
-        <nav class="bg-gray-800 text-white py-4">
-            <div class="container mx-auto px-4">
-                <div class="flex items-center justify-between">
-                    <a href="../index.html" class="text-2xl font-bold text-purple-400">The DBT Resource</a>
-
-                    <!-- Hamburger Menu -->
-                    <button id="menu-toggle" class="block md:hidden text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        <div class="nav-container fixed w-full z-50 top-0">
+            <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
+                <div class="flex items-center justify-between h-16">
+                    <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
+                        The DBT Resource
+                    </a>
+                    
+                    <!-- Desktop Navigation -->
+                    <div class="hidden md:flex space-x-8">
+                        <a href="../index.html" class="nav-link">Home</a>
+                        <a href="../modules/mindfulness.html" class="nav-link">Mindfulness</a>
+                        <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
+                        <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
+                        <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
+                        <a href="../thinking-traps/index.html" class="nav-link">Thinking Traps</a>
+                    </div>
+                    
+                    <!-- Mobile Menu Button -->
+                    <button class="md:hidden p-2 rounded-lg hover:bg-gray-700 transition-colors" 
+                            aria-expanded="false"
+                            aria-controls="mobile-menu"
+                            aria-label="Toggle menu">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
-
-                    <!-- Desktop Navigation -->
-                    <div class="hidden md:flex space-x-6">
-                        <a href="../index.html" class="hover:text-purple-400">Home</a>
-                        <a href="../modules/mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
-                        <a href="../modules/distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
-                        <a href="../modules/emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
-                        <a href="../modules/interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
+                </div>
+                
+                <!-- Mobile Menu -->
+                <div id="mobile-menu" class="md:hidden hidden py-4">
+                    <div class="flex flex-col space-y-4">
+                        <a href="../index.html" class="nav-link px-4 py-2 rounded-lg">Home</a>
+                        <a href="../modules/mindfulness.html" class="nav-link px-4 py-2 rounded-lg">Mindfulness</a>
+                        <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
+                        <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
+                        <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
+                        <a href="../thinking-traps/index.html" class="nav-link px-4 py-2 rounded-lg">Thinking Traps</a>
                     </div>
                 </div>
-
-                <!-- Mobile Menu -->
-                <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-2">
-                    <a href="../index.html" class="block text-center hover:text-purple-400">Home</a>
-                    <a href="../modules/mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
-                    <a href="../modules/distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
-                    <a href="../modules/emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
-                    <a href="../modules/interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
-                </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <!-- Main Content -->
         <main class="container mx-auto px-4 py-12">
             <!-- Introduction -->
-            <section class="mb-12">
+            <section class="content-section mb-12">
                 <h2 class="text-3xl font-bold text-purple-400 mb-6">Creating Your Cope Ahead Plan</h2>
-                <p class="text-lg text-gray-400">
+                <p class="text-lg text-gray-400 mb-4">
                     A Cope Ahead Plan helps you prepare for challenging situations by thinking through your responses and supports in advance. This structured approach can reduce anxiety and increase confidence in handling difficult moments.
                 </p>
+                <div class="key-info">
+                    <h4>Key Takeaway</h4>
+                    <p class="text-gray-300">Planning ahead for difficult situations activates your wise mind and helps you respond skillfully rather than reacting emotionally in the moment.</p>
+                </div>
             </section>
 
             <!-- Plan Steps -->
-            <section class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+            <section class="card-grid mb-12">
                 <!-- Step 1: Situation -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">1. Describe the Situation</h3>
                     <p class="text-gray-400">Write down the specific challenging situation you want to prepare for:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -105,7 +106,7 @@
                 </div>
 
                 <!-- Step 2: Emotions -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">2. Identify Your Emotions</h3>
                     <p class="text-gray-400">Anticipate and write down:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -117,7 +118,7 @@
                 </div>
 
                 <!-- Step 3: Skills -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">3. Plan Your Skills</h3>
                     <p class="text-gray-400">List the DBT skills you want to use:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -129,7 +130,7 @@
                 </div>
 
                 <!-- Step 4: Support System -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">4. Identify Your Supports</h3>
                     <p class="text-gray-400">List your support resources:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -141,7 +142,7 @@
                 </div>
 
                 <!-- Step 5: Things to Avoid -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">5. Plan What to Avoid</h3>
                     <p class="text-gray-400">Identify potential triggers and pitfalls:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -153,7 +154,7 @@
                 </div>
 
                 <!-- Step 6: Positive Outcome -->
-                <div class="bg-gray-800 p-6 rounded-lg section-card">
+                <div class="feature-card">
                     <h3 class="text-xl font-bold text-white mb-4">6. Visualize Success</h3>
                     <p class="text-gray-400">Describe what successful coping looks like:</p>
                     <ul class="list-disc list-inside mt-4 text-gray-400">
@@ -168,7 +169,7 @@
             <!-- Tips Section -->
             <section class="bg-gray-800 p-8 rounded-lg mb-12">
                 <h2 class="text-2xl font-bold text-purple-400 mb-6">Tips for Success</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-grid">
                     <div>
                         <h3 class="text-xl font-bold text-white mb-4">When to Create a Plan</h3>
                         <ul class="list-disc list-inside text-gray-400">
@@ -198,14 +199,8 @@
             </div>
         </footer>
 
-        <!-- Mobile Menu Script -->
-        <script>
-            const menuToggle = document.getElementById("menu-toggle");
-            const mobileMenu = document.getElementById("mobile-menu");
-
-            menuToggle.addEventListener("click", () => {
-                mobileMenu.classList.toggle("hidden");
-            });
-        </script>
+        <!-- Scripts -->
+        <script src="/js/main.js" defer></script>
+        <script src="/js/enhancements.js" defer></script>
     </body>
 </html>

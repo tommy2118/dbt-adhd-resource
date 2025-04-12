@@ -12,6 +12,10 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -84,7 +88,7 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-    <section>
+    <section class="content-section">
       <h2 class="section-title">Overview of States of Mind</h2>
       <p class="text-lg text-gray-400 mb-8">
         The States of Mind framework helps you understand and balance your emotions and logic to make decisions effectively. The three states are:
@@ -92,9 +96,9 @@
       </p>
     </section>
 
-    <section>
+    <section class="content-section">
       <h2 class="section-title">The Three States of Mind</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="card-grid">
         <!-- Emotional Mind -->
         <div class="mind-state-card">
           <h3 class="text-xl font-bold text-white">Emotional Mind</h3>
@@ -165,5 +169,6 @@
 
     <!-- Scripts -->
     <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>
