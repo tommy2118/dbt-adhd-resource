@@ -18,56 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      @layer base {
-        body {
-          @apply bg-gray-900 text-gray-300 font-sans;
-          font-family: 'Inter', sans-serif;
-        }
-        a {
-          @apply text-purple-400 hover:text-purple-300 transition-colors;
-        }
-      }
-      @layer components {
-        .section-title {
-          @apply text-3xl md:text-4xl font-bold text-purple-400 mb-6;
-        }
-        .content-section {
-          @apply mb-12;
-        }
-        .info-box {
-          @apply bg-gray-800 p-6 rounded-lg shadow-lg;
-        }
-        .highlight {
-          @apply text-purple-400 font-semibold;
-        }
-        .thinking-trap-nav {
-          @apply bg-gray-800 border-t border-gray-700 py-4;
-        }
-        .thinking-trap-menu {
-          @apply grid grid-cols-1 md:grid-cols-4 gap-4 max-w-6xl mx-auto px-4;
-        }
-        .trap-category {
-          @apply bg-gray-700 rounded-lg p-4 transition-transform duration-300 hover:scale-105 relative;
-        }
-        .trap-list {
-          @apply mt-2 space-y-2;
-        }
-        .trap-link {
-          @apply block text-gray-300 hover:text-purple-400 transition-colors duration-200 py-1;
-        }
-        .current-trap {
-          @apply text-purple-400 font-semibold;
-        }
-        .nav-indicator {
-          @apply flex items-center justify-between text-sm text-gray-400 mt-4;
-        }
-        .nav-arrow {
-          @apply flex items-center hover:text-purple-400 transition-colors duration-200;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="/dist/output.css">
     <style type="text/tailwindcss">
       @layer components {
         .mobile-category-content {
@@ -364,72 +315,6 @@
       </div>
     </footer>
 
-    <script>
-      // Mobile menu functionality
-      const mobileMenuButton = document.getElementById('mobile-menu-button');
-      const mobileMenu = document.getElementById('mobile-menu');
-      const menuOpenIcon = mobileMenuButton.querySelector('.menu-open');
-      const menuCloseIcon = mobileMenuButton.querySelector('.menu-close');
-
-      function toggleMobileMenu() {
-        const isOpen = mobileMenu.classList.contains('translate-x-0');
-        if (isOpen) {
-          mobileMenu.classList.remove('translate-x-0');
-          mobileMenu.classList.add('translate-x-full');
-          menuOpenIcon.classList.remove('hidden');
-          menuCloseIcon.classList.add('hidden');
-          document.body.style.overflow = '';
-        } else {
-          mobileMenu.classList.add('translate-x-0');
-          mobileMenu.classList.remove('translate-x-full');
-          menuOpenIcon.classList.add('hidden');
-          menuCloseIcon.classList.remove('hidden');
-          document.body.style.overflow = 'hidden';
-        }
-      }
-
-      mobileMenuButton.addEventListener('click', toggleMobileMenu);
-
-      // Mobile category toggles (if applicable)
-      document.querySelectorAll('.mobile-category-button').forEach(button => {
-        button.addEventListener('click', () => {
-          const content = button.nextElementSibling;
-          const arrow = button.querySelector('svg');
-          arrow.classList.toggle('rotate-180');
-          content.classList.toggle('hidden');
-        });
-      });
-
-      // Desktop category toggles
-      const desktopCategories = [
-        { toggleId: 'desktop-perception-toggle', contentId: 'desktop-perception-content', iconId: 'desktop-perception-icon' },
-        { toggleId: 'desktop-expectation-toggle', contentId: 'desktop-expectation-content', iconId: 'desktop-expectation-icon' },
-        { toggleId: 'desktop-attribution-toggle', contentId: 'desktop-attribution-content', iconId: 'desktop-attribution-icon' },
-        { toggleId: 'desktop-additional-toggle', contentId: 'desktop-additional-content', iconId: 'desktop-additional-icon' }
-      ];
-      desktopCategories.forEach(category => {
-        const toggleButton = document.getElementById(category.toggleId);
-        const content = document.getElementById(category.contentId);
-        const icon = document.getElementById(category.iconId);
-        if(toggleButton) {
-          toggleButton.addEventListener('click', () => {
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-          });
-        }
-      });
-
-      // Mark current page in navigation
-      document.addEventListener('DOMContentLoaded', () => {
-        const currentPath = window.location.pathname;
-        const currentPage = currentPath.split('/').pop();
-        document.querySelectorAll('a').forEach(link => {
-          if (link.getAttribute('href') === currentPage) {
-            link.classList.add('text-purple-400', 'font-semibold');
-          }
-        });
-      });
-    </script>
-  </body>
+    <script src="/js/main.js" defer></script></body>
 </html>
 
