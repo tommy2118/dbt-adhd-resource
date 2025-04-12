@@ -83,6 +83,17 @@
                 0 10px 10px -5px rgba(147, 51, 234, 0.04);
   }
   
+  /* Skill cards for module pages */
+  .skill-card {
+    @apply p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+  
+  .skill-card:hover {
+    @apply transform -translate-y-1;
+    box-shadow: 0 20px 25px -5px rgba(147, 51, 234, 0.1),
+                0 10px 10px -5px rgba(147, 51, 234, 0.04);
+  }
+  
   /* How skill cards */
   .how-skill-card {
     @apply p-6 bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300;

@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore mindfulness practices to strengthen your DBT skills. Learn guided exercises and everyday techniques to stay present and focused.">
-  <meta name="author" content="Your Name">
-  <title>Mindful Practices - The DBT Resource</title>
-  <link rel="stylesheet" href="/dist/output.css">
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore mindfulness practices to strengthen your DBT skills. Learn guided exercises and everyday techniques to stay present and focused.">
+    <meta name="author" content="The DBT Resource">
+    <meta name="keywords" content="DBT, Dialectical Behavior Therapy, mental health, emotional wellness, mindful practices">
+    <meta name="theme-color" content="#9333EA">
+    
+    <title>Mindful Practices | The DBT Resource</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="/dist/output.css">
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-L29EXB8PZ7');
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <!-- Skip to Content Link -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Navigation -->
+    <div class="nav-container fixed w-full z-50">
+      <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
+        <div class="flex items-center justify-between h-16">
+          <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
+            The DBT Resource
+          </a>
+          
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex space-x-8">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="mindfulness.html" class="nav-link">Mindfulness</a>
+            <a href="distress-tolerance.html" class="nav-link">Distress Tolerance</a>
+            <a href="emotion-regulation.html" class="nav-link">Emotion Regulation</a>
+            <a href="interpersonal.html" class="nav-link">Interpersonal Skills</a>
+          </div>
+          
+          <!-- Mobile Menu Button -->
+          <button class="md:hidden p-2 rounded-lg hover:bg-gray-700 transition-colors" 
+                  aria-expanded="false"
+                  aria-controls="mobile-menu"
+                  aria-label="Toggle menu">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden py-4">
+          <div class="flex flex-col space-y-4">
+            <a href="../index.html" class="nav-link px-4 py-2 rounded-lg">Home</a>
+            <a href="mindfulness.html" class="nav-link px-4 py-2 rounded-lg">Mindfulness</a>
+            <a href="distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
+            <a href="emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
+            <a href="interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
+          </div>
+        </div>
+      </nav>
+    </div>
 
-  gtag('config', 'G-L29EXB8PZ7');
-</script>
-<body class="bg-gray-900 text-gray-300 font-sans">
-  <!-- Header -->
-  <header class="hero-bg pt-32 pb-24">
+    <!-- Header -->
+    <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
           Mindful Practices
@@ -30,43 +79,9 @@
       </div>
     </header>
 
-  <!-- Navigation -->
-  <nav class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto px-4">
-      <div class="flex items-center justify-between">
-        <!-- Site Title -->
-        <a href="../index.html" class="text-2xl font-bold text-purple-400">The DBT Resource</a>
-
-        <!-- Hamburger Menu -->
-        <button id="menu-toggle" class="block md:hidden text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
-
-        <!-- Desktop Navigation Links -->
-        <div id="menu" class="hidden md:flex space-x-6">
-          <a href="../index.html" class="hover:text-purple-400">Home</a>
-          <a href="mindfulness.html" class="hover:text-purple-400">Mindfulness</a>
-          <a href="distress-tolerance.html" class="hover:text-purple-400">Distress Tolerance</a>
-          <a href="emotion-regulation.html" class="hover:text-purple-400">Emotion Regulation</a>
-          <a href="interpersonal.html" class="hover:text-purple-400">Interpersonal Skills</a>
-        </div>
-      </div>
-
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobile-menu" class="hidden md:hidden flex flex-col mt-4 space-y-2">
-        <a href="../index.html" class="block text-center hover:text-purple-400">Home</a>
-        <a href="mindfulness.html" class="block text-center hover:text-purple-400">Mindfulness</a>
-        <a href="distress-tolerance.html" class="block text-center hover:text-purple-400">Distress Tolerance</a>
-        <a href="emotion-regulation.html" class="block text-center hover:text-purple-400">Emotion Regulation</a>
-        <a href="interpersonal.html" class="block text-center hover:text-purple-400">Interpersonal Skills</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12">
+    <!-- Main Content -->
+    <main id="main-content" class="container mx-auto px-4 py-16">
+      
     <section>
       <h2 class="section-title">Overview of Mindful Practices</h2>
       <p class="text-lg text-gray-400 mb-8">
@@ -120,17 +135,17 @@
         These small moments of mindfulness can have a big impact on your emotional well-being.
       </p>
     </section>
-  </main>
+  
+    </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-400 py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 The DBT Resource. Encouraging mindfulness in everyday life.</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-900 mt-20 py-12">
+      <div class="container mx-auto px-4 text-center">
+        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+      </div>
+    </footer>
 
-  <!-- Mobile Menu Script -->
-  <script src="/js/main.js" defer></script>
-</body>
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+  </body>
 </html>
-

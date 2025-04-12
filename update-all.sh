@@ -8,6 +8,10 @@ npm run build
 echo "Fixing navigation and headers..."
 node js/fix-nav-headers.js
 
+# Standardize module page structure
+echo "Standardizing module pages..."
+node js/fix-module-structure.js
+
 # Update the headers to match the hero style
 echo "Updating headers..."
 node js/update-all-headers.js
