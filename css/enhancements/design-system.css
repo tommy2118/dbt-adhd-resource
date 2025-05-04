@@ -148,6 +148,29 @@ p {
   transform: translateY(0);
 }
 
+.cta-button-secondary {
+  background: transparent;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 2px solid var(--primary-color);
+}
+
+.cta-button-secondary:hover {
+  background: rgba(147, 51, 234, 0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button-secondary:active {
+  transform: translateY(0);
+}
+
 /* Key information boxes */
 .key-info {
   background: rgba(147, 51, 234, 0.1);
@@ -229,6 +252,100 @@ p {
   position: absolute;
   width: 100%;
   height: 100%;
+}
+
+/* Challenge cards */
+.challenge-card {
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: rgba(30, 41, 59, 0.6);
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.challenge-card:hover {
+  background-color: rgba(30, 41, 59, 0.8);
+  transform: translateY(-3px);
+}
+
+.challenge-icon {
+  background-color: var(--primary-color);
+  padding: 0.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Persona cards */
+.persona-card {
+  border-radius: 1rem;
+  background: linear-gradient(to right, rgba(79, 70, 229, 0.2), rgba(147, 51, 234, 0.2));
+  padding: 1.5rem;
+  border-left: 3px solid var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.persona-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.persona-card h3::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Step cards for process */
+.step-card {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: rgba(30, 41, 59, 0.4);
+  border-left: 3px solid var(--primary-color);
+}
+
+.step-card::before {
+  content: attr(data-step);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* DBT benefit tag */
+.benefit-tag {
+  display: inline-block;
+  background-color: rgba(147, 51, 234, 0.2);
+  color: var(--primary-light);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-tag:hover {
+  background-color: rgba(147, 51, 234, 0.3);
 }
 
 /* Thinking Trap styles */
