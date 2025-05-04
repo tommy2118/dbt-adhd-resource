@@ -12,6 +12,10 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -85,16 +89,16 @@
     <main id="main-content" class="container mx-auto px-4 py-16">
       
       <!-- Table of Contents -->
-      <div class="mb-12">
+      <div class="mb-12 bg-gray-800 p-6 rounded-lg">
         <h2 class="section-title">In This Guide</h2>
         <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding All-or-Nothing Thinking</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
+          <li><a href="#introduction" class="text-primary-light hover:text-white transition-colors">Introduction</a></li>
+          <li><a href="#understanding" class="text-primary-light hover:text-white transition-colors">Understanding All-or-Nothing Thinking</a></li>
+          <li><a href="#manifestations" class="text-primary-light hover:text-white transition-colors">Common Manifestations</a></li>
+          <li><a href="#impact" class="text-primary-light hover:text-white transition-colors">Impact on Mental Health</a></li>
+          <li><a href="#dbt-techniques" class="text-primary-light hover:text-white transition-colors">DBT Techniques & Strategies</a></li>
+          <li><a href="#exercises" class="text-primary-light hover:text-white transition-colors">Practical Exercises</a></li>
+          <li><a href="#conclusion" class="text-primary-light hover:text-white transition-colors">Conclusion</a></li>
         </ul>
       </div>
 
@@ -104,7 +108,19 @@
         <p class="text-xl leading-relaxed mb-4">
           All-or-nothing thinking—often called black-and-white thinking—is a cognitive distortion where situations, people, or events are viewed in only two extremes: total success or complete failure. This guide provides an in-depth look at how this trap operates, its consequences, and effective strategies (including DBT techniques) to overcome it.
         </p>
+        <div class="key-info">
+          <h4>Key Takeaway</h4>
+          <p class="text-gray-300">All-or-nothing thinking creates a false dichotomy where situations are either perfect or terrible, with no recognition of the middle ground where most of life actually happens.</p>
+        </div>
       </section>
+
+      <!-- Section Divider -->
+      <div class="section-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding All-or-Nothing Thinking -->
       <section id="understanding" class="content-section">
@@ -214,5 +230,6 @@
 
     <!-- Scripts -->
     <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>
