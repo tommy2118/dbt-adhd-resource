@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to Fortune Telling, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, fortune telling: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, fortune telling, negative predictions, anxiety, future-focused thinking">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Fortune Telling: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Fortune Telling | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Fortune Telling
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Breaking free from negative predictions about the future
         </p>
       </div>
     </header>
@@ -89,136 +92,597 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Fortune Telling</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Fortune Telling</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
+      <section id="introduction" class="content-section mb-16">
         <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Fortune Telling is a cognitive distortion in which you predict negative outcomes without sufficient evidence. This guide examines how fortune telling operates, the effects it can have on your emotional health, and strategies to reframe these predictions using DBT techniques.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Fortune Telling is a cognitive distortion in which you predict negative outcomes without sufficient evidence. It involves making assumptions about the future as if you can see into it with certainty—typically forecasting failure, rejection, or disaster.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide examines how fortune telling operates, the effects it can have on your emotional well-being and behavior, and effective DBT strategies to help you challenge these predictions and cultivate a more balanced perspective on the future.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Fortune Telling convinces you that negative outcomes are inevitable, creating anxiety and avoidance behaviors that can limit your opportunities and experiences—even though the future remains fundamentally uncertain.
+            </p>
+          </div>
+        </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding Fortune Telling -->
-      <section id="understanding" class="content-section">
+      <section id="understanding" class="content-section mb-16">
         <h2 class="section-title">Understanding Fortune Telling</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Fortune Telling involves anticipating negative outcomes and assuming they are inevitable, often without any concrete evidence.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you engage in fortune telling, your mind fixates on worst-case scenarios. This distorted thinking filters out any positive or neutral evidence, reinforcing a negative outlook.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> By constantly predicting negative outcomes, you can increase anxiety and stress, potentially limiting your willingness to engage in new experiences.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Fortune Telling?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Fortune Telling is making negative predictions about the future and treating them as established facts rather than possibilities. It involves anticipating that things will go wrong, that you'll fail, or that disasters will occur—all without adequate evidence to support these conclusions.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                When you engage in fortune telling, your mind fixates on worst-case scenarios as if they're inevitable. This distorted thinking selectively ignores positive possibilities, past successes, and the fundamental unpredictability of life, instead treating negative outcomes as foregone conclusions.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "If I apply for that job, I'll definitely be rejected"</li>
+                <li>• "This relationship won't last—it's going to end badly"</li>
+                <li>• "I'll never recover from this setback"</li>
+                <li>• "If I speak up in the meeting, everyone will think I'm stupid"</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                By constantly predicting negative outcomes, you can increase anxiety and stress in the present moment over events that haven't occurred and may never happen. This can lead to avoidance behaviors, limited personal growth, and a constricted life as you try to protect yourself from imagined disasters.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
+      <section id="manifestations" class="content-section mb-16">
         <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li><strong>Negative Predictions:</strong> Believing that a minor setback will spiral into disaster.</li>
-            <li><strong>Doomsday Scenarios:</strong> Imagining catastrophic outcomes without evidence.</li>
-            <li><strong>Avoidance:</strong> Skipping opportunities or challenges to avoid the possibility of negative results.</li>
-            <li><strong>Self-Fulfilling Prophecy:</strong> The belief in an inevitable negative outcome may influence your behavior and increase the likelihood of that outcome.</li>
-          </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Negative Predictions -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Negative Predictions</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Believing that a minor setback will spiral into disaster without evidence to support this escalation. These predictions often use absolute language like "always," "never," or "definitely" to lock in negative outcomes as certainties.
+            </p>
+          </div>
+
+          <!-- Doomsday Scenarios -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Doomsday Scenarios</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Imagining catastrophic outcomes without considering more likely, moderate possibilities. These scenarios often involve exaggerated consequences far beyond what's realistic, creating excessive anxiety about remote possibilities.
+            </p>
+          </div>
+
+          <!-- Avoidance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Avoidance Behaviors</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Skipping opportunities or challenges to avoid the possibility of negative results. This safety behavior prevents you from testing your predictions against reality, reinforcing the belief that your forecasts are accurate despite the lack of evidence.
+            </p>
+          </div>
+
+          <!-- Self-Fulfilling Prophecy -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Self-Fulfilling Prophecy</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              The belief in an inevitable negative outcome may influence your behavior in ways that actually increase the likelihood of that outcome. For example, expecting social rejection might make you appear withdrawn, creating the very distance you feared.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
+      <section id="impact" class="content-section mb-16">
         <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Engaging in fortune telling can heighten anxiety, stress, and feelings of helplessness. The persistent expectation of negative outcomes not only affects your mood but can also reduce your confidence in making decisions and trying new things.
-          </p>
-          <p class="text-lg">
-            Over time, this distorted thinking pattern can contribute to chronic anxiety and even depressive symptoms.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                Engaging in fortune telling can heighten anxiety, stress, and feelings of helplessness. By constantly bracing yourself for negative outcomes, you live in a state of anticipatory anxiety—experiencing the emotional distress of problems that may never materialize.
+              </p>
+              <p class="text-gray-300">
+                Over time, this distorted thinking pattern can contribute to chronic anxiety, depression, and a pessimistic worldview that becomes increasingly difficult to challenge or change.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Related Mental Health Conditions</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Generalized anxiety disorder</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Social anxiety</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Depression</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Panic disorder</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Long-term Effects</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Diminished confidence in decision-making</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Reduced willingness to try new experiences</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Chronic stress from anticipating disasters</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Limited personal and professional growth</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
+      <section id="dbt-techniques" class="content-section mb-16">
         <h2 class="section-title">DBT Techniques & Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">1. Mindfulness:</span> Notice when you begin to predict negative outcomes. Acknowledge these thoughts without judgment.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your predictions by asking:
-            <ul class="list-disc list-inside ml-6">
-              <li>What evidence do I have that this negative outcome is certain?</li>
-              <li>What are alternative, more balanced possibilities?</li>
-              <li>Have there been times when things turned out better than expected?</li>
-            </ul>
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">3. Behavioral Experiments:</span> Test your predictions by taking small risks. Compare the actual outcome to your feared scenario.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">4. Radical Acceptance:</span> Accept that uncertainty is a part of life and that you cannot control every outcome.
-          </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging fortune telling and developing a more balanced perspective on the future:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mindfulness -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness</h3>
+                <p class="text-gray-300 mb-4">
+                  Notice when you begin to predict negative outcomes. Acknowledge these thoughts without judgment and recognize them as predictions rather than facts about the future.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When you catch yourself making negative predictions, pause and label the thought: "I notice I'm fortune telling right now. This is just a prediction my mind is making, not a fact about what will happen."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cognitive Restructuring -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Cognitive Restructuring</h3>
+                <p class="text-gray-300 mb-4">
+                  Challenge your predictions by examining the evidence and considering alternative possibilities that include neutral or positive outcomes.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• "What evidence do I have that this negative outcome is certain?"</li>
+                    <li>• "What are alternative, more balanced possibilities?"</li>
+                    <li>• "Have there been times when things turned out better than I expected?"</li>
+                    <li>• "How would I assess the situation if it were happening to a friend?"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Behavioral Experiments -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Behavioral Experiments</h3>
+                <p class="text-gray-300 mb-4">
+                  Test your predictions by deliberately taking small risks and systematically comparing the actual outcomes with your forecasted negative scenarios.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Example</h4>
+                  <p class="text-gray-300">If you've predicted "If I speak up in the meeting, everyone will think I'm stupid," challenge this by making one small contribution in the next meeting. Then record the actual response and compare it to your prediction.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Radical Acceptance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Radical Acceptance</h3>
+                <p class="text-gray-300 mb-4">
+                  Accept that uncertainty is a fundamental part of life and that you cannot predict or control every outcome. Embrace the reality that the future contains both possibilities and limitations.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When facing uncertainty, try saying: "I cannot know for certain what will happen. The future contains many possibilities—both positive and negative. I accept this uncertainty while doing my best in the present moment."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
+      <section id="exercises" class="content-section mb-16">
         <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to challenge your fortune-telling thoughts:
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge your fortune-telling thought patterns:
           </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Thought Log:</strong> Record instances when you predict negative outcomes. Note the situation, your prediction, and a more balanced interpretation.
-            </li>
-            <li>
-              <strong>Evidence Search:</strong> For each negative prediction, write down factual evidence that challenges the inevitability of that outcome.
-            </li>
-            <li>
-              <strong>Exposure Exercise:</strong> Deliberately engage in activities that trigger your fortune-telling. Reflect on how the actual results compare to your predictions.
-            </li>
-          </ol>
+          
+          <div class="space-y-8">
+            <!-- Thought Log -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Prediction Tracking</h3>
+                  <p class="text-gray-300 mb-4">
+                    Record instances when you predict negative outcomes. Note the situation, your prediction, and later review what actually happened to build evidence that challenges your fortune telling.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Example Format</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Situation:</strong> Job interview next week</li>
+                      <li><strong>Fortune-Telling Prediction:</strong> "I'll definitely stumble over my words and they'll immediately see I'm not qualified."</li>
+                      <li><strong>Alternative Possibilities:</strong>
+                        <ul class="list-disc list-inside pl-4 pt-2">
+                          <li>I might do well on some questions and adequately on others</li>
+                          <li>The interviewers might appreciate my honesty and preparation</li>
+                          <li>I could get constructive feedback regardless of the outcome</li>
+                        </ul>
+                      </li>
+                      <li><strong>Actual Outcome:</strong> (To be completed after the interview)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Evidence Search -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Evidence Search</h3>
+                  <p class="text-gray-300 mb-4">
+                    For each negative prediction, systematically collect evidence that challenges the inevitability of that outcome, including past experiences that contradict your fortune telling.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Write down your negative prediction</li>
+                      <li>List all evidence that seems to support this prediction</li>
+                      <li>List ALL evidence that contradicts this prediction (including past successes and examples that disprove the "always/never" thinking)</li>
+                      <li>Examine whether your prediction ignores key variables or oversimplifies a complex situation</li>
+                      <li>Consider what a neutral observer would predict given the same facts</li>
+                      <li>Create a revised, more balanced prediction based on all the evidence</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Exposure Exercise -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Exposure Exercise</h3>
+                  <p class="text-gray-300 mb-4">
+                    Deliberately engage in activities that trigger your fortune-telling thoughts, starting with less anxiety-provoking situations and gradually working up to more challenging ones.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Structured Approach</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. <strong>Create a hierarchy:</strong> List situations that trigger fortune telling, from least to most anxiety-producing</li>
+                      <li>2. <strong>Start small:</strong> Begin with a situation that causes only mild anxiety</li>
+                      <li>3. <strong>Document before:</strong> Write down your specific prediction about what will happen</li>
+                      <li>4. <strong>Take action:</strong> Engage in the activity despite your prediction</li>
+                      <li>5. <strong>Document after:</strong> Record what actually happened versus what you predicted</li>
+                      <li>6. <strong>Reflect:</strong> Note the discrepancy between prediction and reality</li>
+                      <li>7. <strong>Progress:</strong> Move to slightly more challenging situations as you build confidence</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Fortune Telling often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="catastrophizing.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Catastrophizing</h3>
+            <p class="text-gray-300">Expecting the worst possible outcome from a situation, often out of proportion with reality.</p>
+          </a>
+          <a href="mind-reading.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Mind Reading</h3>
+            <p class="text-gray-300">Assuming you know what others are thinking, usually attributing negative thoughts toward you without evidence.</p>
+          </a>
+          <a href="magnification-minimization.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Magnification & Minimization</h3>
+            <p class="text-gray-300">Exaggerating negative aspects while downplaying positive ones, distorting the relative importance of events.</p>
+          </a>
         </div>
       </section>
 
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Fortune Telling can trap you in a cycle of negative expectations and heightened anxiety. By practicing mindfulness, cognitive restructuring, and accepting uncertainty, you can challenge these predictions and create a more balanced outlook. Remember, embracing the unknown is a step toward personal growth.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Fortune Telling can trap you in a cycle of negative expectations and heightened anxiety, limiting your willingness to engage with life's opportunities. By practicing mindfulness, cognitive restructuring, and gradually testing your predictions against reality, you can break free from this restrictive thought pattern.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Remember, embracing uncertainty is a fundamental part of living a full and meaningful life. No one—not even professional forecasters—can predict the future with certainty. By accepting this reality and focusing on what you can control in the present moment, you open yourself to a wider range of possibilities and experiences.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward more balanced thinking by exploring other DBT skills and resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/distress-tolerance.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Explore Distress Tolerance Skills
+              </a>
+              <a href="catastrophizing.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Learn About Catastrophizing
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
-    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

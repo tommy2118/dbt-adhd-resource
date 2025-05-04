@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to Disqualifying the Positive, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, disqualifying the positive: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, disqualifying the positive, self-esteem, minimizing achievements">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Disqualifying the Positive: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Disqualifying the Positive | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Disqualifying the Positive
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Learning to recognize and embrace your accomplishments
         </p>
       </div>
     </header>
@@ -89,145 +92,586 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Disqualifying the Positive</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques &amp; Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Disqualifying the Positive</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
+      <section id="introduction" class="content-section mb-16">
         <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Disqualifying the Positive is a cognitive distortion where you dismiss or downplay your achievements, compliments, and positive experiences. This guide explains how this habit can damage your self-esteem and outlines DBT strategies to help you fully embrace your successes.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Disqualifying the positive is a cognitive distortion where you dismiss, minimize, or ignore your achievements, compliments, and positive experiences. This thinking trap leads you to filter out the good aspects of your life and focus exclusively on perceived failures or shortcomings.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how the habit of rejecting positive feedback can damage your self-esteem and outlines practical DBT strategies to help you recognize your accomplishments and fully embrace your successes.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Learning to acknowledge and accept positive experiences is just as important as addressing negative thoughts for a balanced and healthy self-perception.
+            </p>
+          </div>
+        </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding Disqualifying the Positive -->
-      <section id="understanding" class="content-section">
+      <section id="understanding" class="content-section mb-16">
         <h2 class="section-title">Understanding Disqualifying the Positive</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Disqualifying the Positive involves discounting or rejecting positive feedback and achievements. You might attribute successes to luck, timing, or external factors rather than acknowledging your own skills or efforts.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> Even when positive events occur, this distortion leads you to focus on what’s lacking or to minimize the value of compliments. The result is a skewed self-perception where your strengths and successes are overlooked.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> By dismissing the positive, you reinforce negative self-beliefs and create a cycle of low self-worth that can contribute to depression, anxiety, and a reluctance to pursue new opportunities.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Disqualifying the Positive?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Disqualifying the positive occurs when you systematically reject or downplay your achievements, positive qualities, and accomplishments. Rather than integrating positive feedback into your self-concept, you dismiss it as an exception, a mistake, or "not counting" for various reasons.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                This distortion works by creating exceptions for every positive experience. If you receive a compliment, you might think "they're just being nice." When you succeed at something, you might attribute it entirely to luck or external factors. Over time, this creates a skewed self-perception where only negative experiences seem valid.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "Sure, I got a promotion, but anyone could have done it"</li>
+                <li>• "My friend says I'm a good listener, but she's just being polite"</li>
+                <li>• "I completed the project on time, but that's just what was expected"</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                By consistently dismissing positive experiences, you reinforce negative self-beliefs and create a cycle of low self-worth. This pattern prevents you from developing an accurate, balanced self-perception and can contribute to depression, anxiety, and imposter syndrome. Recognizing and challenging this distortion is essential for building authentic self-esteem.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
+      <section id="manifestations" class="content-section mb-16">
         <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li>
-              <strong>Downplaying Achievements:</strong> Attributing successes to external factors such as luck or help from others rather than your own ability.
-            </li>
-            <li>
-              <strong>Rejecting Compliments:</strong> Brushing off praise with thoughts like "they’re just saying that" or "it was nothing special."
-            </li>
-            <li>
-              <strong>Focusing on Flaws:</strong> Emphasizing minor mistakes and using them to overshadow significant accomplishments.
-            </li>
-            <li>
-              <strong>Persistent Self-Criticism:</strong> Maintaining a narrative of inadequacy despite evidence of success.
-            </li>
-          </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Deflecting Compliments -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Deflecting Compliments</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Automatically rejecting praise with responses like "It was nothing" or "Anyone could have done it." This reflects an inability to internalize positive feedback about yourself and your capabilities.
+            </p>
+          </div>
+
+          <!-- Attributing Success to External Factors -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Attributing Success to External Factors</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Believing that your achievements are due entirely to luck, timing, or other people's help rather than acknowledging your skills, effort, or perseverance that contributed to the outcome.
+            </p>
+          </div>
+
+          <!-- Magnifying Flaws -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Magnifying Flaws</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Focusing on minor mistakes or imperfections to diminish the value of significant accomplishments. "I got an A on the paper, but I made that one grammatical error, so it wasn't really good."
+            </p>
+          </div>
+
+          <!-- Setting Impossible Standards -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Setting Impossible Standards</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Creating such high requirements for what "counts" as success that almost nothing you do meets the criteria. "Yes, I finished the marathon, but I didn't beat my goal time, so it doesn't really count."
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
+      <section id="impact" class="content-section mb-16">
         <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            The tendency to disqualify the positive can lead to:
-          </p>
-          <ul class="list-disc list-inside text-lg">
-            <li>Chronic low self-esteem and feelings of unworthiness</li>
-            <li>Increased vulnerability to depression and anxiety</li>
-            <li>Reduced motivation and reluctance to pursue new challenges</li>
-            <li>A skewed self-image that overlooks personal strengths</li>
-          </ul>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                Disqualifying the positive creates a distorted view of yourself and your life that consistently undermines your confidence and self-worth. When you can't internalize positive feedback or recognize your achievements, you're left with a skewed perception dominated by perceived failures and shortcomings.
+              </p>
+              <p class="text-gray-300">
+                Over time, this pattern can contribute to persistent low self-esteem, depression, and anxiety, making it difficult to pursue new challenges or accept opportunities for growth.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Psychological Effects</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Chronic low self-esteem and imposter syndrome</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Increased vulnerability to depression</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Heightened anxiety and perfectionism</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Difficulty accepting compliments or praise</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Behavioral Impacts</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Reluctance to pursue new challenges or opportunities</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Persistent self-criticism and negative self-talk</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Overworking to "compensate" for perceived inadequacies</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Difficulty building authentic relationships based on mutual appreciation</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
-        <h2 class="section-title">DBT Techniques &amp; Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            DBT provides practical strategies to counteract disqualifying the positive:
-          </p>
-          <ul class="list-disc list-inside text-lg mb-4">
-            <li>
-              <span class="highlight">Mindfulness:</span> Cultivate awareness of both positive and negative experiences. Notice when you’re dismissing a compliment or success and pause to truly acknowledge it.
-            </li>
-            <li>
-              <span class="highlight">Self-Validation:</span> Regularly affirm your strengths. Recognize that your achievements are a testament to your abilities, regardless of external factors.
-            </li>
-            <li>
-              <span class="highlight">Reality Testing:</span> When you receive praise, ask yourself for specific examples that support the compliment. This helps anchor positive feedback in reality.
-            </li>
-            <li>
-              <span class="highlight">Opposite Action:</span> Engage in behaviors that celebrate your successes—such as keeping a compliment journal or sharing achievements with a trusted friend.
-            </li>
-            <li>
-              <span class="highlight">Wise Mind Integration:</span> Balance emotional reactions with rational thought. Use your Wise Mind to consider both your strengths and areas for growth.
-            </li>
-          </ul>
+      <section id="dbt-techniques" class="content-section mb-16">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging disqualifying the positive and developing a more balanced perspective:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Self-Validation -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Self-Validation</h3>
+                <p class="text-gray-300 mb-4">
+                  Practice acknowledging your achievements, skills, and positive qualities. Learn to validate your own experiences without requiring external confirmation.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When you accomplish something, take a moment to say: "I did well on this. My effort and skills contributed to this outcome." Resist the urge to immediately downplay or dismiss the achievement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mindfulness of Positive Experiences -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness of Positive Experiences</h3>
+                <p class="text-gray-300 mb-4">
+                  Develop awareness of positive events, compliments, and achievements. Notice when you're dismissing them and practice staying present with positive experiences.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When you receive a compliment, rather than immediately deflecting it, take a deep breath and simply say "Thank you." Notice any discomfort or urge to discount the positive feedback, and allow yourself to sit with that feeling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Reality Testing -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Reality Testing</h3>
+                <p class="text-gray-300 mb-4">
+                  Challenge distorted thinking by examining objective evidence. Look for concrete facts that support the positive aspects of your performance or character.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• "What specific actions or qualities led to this positive outcome?"</li>
+                    <li>• "If a friend achieved this, would I discount it the same way?"</li>
+                    <li>• "What evidence supports the idea that I contributed meaningfully?"</li>
+                    <li>• "Am I holding myself to a reasonable or impossible standard?"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Opposite Action -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Opposite Action</h3>
+                <p class="text-gray-300 mb-4">
+                  When you notice yourself disqualifying positive experiences, deliberately act in the opposite way—fully acknowledge and celebrate your accomplishments.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Example</h4>
+                  <p class="text-gray-300">If your instinct is to dismiss a compliment about your presentation skills, practice the opposite response: "Thank you, I did work hard on preparing that presentation, and I'm pleased with how it went."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
+      <section id="exercises" class="content-section mb-16">
         <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to help counteract disqualifying the positive:
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge the tendency to disqualify positive experiences:
           </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Compliment Journal:</strong> Record every compliment or positive remark you receive. Reflect on these entries regularly.
-            </li>
-            <li>
-              <strong>Balanced Feedback Log:</strong> For each negative thought, write down at least two positive aspects or compliments from the situation.
-            </li>
-            <li>
-              <strong>Positive Affirmations:</strong> Develop a list of affirmations that highlight your achievements and review them daily.
-            </li>
-          </ol>
+          
+          <div class="space-y-8">
+            <!-- Compliment Journal -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Compliment Journal</h3>
+                  <p class="text-gray-300 mb-4">
+                    Create a dedicated journal to record compliments, positive feedback, and achievements. This creates a concrete record that can counter the selective memory of only remembering failures or criticism.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Instructions</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li>• Write down every compliment you receive, exactly as stated</li>
+                      <li>• Record concrete achievements, even small ones</li>
+                      <li>• Review the journal regularly, especially when self-criticism is high</li>
+                      <li>• For each entry, notice any urge to discount it, then practice accepting it</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Evidence Collection -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Evidence Collection</h3>
+                  <p class="text-gray-300 mb-4">
+                    Challenge your tendency to dismiss accomplishments by creating detailed, fact-based accounts of your contributions to positive outcomes.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Identify a recent accomplishment you've minimized</li>
+                      <li>List all the concrete actions you took that contributed to the outcome</li>
+                      <li>Note the skills, knowledge, or character traits you demonstrated</li>
+                      <li>Distinguish between your contributions and external factors</li>
+                      <li>Write a balanced assessment that acknowledges both your role and other factors</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Gratitude Mirror -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Gratitude Mirror</h3>
+                  <p class="text-gray-300 mb-4">
+                    Practice self-acknowledgment by expressing gratitude to yourself for your efforts, qualities, and accomplishments.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Exercise</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. Stand in front of a mirror each morning or evening</li>
+                      <li>2. Look at yourself and say out loud: "Today I am grateful to myself for..." and name something positive about yourself or something you've done</li>
+                      <li>3. Notice any discomfort or resistance, and continue despite it</li>
+                      <li>4. Add specific details about why this quality or action matters</li>
+                      <li>5. End with a simple "Thank you" to yourself</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Disqualifying the positive often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="filtering.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Filtering</h3>
+            <p class="text-gray-300">Focusing exclusively on negative details while filtering out positive aspects of a situation.</p>
+          </a>
+          <a href="personalization.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Personalization</h3>
+            <p class="text-gray-300">Taking excessive responsibility for negative events while discounting your role in positive outcomes.</p>
+          </a>
+          <a href="should-statements.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Should Statements</h3>
+            <p class="text-gray-300">Setting rigid expectations that make it difficult to acknowledge accomplishments unless they meet impossibly high standards.</p>
+          </a>
         </div>
       </section>
 
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Disqualifying the positive can prevent you from fully recognizing your strengths and accomplishments. By integrating DBT techniques such as mindfulness, self-validation, and reality testing, you can learn to accept and build upon your successes. Over time, these strategies foster a more balanced and confident self-image.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Disqualifying the positive is a pervasive thinking trap that can significantly undermine your self-esteem and emotional well-being. By systematically dismissing achievements and positive feedback, you create a distorted self-image that doesn't accurately reflect your capabilities and worth.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Through DBT techniques such as self-validation, mindfulness, reality testing, and opposite action, you can learn to acknowledge and internalize positive experiences. With practice, you can develop a more balanced perception that includes both areas for growth and genuine strengths and accomplishments.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward a more balanced self-perception by exploring these related resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/understanding-emotions.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Explore Understanding Emotions
+              </a>
+              <a href="../modules/reducing-emotional-vulnerability.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Learn Emotional Regulation
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
 

@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to the Just World Fallacy, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, just world fallacy: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, just world fallacy, fairness bias">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Just World Fallacy: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Just World Fallacy | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Just World Fallacy
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Navigating the complexities of fairness and randomness
         </p>
       </div>
     </header>
@@ -89,139 +92,601 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Just World Fallacy</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques &amp; Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Just World Fallacy</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
+      <section id="introduction" class="content-section mb-16">
         <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Just World Fallacy is the belief that life is inherently fair—where good deeds are always rewarded and bad deeds are punished. This guide explores how this distortion can lead to unrealistic expectations and disappointment, and outlines DBT strategies to help develop a more nuanced understanding of fairness.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              The Just World Fallacy is the belief that the world operates on principles of fairness—where good actions are rewarded and bad actions are punished. It's a cognitive distortion that leads us to believe people get what they deserve in life, whether positive or negative.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how this seemingly comforting belief can actually create significant emotional distress when reality fails to align with our expectations of fairness, and outlines DBT strategies to help develop a more nuanced understanding of how the world works.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              The Just World Fallacy provides a false sense of control and predictability in an often random and complex world. Recognizing when you're using this thinking pattern can help you develop greater resilience and compassion.
+            </p>
+          </div>
+        </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding Just World Fallacy -->
-      <section id="understanding" class="content-section">
+      <section id="understanding" class="content-section mb-16">
         <h2 class="section-title">Understanding Just World Fallacy</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Just World Fallacy is the cognitive distortion where you assume that the world is fundamentally just—that people get what they deserve. This belief oversimplifies the complexity of life and ignores systemic and random factors.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you adhere to this belief, you may blame victims for their misfortunes or become disillusioned when your own efforts do not yield the expected rewards. This can lead to frustration and a sense of injustice.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> Holding an overly simplistic view of fairness can result in chronic disappointment and misdirected blame, ultimately undermining resilience and self-compassion.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is the Just World Fallacy?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                The Just World Fallacy is the cognitive distortion where you believe that the world operates according to principles of fairness and justice—that people get what they deserve based on their actions and character. This belief oversimplifies the complexity of life and ignores the roles of randomness, privilege, systemic factors, and chance in determining outcomes.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                This fallacy provides a sense of control and predictability in an unpredictable world. By believing that outcomes are tied directly to behaviors, we feel safer—if we do good things, good things will happen to us, and we can avoid misfortune by avoiding bad behavior.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "He got laid off because he didn't work hard enough"</li>
+                <li>• "She got sick because she didn't take care of herself"</li>
+                <li>• "I deserve a promotion because I've worked harder than everyone else"</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Holding an overly simplistic view of fairness can lead to harsh self-judgment, victim-blaming, disillusionment, and difficulty coping with life's unpredictability. When the world doesn't conform to our expectations of justice, we may experience significant emotional distress.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
+      <section id="manifestations" class="content-section mb-16">
         <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li><strong>Victim Blaming:</strong> Believing that people who suffer must have done something to deserve it.</li>
-            <li><strong>Unrealistic Reward Expectations:</strong> Expecting that hard work and goodness will always lead to success or recognition.</li>
-            <li><strong>Disillusionment:</strong> Feeling bitter or resentful when life does not meet your expectations of fairness.</li>
-            <li><strong>Judgmental Attitudes:</strong> Viewing others through a lens of moral judgment based on perceived deservingness.</li>
-          </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Victim Blaming -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Victim Blaming</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Believing that people who suffer misfortune must have done something to deserve it. This protects our sense of a just world but leads to insensitivity toward others' circumstances and suffering.
+            </p>
+          </div>
+
+          <!-- Unrealistic Reward Expectations -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Unrealistic Reward Expectations</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Expecting that hard work, kindness, or following the rules will always lead to success, recognition, or happiness. When these expectations are not met, it can lead to deep disillusionment and resentment.
+            </p>
+          </div>
+
+          <!-- Self-Blame for Misfortune -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Self-Blame for Misfortune</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Interpreting your own hardships as deserved punishment for past actions or character flaws. This can lead to excessive guilt, shame, and a diminished sense of self-worth when facing challenges.
+            </p>
+          </div>
+
+          <!-- Judgmental Attitudes -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2M6 7H3m15 3h3M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Judgmental Attitudes</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Evaluating others based on their perceived deservingness rather than understanding the complex factors that contribute to their circumstances. This can strain relationships and lead to a lack of empathy.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
+      <section id="impact" class="content-section mb-16">
         <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Just World Fallacy can lead to:
-          </p>
-          <ul class="list-disc list-inside text-lg">
-            <li>Chronic disappointment when rewards do not match your efforts</li>
-            <li>Increased anxiety and feelings of injustice</li>
-            <li>Strained relationships due to judgmental attitudes</li>
-            <li>Lower self-esteem if you internalize failures as deserved</li>
-          </ul>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                The Just World Fallacy can significantly impact mental health by creating a gap between expectations and reality. When we believe the world operates according to fair principles, we're setting ourselves up for disillusionment when faced with the randomness and complexity of life.
+              </p>
+              <p class="text-gray-300">
+                This thinking trap can lead to difficulty coping with injustice, excess self-blame, and a tendency to judge others harshly—all of which can strain relationships and worsen emotional distress.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Related Mental Health Challenges</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Depression following unexpected setbacks</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Chronic resentment and bitterness</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Excessive guilt and shame</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Anxiety about potential future misfortunes</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Long-term Effects</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Reduced resilience in the face of adversity</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Difficulty forming compassionate relationships</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Persistent disillusionment with life</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Inability to accept support when facing challenges</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
-        <h2 class="section-title">DBT Techniques &amp; Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            DBT provides several approaches to help counteract Just World Fallacy:
-          </p>
-          <ul class="list-disc list-inside text-lg mb-4">
-            <li>
-              <span class="highlight">Mindfulness:</span> Cultivate awareness of your judgments and expectations without immediately acting on them.
-            </li>
-            <li>
-              <span class="highlight">Wise Mind Integration:</span> Balance emotional responses with rational analysis to evaluate situations more objectively.
-            </li>
-            <li>
-              <span class="highlight">Reality Testing:</span> Examine the evidence for and against the idea that life is inherently fair.
-            </li>
-            <li>
-              <span class="highlight">Radical Acceptance:</span> Accept that life is complex and outcomes are influenced by multiple factors, reducing the pressure to see everything as fair or unfair.
-            </li>
-          </ul>
+      <section id="dbt-techniques" class="content-section mb-16">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging the Just World Fallacy and developing a more balanced perspective:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Radical Acceptance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Radical Acceptance</h3>
+                <p class="text-gray-300 mb-4">
+                  Accept that life is complex and not always fair. Recognize that outcomes are influenced by multiple factors, many of which are beyond individual control.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When facing an unjust situation, practice saying: "This is unfair, AND I can accept that the world doesn't always operate according to fairness. This doesn't mean I approve of injustice, but I acknowledge reality as it is."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Reality Testing -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Reality Testing</h3>
+                <p class="text-gray-300 mb-4">
+                  Examine the evidence for and against the idea that life is inherently fair. Identify situations that contradict simplistic views of justice.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• "What factors beyond this person's control contributed to their situation?"</li>
+                    <li>• "What role did chance, privilege, or systemic factors play in this outcome?"</li>
+                    <li>• "Have I seen examples where good people suffered or unethical people prospered?"</li>
+                    <li>• "What other explanations might account for this situation beyond deservingness?"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Non-Judgmental Stance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2zm0 8a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1v-2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Non-Judgmental Stance</h3>
+                <p class="text-gray-300 mb-4">
+                  Practice observing situations without immediately assigning blame or moral evaluations. Focus on understanding rather than judging.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When you notice yourself making judgments about why someone deserves their circumstances, pause and reframe your thoughts in descriptive rather than evaluative terms. For example, instead of "They're homeless because they're lazy," try "They're experiencing homelessness, which could be due to many factors I may not be aware of."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wise Mind Integration -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Wise Mind Integration</h3>
+                <p class="text-gray-300 mb-4">
+                  Balance emotional responses with rational analysis to develop a more nuanced view of fairness and justice.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Integration Exercise</h4>
+                  <p class="text-gray-300">When you feel strong emotions about perceived injustice, acknowledge both your emotional reaction ("This feels unfair") and the rational perspective ("Life is complex and multiple factors influence outcomes"). From this balanced place, consider how to respond effectively rather than reactively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
+      <section id="exercises" class="content-section mb-16">
         <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to challenge the Just World Fallacy:
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge the Just World Fallacy and develop a more nuanced understanding of fairness:
           </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Fairness Audit:</strong> Reflect on situations where outcomes did not match your expectations of fairness. Write down the factors that influenced the outcome.
-            </li>
-            <li>
-              <strong>Mindfulness Reflection:</strong> Practice a mindfulness meditation focusing on observing your thoughts about fairness without judgment.
-            </li>
-            <li>
-              <strong>Balanced Perspective Journal:</strong> Record instances of success and setbacks, and note the external factors that played a role in each outcome.
-            </li>
-          </ol>
+          
+          <div class="space-y-8">
+            <!-- Fairness Audit -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Fairness Audit</h3>
+                  <p class="text-gray-300 mb-4">
+                    Reflect on situations where outcomes did not match your expectations of fairness. Write down all the factors that influenced the outcome beyond individual actions or character.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Example Format</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Situation:</strong> Not getting a job despite being qualified</li>
+                      <li><strong>Initial Thought:</strong> "I should have gotten this job. I deserved it."</li>
+                      <li><strong>Contributing Factors Beyond Merit:</strong>
+                        <ul class="ml-5 mt-2 space-y-1">
+                          <li>• Internal company politics I wasn't aware of</li>
+                          <li>• Another candidate may have had connections</li>
+                          <li>• Timing and budget constraints</li>
+                          <li>• Unconscious bias in the hiring process</li>
+                          <li>• Random factors in how well interviews went that day</li>
+                        </ul>
+                      </li>
+                      <li><strong>Balanced Perspective:</strong> "Many factors beyond my qualifications affected this outcome. Not getting this job doesn't mean I wasn't deserving or won't find a good opportunity elsewhere."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Compassion Practice -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Compassion Practice</h3>
+                  <p class="text-gray-300 mb-4">
+                    When you notice judgment arising toward yourself or others based on the Just World Fallacy, practice redirecting to compassion.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Notice when you're thinking "They deserved that" or "I deserved better"</li>
+                      <li>Pause and take three deep breaths</li>
+                      <li>Consider the complexities and unknowns in the situation</li>
+                      <li>Generate three possible alternative explanations that don't involve deservingness</li>
+                      <li>Offer a compassionate thought toward the person (including yourself) experiencing difficulty</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Systems Awareness Exercise -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Systems Awareness Exercise</h3>
+                  <p class="text-gray-300 mb-4">
+                    This exercise helps expand your understanding of the many factors that influence outcomes beyond individual effort or character.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Practice Method</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. <strong>Choose a Success Story:</strong> Select an achievement you or someone else has experienced</li>
+                      <li>2. <strong>Map Contributing Factors:</strong> Create a mind map or list of ALL factors that contributed to this success:
+                        <ul class="ml-5 mt-2 space-y-1">
+                          <li>• Personal efforts and choices</li>
+                          <li>• Support from others</li>
+                          <li>• Access to resources and opportunities</li>
+                          <li>• Timing and luck</li>
+                          <li>• Systemic advantages or privileges</li>
+                        </ul>
+                      </li>
+                      <li>3. <strong>Reflect:</strong> Notice how many factors beyond individual control contributed to the outcome</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          The Just World Fallacy often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="control-fallacies.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Control Fallacies</h3>
+            <p class="text-gray-300">The belief that you are either completely in control of or have no control over your life circumstances.</p>
+          </a>
+          <a href="should-statements.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Should Statements</h3>
+            <p class="text-gray-300">Holding rigid rules about how you, others, or the world "should," "must," or "ought to" be.</p>
+          </a>
+          <a href="fallacy-of-change.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Fallacy of Change</h3>
+            <p class="text-gray-300">The belief that others will change to suit your needs if you pressure or encourage them enough.</p>
+          </a>
         </div>
       </section>
 
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Just World Fallacy can set unrealistic expectations about how life should work, often leading to disappointment and misplaced blame. By integrating DBT techniques such as mindfulness, reality testing, and radical acceptance, you can develop a more balanced view of fairness and build resilience against life’s uncertainties.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            The Just World Fallacy can be a comforting belief—after all, it's reassuring to think that good is rewarded and evil is punished. However, this oversimplified view sets us up for disappointment, judgment, and disillusionment when reality inevitably proves more complex.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            By using DBT techniques such as radical acceptance, reality testing, and cultivating a non-judgmental stance, you can develop a more nuanced understanding of fairness. This balanced perspective allows for greater resilience in the face of injustice and more compassion toward yourself and others during difficult times.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward a more balanced understanding of fairness by exploring these related DBT skills:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/radical-acceptance.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Radical Acceptance
+              </a>
+              <a href="control-fallacies.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Control Fallacies
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
-    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

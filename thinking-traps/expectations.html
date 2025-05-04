@@ -38,18 +38,18 @@
     <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
-          <a href="/index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
+          <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
             The DBT Resource
           </a>
           
           <!-- Desktop Navigation -->
           <div class="hidden md:flex space-x-8">
-            <a href="/index.html" class="nav-link">Home</a>
-            <a href="/modules/mindfulness.html" class="nav-link">Mindfulness</a>
-            <a href="/modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
-            <a href="/modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
-            <a href="/modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="/thinking-traps/index.html" class="nav-link active">Thinking Traps</a>
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../modules/mindfulness.html" class="nav-link">Mindfulness</a>
+            <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
+            <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
+            <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -66,12 +66,12 @@
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="md:hidden hidden py-4">
           <div class="flex flex-col space-y-4">
-            <a href="/index.html" class="nav-link px-4 py-2 rounded-lg">Home</a>
-            <a href="/modules/mindfulness.html" class="nav-link px-4 py-2 rounded-lg">Mindfulness</a>
-            <a href="/modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
-            <a href="/modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
-            <a href="/modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="/thinking-traps/index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
+            <a href="../index.html" class="nav-link px-4 py-2 rounded-lg">Home</a>
+            <a href="../modules/mindfulness.html" class="nav-link px-4 py-2 rounded-lg">Mindfulness</a>
+            <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
+            <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
+            <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -81,116 +81,229 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">Expectation Thinking Traps</h1>
-        <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">The expectations we place on ourselves and others can lead to unhelpful thinking patterns.</p>
+        <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">The expectations we place on ourselves and others can lead to unhelpful thinking patterns</p>
       </div>
     </header>
 
     <!-- Main Content -->
-    <main id="main-content" class="container mx-auto px-4 py-12">
-      <section class="content-section">
+    <main id="main-content" class="container mx-auto px-4 py-16">
+      <!-- Page Navigation -->
+      <div class="mb-12">
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Expectation Traps</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      
+      <section class="content-section mb-16">
         <h2 class="section-title">About Expectation Traps</h2>
-        <p class="text-lg text-gray-400 mb-6">
-          Expectation traps are thinking patterns related to the unrealistic or rigid expectations we place on ourselves, others, and the world. These patterns often lead to disappointment, frustration, and relationship conflicts.
-        </p>
-        <div class="key-info">
-          <h4>Key Takeaway</h4>
-          <p class="text-gray-300">By identifying and challenging your expectations, you can develop more flexible thinking that leads to greater acceptance and reduced emotional suffering.</p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Expectation traps are thinking patterns related to the unrealistic or rigid expectations we place on ourselves, others, and the world. These patterns often lead to disappointment, frustration, and relationship conflicts when reality doesn't match our internal expectations.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              These thinking distortions can significantly impact our emotional well-being, as they create constant tension between what we believe "should" happen and what actually does happen. Learning to recognize these traps helps us develop more flexible thinking.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              By identifying and challenging your expectations, you can develop more flexible thinking that leads to greater acceptance and reduced emotional suffering.
+            </p>
+          </div>
         </div>
       </section>
-
+      
       <!-- Section Divider -->
-      <div class="section-divider">
+      <div class="section-divider mb-16">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
           <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
         </svg>
       </div>
 
-      <section class="content-section">
+      <section class="content-section mb-16">
         <h2 class="section-title">Common Expectation Traps</h2>
-        <div class="card-grid mt-6">
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          These expectation-related thinking traps are particularly common and can significantly affect your emotional well-being and relationships:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <!-- Should Statements -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Should Statements</h3>
-            <p class="mt-2 text-gray-400">
-              Using rigid rules about how you, others, or the world "should," "must," or "ought to" be.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Should Statements</h3>
+            <p class="text-gray-300 mb-4">
+              Using rigid rules about how you, others, or the world "should," "must," or "ought to" be. These inflexible expectations create frustration and disappointment.
             </p>
-            <a href="should-statements.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="should-statements.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
 
           <!-- Mind Reading -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Mind Reading</h3>
-            <p class="mt-2 text-gray-400">
-              Assuming you know what others are thinking without sufficient evidence.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Mind Reading</h3>
+            <p class="text-gray-300 mb-4">
+              Assuming you know what others are thinking without sufficient evidence. This leads to misunderstandings and responding to assumptions rather than reality.
             </p>
-            <a href="mind-reading.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="mind-reading.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
 
           <!-- Fortune Telling -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Fortune Telling</h3>
-            <p class="mt-2 text-gray-400">
-              Predicting negative outcomes without considering other possibilities or evidence.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Fortune Telling</h3>
+            <p class="text-gray-300 mb-4">
+              Predicting negative outcomes without considering other possibilities or evidence. This creates anxiety and limits your willingness to try new experiences.
             </p>
-            <a href="fortune-telling.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="fortune-telling.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
 
           <!-- Just World Fallacy -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Just World Fallacy</h3>
-            <p class="mt-2 text-gray-400">
-              Believing that the world is fair and people get what they deserve.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Just World Fallacy</h3>
+            <p class="text-gray-300 mb-4">
+              Believing that the world is fair and people get what they deserve. This leads to excess self-blame when things go wrong and difficulty accepting injustice.
             </p>
-            <a href="just-world-fallacy.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="just-world-fallacy.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
 
           <!-- Fallacy of Change -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Fallacy of Change</h3>
-            <p class="mt-2 text-gray-400">
-              Expecting that others will change to suit our needs if we pressure or encourage them enough.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Fallacy of Change</h3>
+            <p class="text-gray-300 mb-4">
+              Expecting that others will change to suit our needs if we pressure or encourage them enough. This creates relationship strain and disappointment.
             </p>
-            <a href="fallacy-of-change.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="fallacy-of-change.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
 
           <!-- Heaven's Reward Fallacy -->
-          <div class="feature-card">
-            <h3 class="text-xl font-bold text-white">Heaven's Reward Fallacy</h3>
-            <p class="mt-2 text-gray-400">
-              Expecting that self-sacrifice and self-denial will eventually pay off, as if someone is keeping score.
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-3">Heaven's Reward Fallacy</h3>
+            <p class="text-gray-300 mb-4">
+              Expecting that self-sacrifice and self-denial will eventually pay off, as if someone is keeping score. This leads to resentment when efforts aren't recognized.
             </p>
-            <a href="heavens-reward-fallacy.html" class="hover-highlight mt-4 inline-block">Learn More →</a>
+            <a href="heavens-reward-fallacy.html" class="flex items-center text-primary-light hover:text-white transition-colors mt-2 font-medium">
+              Learn More
+              <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="content-section mt-12">
+      <section class="content-section mb-16">
         <h2 class="section-title">DBT Skills for Expectation Traps</h2>
-        <p class="text-lg text-gray-400 mb-6">
-          These DBT skills can help you challenge and overcome expectation-related thinking traps:
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          These Dialectical Behavior Therapy skills can help you challenge and overcome expectation-related thinking traps:
         </p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-white mb-4">Radical Acceptance</h3>
-            <p class="text-gray-400">Accept reality as it is, rather than fighting against what "should" be. This reduces suffering caused by unrealistic expectations.</p>
-            <a href="/modules/distress-tolerance.html" class="hover-highlight mt-4 inline-block">Explore Distress Tolerance →</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Radical Acceptance</h3>
+                <p class="text-gray-300 mb-4">
+                  Accept reality as it is, rather than fighting against what "should" be. This reduces suffering caused by unrealistic expectations and allows you to work with reality as it exists.
+                </p>
+                <a href="../modules/radical-acceptance.html" class="flex items-center text-primary-light hover:text-white transition-colors font-medium">
+                  Explore Distress Tolerance
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold text-white mb-4">Effective Interpersonal Skills</h3>
-            <p class="text-gray-400">Learn to express needs directly and validate others, rather than expecting them to read your mind or meet unstated expectations.</p>
-            <a href="/modules/interpersonal.html" class="hover-highlight mt-4 inline-block">Explore Interpersonal Skills →</a>
+          
+          <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Effective Interpersonal Skills</h3>
+                <p class="text-gray-300 mb-4">
+                  Learn to express needs directly and validate others, rather than expecting them to read your mind or meet unstated expectations. These skills help create healthier relationships with clearer communication.
+                </p>
+                <a href="../modules/interpersonal.html" class="flex items-center text-primary-light hover:text-white transition-colors font-medium">
+                  Explore Interpersonal Skills
+                  <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="content-section mt-12">
-        <div class="bg-primary-dark p-6 rounded-lg mt-8">
-          <h3 class="text-xl font-bold text-white mb-2">Explore Other Thinking Traps</h3>
-          <p class="text-gray-300 mb-4">Discover other categories of thinking traps and how to address them with DBT skills.</p>
-          <div class="flex flex-wrap gap-4">
-            <a href="perception.html" class="cta-button-secondary">Perception Distortions</a>
-            <a href="index.html" class="cta-button">All Thinking Traps</a>
+      <section class="content-section">
+        <div class="bg-primary-dark p-8 rounded-lg mt-8">
+          <h3 class="text-xl font-bold text-white mb-4">Explore Other Thinking Traps</h3>
+          <p class="text-gray-300 mb-6">Discover other categories of thinking traps and how to address them with DBT skills.</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <a href="perception.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+              <h4 class="text-xl font-bold text-white mb-2">Perception Distortions</h4>
+              <p class="text-gray-300">Thinking traps that affect how you see and interpret events and experiences.</p>
+            </a>
+            <a href="index.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+              <h4 class="text-xl font-bold text-white mb-2">All Thinking Traps</h4>
+              <p class="text-gray-300">View the complete collection of cognitive distortions and thinking traps.</p>
+            </a>
           </div>
         </div>
       </section>
@@ -208,13 +321,13 @@
           <div>
             <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
             <ul class="space-y-2">
-              <li><a href="/index.html" class="hover:text-primary-light transition-colors">Home</a></li>
-              <li><a href="/modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
-              <li><a href="/modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
-              <li><a href="/modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
-              <li><a href="/modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
-              <li><a href="/thinking-traps/index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
-              <li><a href="/tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
             </ul>
           </div>
           <div>
@@ -228,5 +341,9 @@
         </div>
       </div>
     </footer>
+
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

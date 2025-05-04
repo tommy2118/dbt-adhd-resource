@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to Jumping to Conclusions, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, jumping to conclusions: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, jumping to conclusions, mind reading, fortune telling">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Jumping to Conclusions: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Jumping to Conclusions | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Jumping to Conclusions
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Learning to pause and assess situations objectively
         </p>
       </div>
     </header>
@@ -89,139 +92,586 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Jumping to Conclusions</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques &amp; Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Jumping to Conclusions</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
+      <section id="introduction" class="content-section mb-16">
         <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Jumping to Conclusions is a cognitive distortion where you make assumptions or inferences without having sufficient factual evidence. This guide will explore how this trap can distort your perception, lead to premature judgments, and outline DBT strategies to help you pause and assess situations more objectively.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Jumping to Conclusions is a cognitive distortion where you make assumptions or inferences without having sufficient factual evidence. This pattern can significantly distort your perception of reality, leading to premature judgments and unnecessary emotional distress.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how this thinking trap operates, its various manifestations, and effective DBT strategies to help you pause, gather information, and assess situations more objectively before forming conclusions.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Jumping to conclusions bypasses careful consideration of facts, leading to snap judgments that are often inaccurate and emotionally distressing. Learning to pause and check the evidence can significantly improve your decision-making.
+            </p>
+          </div>
+        </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding Jumping to Conclusions -->
-      <section id="understanding" class="content-section">
+      <section id="understanding" class="content-section mb-16">
         <h2 class="section-title">Understanding Jumping to Conclusions</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Jumping to Conclusions involves forming an opinion or making a decision without checking all the relevant facts. This distortion bypasses careful consideration, leading you to make snap judgments.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you jump to conclusions, your mind fills in gaps with assumptions, often based on past experiences or emotional biases. As a result, you may end up misinterpreting situations or other people’s intentions.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> Making decisions without verifying the facts can lead to misunderstandings, conflict, and increased anxiety, as your interpretations may not accurately reflect reality.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Jumping to Conclusions?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Jumping to Conclusions involves forming an opinion or making a decision without checking all the relevant facts. This distortion bypasses careful consideration, leading you to make snap judgments based on limited information, often influenced by emotions rather than evidence.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                When you jump to conclusions, your mind fills in gaps with assumptions, often based on past experiences or emotional biases. The brain takes shortcuts to make sense of limited information, creating narratives that may not reflect reality.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "My colleague didn't smile at me, so they must be angry with me"</li>
+                <li>• "No one responded to my email yet, so they must be ignoring me"</li>
+                <li>• "I feel nervous about the presentation, so I'm definitely going to fail"</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Making decisions without verifying the facts can lead to misunderstandings, unnecessary conflict, and increased anxiety. These premature conclusions often create problems that wouldn't exist if you had gathered more information first.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
+      <section id="manifestations" class="content-section mb-16">
         <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li><strong>Assumptive Judgments:</strong> Quickly forming opinions about people or situations without evidence.</li>
-            <li><strong>Overgeneralizing:</strong> Believing that one negative event predicts future outcomes.</li>
-            <li><strong>Mind Reading:</strong> Assuming you know what others are thinking without confirmation.</li>
-            <li><strong>Catastrophizing:</strong> Predicting disastrous outcomes based solely on your initial impressions.</li>
-          </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Mind Reading -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Mind Reading</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Assuming you know what others are thinking without confirmation. You believe you can interpret others' thoughts and motivations based on minimal cues, often projecting your own fears and insecurities.
+            </p>
+          </div>
+
+          <!-- Fortune Telling -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Fortune Telling</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Predicting negative outcomes with certainty despite having incomplete information. You believe you can see the future, typically anticipating disaster without considering alternative possibilities.
+            </p>
+          </div>
+
+          <!-- Assumptive Judgments -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2M6 7H3m15 3h3m-12 0h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Assumptive Judgments</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Quickly forming opinions about people or situations without adequate evidence. You make snap judgments based on first impressions or limited information, often influenced by biases or past experiences.
+            </p>
+          </div>
+
+          <!-- Catastrophizing -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Catastrophizing</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Predicting disastrous outcomes based on minimal evidence. You jump from a minor issue to imagining the worst possible scenario, creating anxiety about things that haven't happened and likely won't.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
+      <section id="impact" class="content-section mb-16">
         <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            When you jump to conclusions, it can:
-          </p>
-          <ul class="list-disc list-inside text-lg">
-            <li>Fuel anxiety by anticipating negative outcomes prematurely</li>
-            <li>Increase interpersonal conflicts due to misinterpretation of intentions</li>
-            <li>Undermine your ability to think critically and solve problems effectively</li>
-            <li>Reinforce a cycle of negative thinking that hampers overall mental well-being</li>
-          </ul>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                Jumping to conclusions can create a significant mental health burden, as it constantly pulls you away from reality and into a distorted perception. This thinking trap is particularly problematic because it creates problems that don't actually exist outside your mind.
+              </p>
+              <p class="text-gray-300">
+                Over time, the habit of making premature judgments can lead to chronic anxiety, relationship issues, and difficulty with rational decision-making.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Related Mental Health Conditions</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Social anxiety disorder</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Generalized anxiety disorder</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Depression</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Paranoid thinking patterns</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Long-term Effects</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Increased interpersonal conflicts</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Impaired decision-making abilities</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Chronic anticipatory anxiety</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Social isolation due to misinterpretations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
-        <h2 class="section-title">DBT Techniques &amp; Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            DBT offers several strategies to help counteract jumping to conclusions:
-          </p>
-          <ul class="list-disc list-inside text-lg mb-4">
-            <li>
-              <span class="highlight">Mindfulness:</span> Practice staying present and observing your thoughts without immediately acting on them.
-            </li>
-            <li>
-              <span class="highlight">Check the Facts:</span> Before forming a conclusion, pause and actively look for evidence to support or refute your assumptions.
-            </li>
-            <li>
-              <span class="highlight">Wise Mind Integration:</span> Balance your emotional impulses with rational thought by engaging your Wise Mind.
-            </li>
-            <li>
-              <span class="highlight">Opposite Action:</span> If a negative assumption is prompting an impulsive reaction, choose a behavior that contradicts this impulse.
-            </li>
-          </ul>
+      <section id="dbt-techniques" class="content-section mb-16">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging jumping to conclusions and developing a more evidence-based approach:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Check the Facts -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Check the Facts</h3>
+                <p class="text-gray-300 mb-4">
+                  Before forming a conclusion, pause and actively look for evidence to support or refute your assumptions. This technique helps separate facts from interpretations.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When you notice yourself making an assumption, ask: "What evidence do I have for this conclusion? What evidence contradicts it? What facts am I missing?" This slows down the jumping process.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mindfulness -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness</h3>
+                <p class="text-gray-300 mb-4">
+                  Practice staying present and observing your thoughts without immediately acting on them. Mindfulness helps create space between stimulus and response.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When you notice a conclusion forming, pause and label it: "I notice I'm having a thought about what this person thinks of me." This separation helps you see thoughts as mental events, not facts.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Wise Mind Integration -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Wise Mind Integration</h3>
+                <p class="text-gray-300 mb-4">
+                  Balance your emotional impulses with rational thought by engaging your Wise Mind—the balance point between emotional and reasonable mind.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• "What is my emotional mind telling me?"</li>
+                    <li>• "What is my reasonable mind saying about the evidence?"</li>
+                    <li>• "What would my wisest self conclude in this situation?"</li>
+                    <li>• "What additional information would help me make a balanced judgment?"</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Alternative Explanations -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Alternative Explanations</h3>
+                <p class="text-gray-300 mb-4">
+                  Challenge your initial interpretation by generating multiple alternative explanations for the same situation or behavior.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Example</h4>
+                  <p class="text-gray-300">If you think "My friend didn't respond to my text because they're mad at me," generate alternatives: "They might be busy, their phone might be off, they might be taking time to think about their response, or they might not have seen the message yet."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
+      <section id="exercises" class="content-section mb-16">
         <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to challenge jumping to conclusions:
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge jumping to conclusions and develop a more evidence-based thinking style:
           </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Thought Log:</strong> Keep a record of instances when you find yourself jumping to conclusions. Write down the situation, your assumption, and then list factual evidence for and against that assumption.
-            </li>
-            <li>
-              <strong>Mindfulness Practice:</strong> Dedicate time each day to mindfulness meditation, focusing on observing your thoughts without judgment.
-            </li>
-            <li>
-              <strong>Reality Testing:</strong> When you catch yourself making an assumption, ask a trusted friend or mentor for their perspective on the situation.
-            </li>
-          </ol>
+          
+          <div class="space-y-8">
+            <!-- Thought Log -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Thought Log</h3>
+                  <p class="text-gray-300 mb-4">
+                    Keep a record of instances when you find yourself jumping to conclusions. Write down the situation, your assumption, and then list factual evidence for and against that assumption.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Example Format</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Situation:</strong> Coworker walked past without saying hello.</li>
+                      <li><strong>Jumping to Conclusion:</strong> "They're upset with me about something I did."</li>
+                      <li><strong>Evidence For:</strong> "They usually say hello when we pass in the hallway."</li>
+                      <li><strong>Evidence Against:</strong> "They were looking at their phone; they seemed rushed; we haven't had any conflict; they were friendly yesterday."</li>
+                      <li><strong>Balanced Conclusion:</strong> "They were probably distracted or in a hurry. I don't have evidence they're upset with me."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Reality Testing -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Reality Testing</h3>
+                  <p class="text-gray-300 mb-4">
+                    When you catch yourself making an assumption, ask a trusted friend or mentor for their perspective on the situation to get an outside view.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Identify a situation where you've jumped to a conclusion</li>
+                      <li>Share the factual details with a trusted person (not your interpretation)</li>
+                      <li>Ask: "What's your take on this situation?"</li>
+                      <li>Compare their perspective with your initial conclusion</li>
+                      <li>Note the differences in interpretation</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Pause Practice -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Pause Practice</h3>
+                  <p class="text-gray-300 mb-4">
+                    Develop the habit of deliberately pausing before reaching conclusions, especially in emotionally charged situations.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Three-Step Pause Method</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. <strong>Notice the Urge:</strong> Become aware when you feel the urge to form a quick conclusion</li>
+                      <li>2. <strong>Take a Breath:</strong> Physically pause and take three deep breaths</li>
+                      <li>3. <strong>Ask Questions:</strong> "What facts do I know for certain? What am I assuming? What other explanations might there be?"</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Jumping to conclusions often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="mind-reading.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Mind Reading</h3>
+            <p class="text-gray-300">Assuming you know what others are thinking without confirmation or evidence.</p>
+          </a>
+          <a href="fortune-telling.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Fortune Telling</h3>
+            <p class="text-gray-300">Predicting negative outcomes without sufficient evidence or consideration of alternatives.</p>
+          </a>
+          <a href="catastrophizing.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Catastrophizing</h3>
+            <p class="text-gray-300">Expecting the worst possible outcome from a situation, often out of proportion with reality.</p>
+          </a>
         </div>
       </section>
 
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Jumping to conclusions can lead to misinterpretations and unnecessary distress. By applying DBT techniques—such as mindfulness, reality testing, and Wise Mind integration—you can learn to slow down, gather facts, and form more balanced judgments. With consistent practice, you can break the cycle of premature conclusions and improve your overall mental well-being.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Jumping to conclusions can lead to misinterpretations, unnecessary distress, and a distorted view of reality. By applying DBT techniques such as checking the facts, practicing mindfulness, and engaging your Wise Mind, you can learn to slow down, gather information, and form more accurate judgments.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Remember that challenging this thinking trap takes consistent practice. Each time you pause to question an assumption or consider alternative explanations, you're building a more flexible and accurate thinking style that will serve your emotional well-being in the long run.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward more evidence-based thinking by exploring other DBT skills and resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/mindfulness-how-skills.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Mindfulness How Skills
+              </a>
+              <a href="emotional-reasoning.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Emotional Reasoning
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
-    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

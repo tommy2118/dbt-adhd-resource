@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to Personalization, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, personalization: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, personalization, self-blame, responsibility">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Personalization: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Personalization | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Personalization
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Breaking free from taking excessive responsibility for external events
         </p>
       </div>
     </header>
@@ -89,136 +92,586 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Personalization</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Personalization</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
+      <section id="introduction" class="content-section mb-16">
         <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Personalization is a cognitive distortion where you assume excessive responsibility for events or outcomes that are outside of your control. This guide explores how personalization operates, its impact on your emotional well-being, and DBT strategies to help you develop a more balanced perspective.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Personalization is a cognitive distortion where you assume excessive responsibility for events or outcomes that are outside of your control. When personalizing, you attribute external events to yourself even when they have little or nothing to do with you.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how personalization operates, its impact on your emotional well-being, and effective DBT strategies to help you recognize when you're personalizing and develop a more balanced perspective on responsibility.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Personalization leads us to shoulder responsibility for things beyond our control, creating unnecessary guilt and anxiety. Learning to separate what is and isn't your responsibility is essential for emotional well-being.
+            </p>
+          </div>
+        </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
 
       <!-- Understanding Personalization -->
-      <section id="understanding" class="content-section">
+      <section id="understanding" class="content-section mb-16">
         <h2 class="section-title">Understanding Personalization</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Personalization involves taking undue responsibility for external events or believing that everything is related to you, even when it isn't.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> When you personalize, you may interpret neutral or even positive events as negative, blaming yourself for things that are not entirely within your control.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> This distortion can lead to chronic feelings of guilt, low self-esteem, and anxiety. It may also strain your relationships by fostering unrealistic expectations of responsibility.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Personalization?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Personalization involves taking undue responsibility for external events or believing that everything others do or say is a direct reaction to you or your behavior. It's the tendency to attribute events, particularly negative ones, to yourself when they may have little or nothing to do with you.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                When you personalize, you may interpret neutral or even positive events as negative, blaming yourself for things that are not entirely within your control. You become the center of an explanation for why something happened, even when numerous other factors are at play.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "My colleague seems upset today. I must have done something wrong."</li>
+                <li>• "The team project failed because I didn't work hard enough."</li>
+                <li>• "My friend didn't laugh at my joke. She probably thinks I'm boring."</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                This distortion can lead to chronic feelings of guilt, low self-esteem, and anxiety. It may also strain your relationships by fostering unrealistic expectations of responsibility. By assuming excessive accountability for events beyond your control, you place an unfair burden on yourself that can lead to burnout and emotional exhaustion.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
+      <section id="manifestations" class="content-section mb-16">
         <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li><strong>Blame Taking:</strong> Assuming responsibility for events outside your control.</li>
-            <li><strong>Excessive Guilt:</strong> Feeling guilty even when circumstances are not entirely your fault.</li>
-            <li><strong>Overanalyzing Feedback:</strong> Interpreting neutral or ambiguous feedback as a personal failure.</li>
-            <li><strong>Self-Criticism:</strong> Engaging in harsh self-judgment for events that are not completely within your control.</li>
-          </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Blame Taking -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Blame Taking</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Assuming responsibility for events that are largely or entirely outside your control. You may believe you're somehow at fault for others' feelings, behaviors, or outcomes that have multiple causes unrelated to you.
+            </p>
+          </div>
+
+          <!-- Excessive Guilt -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Excessive Guilt</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Feeling disproportionately guilty even when circumstances are not entirely or even partially your fault. This can lead to constant apologizing for things you didn't cause or couldn't control.
+            </p>
+          </div>
+
+          <!-- Overanalyzing Feedback -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Overanalyzing Feedback</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Interpreting neutral or ambiguous feedback as a personal failure or criticism. General comments become personalized critiques, and you may obsess over perceived slights that were not intended as such.
+            </p>
+          </div>
+
+          <!-- Self-Criticism -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Self-Criticism</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Engaging in harsh self-judgment for events that are not completely within your control. You may hold yourself to impossibly high standards of influence over external events and berate yourself when outcomes are less than perfect.
+            </p>
+          </div>
         </div>
       </section>
 
       <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
+      <section id="impact" class="content-section mb-16">
         <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Personalization can contribute to chronic stress, anxiety, and depression. When you assume responsibility for events that are not your fault, it can erode your self-confidence and lead to unhealthy patterns of self-blame.
-          </p>
-          <p class="text-lg">
-            Over time, these patterns can negatively impact your relationships and overall quality of life.
-          </p>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                Personalization can contribute to chronic stress, anxiety, and depression. When you assume responsibility for events that are not your fault, it can erode your self-confidence and lead to unhealthy patterns of self-blame.
+              </p>
+              <p class="text-gray-300">
+                Over time, these patterns can negatively impact your relationships and overall quality of life, creating a constant sense of being inadequate or at fault.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Emotional Impact</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Persistent guilt and shame</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Heightened anxiety in social situations</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Lowered sense of self-worth</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Emotional exhaustion from constant self-blame</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Relationship Impact</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Overextending yourself to fix problems that aren't yours</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Difficulty setting healthy boundaries</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Susceptibility to manipulation or exploitation</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Reduced authentic communication due to self-blame</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
+      <section id="dbt-techniques" class="content-section mb-16">
         <h2 class="section-title">DBT Techniques & Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">1. Mindfulness:</span> Notice when you begin to take on responsibility for external events. Observe these thoughts without judgment.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your automatic assumptions by asking:
-            <ul class="list-disc list-inside ml-6">
-              <li>What evidence supports the idea that I am solely responsible?</li>
-              <li>What parts of this situation are beyond my control?</li>
-              <li>How can I view this event more objectively?</li>
-            </ul>
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">3. Behavioral Experiments:</span> Test your assumptions by considering alternative explanations for events. Reflect on instances where outcomes were not your responsibility.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">4. Radical Acceptance:</span> Accept that not everything is within your control. Focus on what you can influence and let go of excessive self-blame.
-          </p>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging personalization and developing a more balanced perspective on responsibility:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mindfulness -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness</h3>
+                <p class="text-gray-300 mb-4">
+                  Notice when you begin to take on responsibility for external events. Observe these thoughts without judgment and recognize them as a pattern rather than the truth.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When you catch yourself personalizing, pause and label the thought: "I notice I'm personalizing right now." This creates distance between you and the thought, allowing you to examine it more objectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cognitive Restructuring -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Cognitive Restructuring</h3>
+                <p class="text-gray-300 mb-4">
+                  Challenge your automatic assumptions by examining evidence and considering alternative explanations for events.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• What evidence supports the idea that I am solely responsible?</li>
+                    <li>• What other factors could have contributed to this outcome?</li>
+                    <li>• What parts of this situation are beyond my control?</li>
+                    <li>• How would I view this situation if it happened to someone else?</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Behavioral Experiments -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Behavioral Experiments</h3>
+                <p class="text-gray-300 mb-4">
+                  Test your assumptions by considering alternative explanations for events and systematically collecting evidence about your actual level of responsibility.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Example</h4>
+                  <p class="text-gray-300">If you believe "My friend is upset because of something I did," try checking in with them directly: "I noticed you seem upset. Is everything okay?" Often, you'll discover their mood has nothing to do with you.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Radical Acceptance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Radical Acceptance</h3>
+                <p class="text-gray-300 mb-4">
+                  Accept that not everything is within your control. Focus on what you can influence and let go of excessive self-blame for things beyond your power.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When facing a challenging situation, try saying: "I accept that I can only control my own actions and responses. I can't control others' feelings, thoughts, or external events. I accept the limits of my responsibility and influence."</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
+      <section id="exercises" class="content-section mb-16">
         <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to challenge personalization:
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge personalization and develop a more balanced view of responsibility:
           </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Thought Log:</strong> Keep a record of instances when you blame yourself for events outside your control. Write down alternative explanations.
-            </li>
-            <li>
-              <strong>Responsibility Audit:</strong> List situations where you feel responsible and evaluate which parts you can realistically control.
-            </li>
-            <li>
-              <strong>Self-Compassion Practice:</strong> When you catch yourself personalizing, pause and offer yourself a kind, balanced response—as you would to a friend.
-            </li>
-          </ol>
+          
+          <div class="space-y-8">
+            <!-- Thought Log -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Personalization Thought Log</h3>
+                  <p class="text-gray-300 mb-4">
+                    Keep a record of instances when you blame yourself for events outside your control. Write down the situation, your personalized thought, and alternative explanations that consider other factors.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Example Format</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Situation:</strong> My friend canceled our plans last minute.</li>
+                      <li><strong>Personalized Thought:</strong> "She must be upset with me about something I said last week."</li>
+                      <li><strong>Alternative Explanations:</strong> "She might be feeling sick, had a family emergency, got called into work unexpectedly, or simply needs some alone time to recharge."</li>
+                      <li><strong>Balanced Perspective:</strong> "There are many reasons my friend might have canceled that have nothing to do with me. Without evidence that I've done something wrong, I'll assume it's unrelated to me unless she tells me otherwise."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Responsibility Audit -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Responsibility Audit</h3>
+                  <p class="text-gray-300 mb-4">
+                    List situations where you feel responsible and evaluate which parts you can realistically control versus which aspects are beyond your influence.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Identify a situation where you feel responsible for a negative outcome</li>
+                      <li>Draw a line down the middle of a page</li>
+                      <li>On the left side, list all aspects of the situation that are within your control</li>
+                      <li>On the right side, list all factors that are beyond your control</li>
+                      <li>Review the lists and acknowledge the limits of your responsibility</li>
+                      <li>Focus your energy only on the aspects that are truly within your control</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Self-Compassion Practice -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Self-Compassion Practice</h3>
+                  <p class="text-gray-300 mb-4">
+                    When you catch yourself personalizing, pause and offer yourself the same kindness and balanced perspective you would offer to a friend in the same situation.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Three-Step Approach</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Step 1: Recognize the Personalization</strong> - "I notice I'm blaming myself for something that may not be my responsibility."</li>
+                      <li><strong>Step 2: Offer Kind Understanding</strong> - "It's natural to sometimes feel responsible for things beyond my control. Many people struggle with this."</li>
+                      <li><strong>Step 3: Reframe with Balance</strong> - "What would I say to a friend in this situation? Would I place all the blame on them, or would I consider multiple factors? I deserve the same balanced perspective I would offer others."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Personalization often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="mind-reading.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Mind Reading</h3>
+            <p class="text-gray-300">Assuming you know what others are thinking without sufficient evidence or clarification.</p>
+          </a>
+          <a href="jumping-to-conclusions.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Jumping to Conclusions</h3>
+            <p class="text-gray-300">Making negative interpretations without adequate evidence to support them.</p>
+          </a>
+          <a href="control-fallacies.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Control Fallacies</h3>
+            <p class="text-gray-300">Either feeling completely responsible for everything (internal control fallacy) or helpless and without any control (external control fallacy).</p>
+          </a>
         </div>
       </section>
 
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Personalization can trap you in a cycle of self-blame and unrealistic responsibility. By practicing mindfulness, cognitive restructuring, and radical acceptance, you can learn to distinguish between what is within your control and what isn't. Embrace a balanced view of responsibility and nurture your emotional well-being.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Personalization can trap you in a cycle of self-blame and unrealistic responsibility. By assuming that external events are primarily related to you, you place an unfair burden on yourself that can lead to chronic guilt, anxiety, and strained relationships.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            By practicing mindfulness, cognitive restructuring, and radical acceptance, you can learn to distinguish between what is within your control and what isn't. This balanced perspective allows you to take appropriate responsibility for your actions while recognizing the many other factors that influence outcomes in complex situations.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward a more balanced perspective by exploring these DBT skills and resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/mindfulness-what-skills.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Learn Mindful Observation
+              </a>
+              <a href="../modules/interpersonal.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Explore Interpersonal Skills
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
-    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>

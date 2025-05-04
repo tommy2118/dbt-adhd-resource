@@ -3,15 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="A comprehensive guide to Overgeneralization, a common cognitive distortion. Learn how to identify, understand, and challenge this thinking trap using DBT techniques.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, overgeneralization: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, overgeneralization, all-or-nothing thinking, absolutist thinking">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Overgeneralization: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Overgeneralization | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -21,18 +29,13 @@
       gtag('js', new Date());
       gtag('config', 'G-L29EXB8PZ7');
     </script>
-      <link rel="stylesheet" href="/dist/output.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900</head>family=Inter:wght@400;500;600;700</head>display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/enhancements/design-system.css">
-</head>
-  <body class="min-h-screen">
+  </head>
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -46,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -68,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -78,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          DBT Skills
+          Overgeneralization
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Learn essential skills for emotional wellness and personal growth.
+          Breaking free from sweeping conclusions based on isolated events
         </p>
       </div>
     </header>
@@ -89,129 +92,599 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
-      <!-- Table of Contents -->
+      <!-- Page Navigation -->
       <div class="mb-12">
-        <h2 class="section-title">In This Guide</h2>
-        <ul class="list-disc list-inside text-lg">
-          <li><a href="#introduction">Introduction</a></li>
-          <li><a href="#understanding">Understanding Overgeneralization</a></li>
-          <li><a href="#manifestations">Common Manifestations</a></li>
-          <li><a href="#impact">Impact on Mental Health</a></li>
-          <li><a href="#dbt-techniques">DBT Techniques & Strategies</a></li>
-          <li><a href="#exercises">Practical Exercises</a></li>
-          <li><a href="#conclusion">Conclusion</a></li>
-        </ul>
-      </div>
-      <!-- Introduction Section -->
-      <section id="introduction" class="content-section">
-        <h2 class="section-title">Introduction</h2>
-        <p class="text-xl leading-relaxed mb-4">
-          Overgeneralization is a cognitive distortion in which you draw broad, sweeping conclusions based on a single event or piece of evidence. This guide explains how overgeneralization can affect your thinking, relationships, and overall mental health, and it provides DBT strategies to help you adopt a more balanced perspective.
-        </p>
-      </section>
-      <!-- Understanding Overgeneralization -->
-      <section id="understanding" class="content-section">
-        <h2 class="section-title">Understanding Overgeneralization</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">Definition:</span> Overgeneralization involves taking one instance or a few examples and generalizing them to an overall pattern or belief.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">How It Works:</span> This distortion leads you to make broad statements such as "I always fail" or "nothing ever goes right," even if the evidence is limited or isolated.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">Why It Matters:</span> By overgeneralizing, you may overlook the nuances of individual situations, which can result in persistent negative thinking and discourage you from trying new approaches.
-          </p>
-        </div>
-      </section>
-      <!-- Common Manifestations -->
-      <section id="manifestations" class="content-section">
-        <h2 class="section-title">Common Manifestations</h2>
-        <div class="info-box">
-          <ul class="list-disc list-inside text-lg">
-            <li><strong>Absolute Statements:</strong> Using words like "always" or "never" based on limited experiences.</li>
-            <li><strong>Negative Self-Labels:</strong> Believing that one failure defines your entire identity.</li>
-            <li><strong>Dismissal of Positive Experiences:</strong> Ignoring successes or positive outcomes because of one negative event.</li>
-            <li><strong>Generalized Conclusions:</strong> Assuming that a single event is indicative of a broader, unchangeable pattern.</li>
-          </ul>
-        </div>
-      </section>
-      <!-- Impact on Mental Health -->
-      <section id="impact" class="content-section">
-        <h2 class="section-title">Impact on Mental Health</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Overgeneralization can lead to chronic negative emotions, such as hopelessness, anxiety, and depression. By focusing on a single negative experience, you may dismiss positive developments, which can lower self-esteem and hinder personal growth.
-          </p>
-          <p class="text-lg">
-            This distortion may also contribute to relationship difficulties, as you might assume negative intentions or outcomes without considering alternative explanations.
-          </p>
-        </div>
-      </section>
-      <!-- DBT Techniques & Strategies -->
-      <section id="dbt-techniques" class="content-section">
-        <h2 class="section-title">DBT Techniques & Strategies</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            <span class="highlight">1. Mindfulness:</span> Pay close attention to your thoughts, especially when you notice broad generalizations. Recognize these patterns without judgment.
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">2. Cognitive Restructuring:</span> Challenge your overgeneralized beliefs by asking:
-            <ul class="list-disc list-inside ml-6">
-              <li>Is it really true that this one event defines every situation?</li>
-              <li>What evidence exists that contradicts this sweeping generalization?</li>
-              <li>Can I think of examples that defy this pattern?</li>
-            </ul>
-          </p>
-          <p class="text-lg mb-4">
-            <span class="highlight">3. Behavioral Experiments:</span> Test your beliefs by collecting evidence from various situations to see if your negative generalization holds true.
-          </p>
-          <p class="text-lg">
-            <span class="highlight">4. Radical Acceptance:</span> Accept that while one event may have been negative, it does not define every aspect of your life.
-          </p>
-        </div>
-      </section>
-      <!-- Practical Exercises -->
-      <section id="exercises" class="content-section">
-        <h2 class="section-title">Practical Exercises</h2>
-        <div class="info-box">
-          <p class="text-lg mb-4">
-            Try these exercises to challenge overgeneralized thoughts:
-          </p>
-          <ol class="list-decimal list-inside text-lg">
-            <li>
-              <strong>Thought Log:</strong> Record instances where you overgeneralize. Write down the specific event and then list other examples that contradict your generalization.
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
             </li>
             <li>
-              <strong>Evidence Gathering:</strong> Actively look for positive or neutral experiences that challenge your negative beliefs.
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
             </li>
-            <li>
-              <strong>Reframing Practice:</strong> For each overgeneralized thought, write a balanced alternative that reflects the complexity of the situation.
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Overgeneralization</span>
+              </div>
             </li>
           </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#manifestations" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Manifestations
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Introduction Section -->
+      <section id="introduction" class="content-section mb-16">
+        <h2 class="section-title">Introduction</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Overgeneralization is a cognitive distortion in which you draw broad, sweeping conclusions based on a single event or piece of evidence. This pattern creates a misleading sense that one negative experience represents an endless pattern of defeat or failure.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how overgeneralization operates, its effects on your emotions and behavior, and effective DBT strategies to help you recognize and overcome this distortion to develop a more balanced perspective.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Overgeneralization leads us to transform single incidents into universal rules, creating unnecessary suffering through "always" and "never" thinking that doesn't match reality.
+            </p>
+          </div>
         </div>
       </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
+
+      <!-- Understanding Overgeneralization -->
+      <section id="understanding" class="content-section mb-16">
+        <h2 class="section-title">Understanding Overgeneralization</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v16h16M4 12h16M4 20h16"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Overgeneralization?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Overgeneralization involves taking one instance or a few examples and generalizing them to an overall pattern or belief. Rather than seeing an event as an isolated incident, you perceive it as part of an endless, inevitable cycle of negative experiences.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Works</h4>
+              </div>
+              <p class="text-gray-300 ml-9 mb-4">
+                This distortion leads you to make broad statements such as "I always fail" or "nothing ever goes right," even when the evidence is limited to one or a few isolated incidents. It creates a mental shortcut that applies a single outcome to all future scenarios.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Examples</h4>
+              </div>
+              <ul class="text-gray-300 ml-9 space-y-2">
+                <li>• "I got rejected for one job, so I'll never find employment"</li>
+                <li>• "She forgot to call me back once, so she never cares about me"</li>
+                <li>• "I failed this test, so I'm a complete failure at school"</li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                By overgeneralizing, you may overlook the nuances of individual situations and create a false sense of predictability in a complex world. This can result in persistent negative thinking, avoidance behaviors, and discourage you from trying new approaches or persisting through challenges.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Manifestations -->
+      <section id="manifestations" class="content-section mb-16">
+        <h2 class="section-title">Common Manifestations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Absolute Statements -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Absolute Statements</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Using words like "always," "never," "everyone," or "no one" based on limited experiences. These absolutist terms transform specific situations into universal rules, leaving no room for exceptions or change.
+            </p>
+          </div>
+
+          <!-- Negative Self-Labels -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5v-4m0 4h-4m4 0l-5-5"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Negative Self-Labels</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Believing that one failure or mistake defines your entire identity. A single error becomes evidence of a fundamental character flaw rather than an isolated incident from which you can learn and grow.
+            </p>
+          </div>
+
+          <!-- Dismissal of Positive Experiences -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Dismissal of Positive Experiences</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Ignoring successes or positive outcomes because of one negative event. When you overgeneralize, you may filter out contradictory evidence that doesn't fit your negative narrative, reinforcing a skewed perception of reality.
+            </p>
+          </div>
+
+          <!-- Generalized Conclusions -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Generalized Conclusions</h4>
+            </div>
+            <p class="text-gray-300 mb-4">
+              Assuming that a single event is indicative of a broader, unchangeable pattern. This creates a false sense of predictability where you believe you can forecast future outcomes based on limited past experiences, often leading to avoidance behaviors.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact on Mental Health -->
+      <section id="impact" class="content-section mb-16">
+        <h2 class="section-title">Impact on Mental Health</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Mental Health Burden</h3>
+              <p class="text-gray-300 mb-4">
+                Overgeneralization can lead to chronic negative emotions, such as hopelessness, anxiety, and depression. By focusing on a single negative experience, you may dismiss positive developments, which can lower self-esteem and hinder personal growth.
+              </p>
+              <p class="text-gray-300">
+                This distortion may also contribute to relationship difficulties, as you might assume negative intentions or outcomes without considering alternative explanations, leading to unnecessary conflict or withdrawal.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Emotional Impact</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Feelings of helplessness and hopelessness</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Increased anxiety about future events</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Lowered self-esteem and self-confidence</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Pervasive sense of dread or expectation of failure</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Behavioral Impact</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Avoidance of new challenges or opportunities</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Preemptive withdrawal from relationships</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Decreased resilience and giving up easily</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Self-fulfilling prophecies through negative expectations</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DBT Techniques & Strategies -->
+      <section id="dbt-techniques" class="content-section mb-16">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging overgeneralization and developing more balanced perspectives:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Mindfulness -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness</h3>
+                <p class="text-gray-300 mb-4">
+                  Pay close attention to your thoughts, especially when you notice broad generalizations like "always" or "never." Recognize these patterns without judgment.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Application</h4>
+                  <p class="text-gray-300">When you catch yourself using absolute language, pause and label it: "I notice I'm overgeneralizing right now." This creates distance between you and the thought, allowing you to examine it objectively.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cognitive Restructuring -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Cognitive Restructuring</h3>
+                <p class="text-gray-300 mb-4">
+                  Challenge your overgeneralized beliefs by examining evidence and considering more nuanced perspectives.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Questions to Ask</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• Is it really true that this one event defines every situation?</li>
+                    <li>• What evidence exists that contradicts this sweeping generalization?</li>
+                    <li>• Can I think of examples that defy this pattern?</li>
+                    <li>• What more accurate statement could replace my absolutist thinking?</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Behavioral Experiments -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Behavioral Experiments</h3>
+                <p class="text-gray-300 mb-4">
+                  Test your beliefs by collecting evidence from various situations to see if your negative generalization holds true across different contexts.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Example</h4>
+                  <p class="text-gray-300">If you believe "I always mess up presentations," commit to tracking the outcomes of your next five presentations, noting both strengths and areas for improvement. This systematic data collection often reveals a more balanced reality.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Radical Acceptance -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Radical Acceptance</h3>
+                <p class="text-gray-300 mb-4">
+                  Accept that while one event may have been negative, it does not define every aspect of your life or future. Embrace the complexity and uniqueness of each situation.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">When facing a setback, try saying: "This specific situation didn't go as I hoped, and I accept that reality. This is one event, not my entire life or future. Each new situation brings different possibilities."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Exercises -->
+      <section id="exercises" class="content-section mb-16">
+        <h2 class="section-title">Practical Exercises</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge overgeneralized thinking and develop more balanced perspectives:
+          </p>
+          
+          <div class="space-y-8">
+            <!-- Thought Log -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Overgeneralization Thought Log</h3>
+                  <p class="text-gray-300 mb-4">
+                    Record instances where you overgeneralize. Write down the specific event, your overgeneralized thought, and then list other examples that contradict your generalization.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Example Format</h4>
+                    <ul class="text-gray-300 space-y-3">
+                      <li><strong>Situation:</strong> I forgot an important point during my presentation.</li>
+                      <li><strong>Overgeneralized Thought:</strong> "I always mess up important presentations. I'm a terrible public speaker."</li>
+                      <li><strong>Contradicting Evidence:</strong> "I successfully delivered three presentations last month with positive feedback. Even in today's presentation, I covered 90% of my material effectively. One colleague specifically mentioned they appreciated my clear explanation of the project timeline."</li>
+                      <li><strong>Balanced Thought:</strong> "I forgot one point in my presentation today. While that's disappointing, it doesn't erase my past successes or define all my future presentations. I can learn from this experience and continue to improve my public speaking skills."</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Evidence Gathering -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Evidence Gathering Practice</h3>
+                  <p class="text-gray-300 mb-4">
+                    Actively look for positive or neutral experiences that challenge your negative beliefs. Collect counterexamples systematically to build a more accurate worldview.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2 list-decimal list-inside">
+                      <li>Identify a belief you hold that involves words like "always" or "never"</li>
+                      <li>Create a table with two columns: "Supporting Evidence" and "Contradicting Evidence"</li>
+                      <li>For one week, actively look for and record examples that both support and contradict your belief</li>
+                      <li>Be thorough and honest, recording even small examples that don't fit your generalization</li>
+                      <li>At the end of the week, review both columns and evaluate the true pattern</li>
+                      <li>Rewrite your belief in more accurate, nuanced terms based on the complete evidence</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Reframing Practice -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Reframing Practice</h3>
+                  <p class="text-gray-300 mb-4">
+                    For each overgeneralized thought, write a balanced alternative that reflects the complexity of the situation and leaves room for change and growth.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Transforming Statements</h4>
+                    <table class="w-full text-gray-300">
+                      <tr class="border-b border-gray-600">
+                        <th class="text-left py-2 px-4">Overgeneralized Statement</th>
+                        <th class="text-left py-2 px-4">Balanced Alternative</th>
+                      </tr>
+                      <tr class="border-b border-gray-600">
+                        <td class="py-2 px-4">"I never succeed at anything I try."</td>
+                        <td class="py-2 px-4">"I've had both successes and setbacks. This particular task is challenging for me, but I've succeeded at other things in the past."</td>
+                      </tr>
+                      <tr class="border-b border-gray-600">
+                        <td class="py-2 px-4">"Everyone thinks I'm incompetent."</td>
+                        <td class="py-2 px-4">"Some people may question my abilities sometimes, while others appreciate my contributions. Different people have different perceptions."</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 px-4">"I'll never get better at this."</td>
+                        <td class="py-2 px-4">"I'm finding this difficult right now, but with practice and persistence, I can improve over time like I have with other skills."</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Overgeneralization often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="all-or-nothing.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">All-or-Nothing Thinking</h3>
+            <p class="text-gray-300">Seeing situations in only two categories (perfect or failed) with no middle ground or nuance.</p>
+          </a>
+          <a href="catastrophizing.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Catastrophizing</h3>
+            <p class="text-gray-300">Assuming the worst possible outcome from a situation, often out of proportion with reality.</p>
+          </a>
+          <a href="labeling.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Labeling</h3>
+            <p class="text-gray-300">Attaching a negative label to yourself or others based on limited evidence or isolated behaviors.</p>
+          </a>
+        </div>
+      </section>
+
       <!-- Conclusion -->
       <section id="conclusion" class="content-section">
         <h2 class="section-title">Conclusion</h2>
-        <div class="info-box">
-          <p class="text-lg">
-            Overgeneralization can trap you in a cycle of negative thinking by taking one experience and making it a blanket truth. By practicing mindfulness, cognitive restructuring, and other DBT techniques, you can challenge these broad conclusions and foster a more nuanced, balanced outlook. Remember, every experience is unique, and no single event defines your entire life.
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Overgeneralization can trap you in a cycle of negative thinking by taking one experience and making it a blanket truth. This thinking trap creates unnecessary suffering by convincing you that isolated incidents represent universal patterns.
           </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            By practicing mindfulness, cognitive restructuring, evidence gathering, and other DBT techniques, you can challenge these broad conclusions and foster a more nuanced, balanced outlook. Remember, every experience is unique, and no single event defines your entire life or future.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue developing a more balanced perspective by exploring these DBT skills and resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="../modules/mindfulness-what-skills.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Learn Mindful Observation
+              </a>
+              <a href="../modules/emotion-regulation.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Emotion Regulation Skills
+              </a>
+            </div>
+          </div>
         </div>
       </section>
-    
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
-
-    <!-- Scripts -->
-    <script src="/js/main.js" defer></script>
-    <script src="/js/enhancements.js" defer></script>
   </body>
 </html>
