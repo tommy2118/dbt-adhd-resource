@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Identify and challenge cognitive distortions that affect your emotions and behaviors.">
+    <meta name="description" content="Learn about catastrophizing, a common thinking trap where we expect the worst possible outcomes. Discover DBT techniques to overcome catastrophic thinking.">
     <meta name="author" content="The DBT Resource">
-    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, catastrophizing: a detailed guide | the dbt resource">
+    <meta name="keywords" content="DBT, thinking traps, cognitive distortions, mental health, emotional wellness, catastrophizing, catastrophic thinking">
     <meta name="theme-color" content="#9333EA">
     
-    <title>Catastrophizing: A Detailed Guide | The DBT Resource | The DBT Resource</title>
+    <title>Catastrophizing | The DBT Resource</title>
     
     <!-- Styles -->
     <link rel="stylesheet" href="/dist/output.css">
@@ -16,6 +16,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/enhancements/design-system.css">
+    
+    <!-- Scripts -->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/enhancements.js" defer></script>
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L29EXB8PZ7"></script>
@@ -26,12 +30,12 @@
       gtag('config', 'G-L29EXB8PZ7');
     </script>
   </head>
-  <body class="min-h-screen">
+  <body class="bg-gray-900 text-gray-300 font-sans min-h-screen">
     <!-- Skip to Content Link -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
     
     <!-- Navigation -->
-    <div class="nav-container fixed w-full z-50">
+    <div class="nav-container fixed w-full z-50 top-0">
       <nav role="navigation" aria-label="Main navigation" class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a href="../index.html" class="text-2xl font-bold text-white hover:text-primary-light transition-colors" aria-label="The DBT Resource Home">
@@ -45,7 +49,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active">Thinking Traps</a>
           </div>
           
           <!-- Mobile Menu Button -->
@@ -67,7 +71,7 @@
             <a href="../modules/distress-tolerance.html" class="nav-link px-4 py-2 rounded-lg">Distress Tolerance</a>
             <a href="../modules/emotion-regulation.html" class="nav-link px-4 py-2 rounded-lg">Emotion Regulation</a>
             <a href="../modules/interpersonal.html" class="nav-link px-4 py-2 rounded-lg">Interpersonal Skills</a>
-            <a href="index.html" class="nav-link px-4 py-2 rounded-lg" aria-current="page">Thinking Traps</a>
+            <a href="index.html" class="nav-link active px-4 py-2 rounded-lg">Thinking Traps</a>
           </div>
         </div>
       </nav>
@@ -77,10 +81,10 @@
     <header class="hero-bg pt-32 pb-24">
       <div class="hero-content container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
-          Catastrophizing: A Detailed Guide | The DBT Resource
+          Catastrophizing
         </h1>
         <p class="text-xl md:text-2xl text-gray-100 max-w-3xl mx-auto mb-12">
-          Identify and challenge cognitive distortions that affect your emotions and behaviors.
+          Overcoming the habit of assuming the worst possible outcomes
         </p>
       </div>
     </header>
@@ -88,12 +92,624 @@
     <!-- Main Content -->
     <main id="main-content" class="container mx-auto px-4 py-16">
       
+      <!-- Page Navigation -->
+      <div class="mb-12">
+        <nav class="flex items-center text-sm mb-8" aria-label="Breadcrumb">
+          <ol class="inline-flex items-center space-x-1 md:space-x-3">
+            <li class="inline-flex items-center">
+              <a href="../index.html" class="text-gray-400 hover:text-white inline-flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li>
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <a href="index.html" class="text-gray-400 hover:text-white ml-1 md:ml-2">Thinking Traps</a>
+              </div>
+            </li>
+            <li aria-current="page">
+              <div class="flex items-center">
+                <svg class="w-6 h-6 text-gray-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-gray-400 ml-1 md:ml-2">Catastrophizing</span>
+              </div>
+            </li>
+          </ol>
+        </nav>
+      
+        <!-- Table of Contents -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+          <h2 class="text-xl font-bold text-white mb-4">In This Guide</h2>
+          <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <li>
+              <a href="#introduction" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Introduction
+              </a>
+            </li>
+            <li>
+              <a href="#understanding" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                Understanding
+              </a>
+            </li>
+            <li>
+              <a href="#examples" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                Common Examples
+              </a>
+            </li>
+            <li>
+              <a href="#impact" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                Mental Health Impact
+              </a>
+            </li>
+            <li>
+              <a href="#dbt-techniques" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                </svg>
+                DBT Techniques
+              </a>
+            </li>
+            <li>
+              <a href="#exercises" class="flex items-center text-primary-light hover:text-white transition-colors">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                </svg>
+                Practical Exercises
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Introduction Section -->
+      <section id="introduction" class="content-section mb-16">
+        <h2 class="section-title">Introduction</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          <div class="md:col-span-2">
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+              Catastrophizing is a thinking trap where your mind jumps to the worst possible scenario, no matter how unlikely it might be. This pattern magnifies potential problems far beyond their actual size and probability, making minor setbacks feel like disasters and small challenges seem insurmountable.
+            </p>
+            <p class="text-lg text-gray-300 leading-relaxed">
+              This guide explores how catastrophic thinking affects your emotions and behaviors, and provides practical DBT techniques to help you develop a more balanced perspective, even in challenging situations.
+            </p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <h3 class="text-xl font-bold text-primary-light mb-4">Key Takeaway</h3>
+            <p class="text-gray-300">
+              Catastrophizing makes us anticipate disaster even when it's unlikely. By learning to recognize and challenge these thoughts, we can reduce anxiety and develop more realistic expectations.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Section Divider -->
+      <div class="section-divider mb-16">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.4"></path>
+          <path d="M1200 120L0 16.48V0h1200v120z" fill="#1E293B" opacity="0.3" transform="translate(0, 10)"></path>
+        </svg>
+      </div>
+
+      <!-- Understanding Catastrophizing -->
+      <section id="understanding" class="content-section mb-16">
+        <h2 class="section-title">Understanding Catastrophizing</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border-l-4 border-primary-light">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-3 mb-8">
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <h3 class="text-xl font-bold text-white">What Is Catastrophizing?</h3>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Catastrophizing involves anticipating the worst possible outcome of a situation and overestimating both the likelihood of that outcome and its potential impact. It's a common cognitive distortion that treats mundane problems as potential disasters and minor setbacks as life-altering catastrophes.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Two Types</h4>
+              </div>
+              <div class="text-gray-300 ml-9 mb-4">
+                <p class="mb-2"><strong>1. Future Catastrophizing:</strong> "What if" thinking that predicts disaster in the future</p>
+                <p><strong>2. Present Catastrophizing:</strong> Exaggerating the negative aspects of a current situation</p>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">How It Happens</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                Catastrophizing often involves a chain reaction of increasingly negative predictions. Each step builds on the previous one until a relatively minor concern snowballs into an imagined worst-case scenario.
+              </p>
+            </div>
+            
+            <div>
+              <div class="flex items-start mb-2">
+                <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h4 class="text-lg font-semibold text-white">Why It Matters</h4>
+              </div>
+              <p class="text-gray-300 ml-9">
+                When you catastrophize, your emotional response is proportional to the imagined catastrophe, not the actual situation. This leads to excessive anxiety, avoidance behaviors, and difficulty making rational decisions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Common Examples -->
+      <section id="examples" class="content-section mb-16">
+        <h2 class="section-title">Common Examples</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Catastrophizing can appear in many different areas of life. Here are some common examples:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- Health Concerns -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Health Concerns</h4>
+            </div>
+            <div class="bg-gray-700/50 p-4 rounded-lg mb-4">
+              <p class="text-gray-300 italic">
+                "This headache must be a brain tumor. I'll need surgery and might not survive."
+              </p>
+            </div>
+            <p class="text-gray-300">
+              Rather than considering more likely explanations (stress, dehydration), the mind jumps to the most severe medical scenario.
+            </p>
+          </div>
+
+          <!-- Social Situations -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Social Situations</h4>
+            </div>
+            <div class="bg-gray-700/50 p-4 rounded-lg mb-4">
+              <p class="text-gray-300 italic">
+                "If I make a mistake in my presentation, everyone will think I'm incompetent, I'll get fired, and I'll never find another job."
+              </p>
+            </div>
+            <p class="text-gray-300">
+              A single mistake is magnified into a career-ending disaster, ignoring the reality that most people are forgiving of minor errors.
+            </p>
+          </div>
+
+          <!-- Relationship Concerns -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Relationship Concerns</h4>
+            </div>
+            <div class="bg-gray-700/50 p-4 rounded-lg mb-4">
+              <p class="text-gray-300 italic">
+                "My partner hasn't replied to my text for three hours. They must be angry with me, or perhaps they're with someone else. Our relationship is probably over."
+              </p>
+            </div>
+            <p class="text-gray-300">
+              Instead of considering benign explanations (they're busy, phone is off), the worst possible scenarios are imagined.
+            </p>
+          </div>
+
+          <!-- Performance Anxiety -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/70">
+            <div class="flex items-start mb-4">
+              <svg class="w-6 h-6 text-primary-light mr-3 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              <h4 class="text-xl font-bold text-white">Performance Anxiety</h4>
+            </div>
+            <div class="bg-gray-700/50 p-4 rounded-lg mb-4">
+              <p class="text-gray-300 italic">
+                "If I don't perform perfectly on this test, I'll fail the class, won't graduate, and my entire future will be ruined."
+              </p>
+            </div>
+            <p class="text-gray-300">
+              A single performance is seen as determining one's entire life trajectory, ignoring the many opportunities for recovery and alternative paths.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact on Mental Health -->
+      <section id="impact" class="content-section mb-16">
+        <h2 class="section-title">Impact on Mental Health</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <div class="flex items-start mb-6">
+            <div class="bg-primary-light/20 p-3 rounded-full mr-5">
+              <svg class="w-8 h-8 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-white mb-2">The Emotional Toll</h3>
+              <p class="text-gray-300 mb-4">
+                Catastrophizing creates emotional reactions that match the imagined disaster, not the actual situation. This means you experience the stress, fear, and anxiety of worst-case scenarios even when they're highly unlikely to occur.
+              </p>
+              <p class="text-gray-300">
+                Over time, this pattern can contribute to chronic anxiety, depression, and feelings of helplessness as your world begins to feel increasingly dangerous and unpredictable.
+              </p>
+            </div>
+          </div>
+          
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Psychological Effects</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Heightened anxiety and panic</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Increased worry and rumination</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Decreased ability to solve problems effectively</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Hopelessness and helplessness</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <h4 class="text-lg font-bold text-white mb-3">Behavioral Impact</h4>
+              <ul class="space-y-2 text-gray-300">
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Avoidance of situations that trigger catastrophic thoughts</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Excessive reassurance-seeking from others</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Difficulty taking healthy risks or trying new things</span>
+                </li>
+                <li class="flex items-start">
+                  <svg class="w-5 h-5 text-primary-light mr-2 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                  </svg>
+                  <span>Impaired decision-making under stress</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DBT Techniques & Strategies -->
+      <section id="dbt-techniques" class="content-section mb-16">
+        <h2 class="section-title">DBT Techniques & Strategies</h2>
+        <p class="text-lg text-gray-300 leading-relaxed mb-8">
+          Dialectical Behavior Therapy offers several effective techniques for challenging catastrophic thinking:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Check the Facts -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Check the Facts</h3>
+                <p class="text-gray-300 mb-4">
+                  This technique helps you distinguish between facts and interpretations, evaluating the actual probability of your feared outcome.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Key Questions</h4>
+                  <ul class="text-gray-300 space-y-2">
+                    <li>• What are the objective facts in this situation?</li>
+                    <li>• What is my interpretation or prediction?</li>
+                    <li>• What's the evidence for and against my catastrophic prediction?</li>
+                    <li>• What's the actual probability this outcome will occur?</li>
+                    <li>• Have I experienced similar situations before? What happened?</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Coping Ahead -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Coping Ahead</h3>
+                <p class="text-gray-300 mb-4">
+                  Instead of focusing only on what might go wrong, plan how you would cope even if your fears came true. This reduces the sense of helplessness.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                  <ol class="text-gray-300 space-y-1 list-decimal list-inside">
+                    <li>Describe the situation you fear</li>
+                    <li>Identify potential challenges</li>
+                    <li>Develop specific coping strategies for each challenge</li>
+                    <li>Rehearse these strategies mentally</li>
+                    <li>Practice deep breathing and relaxation throughout</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Mindfulness -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M6 12H5m12.364-5.636l-.707.707M6.343 6.343l-.707-.707m12.728 12.728l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">Mindfulness</h3>
+                <p class="text-gray-300 mb-4">
+                  Mindfulness helps you observe catastrophic thoughts without automatically believing them or becoming overwhelmed by them.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                  <p class="text-gray-300">
+                    When you notice catastrophic thinking, label it: "I notice I'm having a catastrophic thought." This creates space between you and the thought, allowing you to respond rather than react.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- TIPP Skills -->
+          <div class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:shadow-xl border-t-2 border-primary-light/50">
+            <div class="flex items-start mb-4">
+              <div class="bg-primary-light/20 p-2 rounded-full mr-4">
+                <svg class="w-6 h-6 text-primary-light" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold text-white mb-2">TIPP Skills</h3>
+                <p class="text-gray-300 mb-4">
+                  When catastrophic thoughts trigger intense emotions, these skills can help regulate your physiological response.
+                </p>
+                <div class="bg-gray-700/50 p-4 rounded-lg">
+                  <h4 class="text-lg font-semibold text-white mb-2">TIPP Stands For:</h4>
+                  <ul class="text-gray-300 space-y-1">
+                    <li><strong>T</strong> - Temperature change (cold water on face)</li>
+                    <li><strong>I</strong> - Intense exercise (brief bursts of activity)</li>
+                    <li><strong>P</strong> - Paced breathing (slow, deep breaths)</li>
+                    <li><strong>P</strong> - Progressive muscle relaxation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Practical Exercises -->
+      <section id="exercises" class="content-section mb-16">
+        <h2 class="section-title">Practical Exercises</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg border border-gray-700">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Try these exercises to challenge catastrophic thinking and develop more balanced perspectives:
+          </p>
+          
+          <div class="space-y-8">
+            <!-- Decatastrophizing Exercise -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">1</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Decatastrophizing Exercise</h3>
+                  <p class="text-gray-300 mb-4">
+                    This structured exercise helps you challenge your catastrophic predictions by asking a series of questions.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. <strong>Write down the catastrophic thought:</strong> "What's the worst that could happen?"</li>
+                      <li>2. <strong>Assess probability:</strong> "How likely is this outcome, really? (0-100%)"</li>
+                      <li>3. <strong>Consider alternatives:</strong> "What are some other possible outcomes?"</li>
+                      <li>4. <strong>Develop coping plan:</strong> "Even if the worst did happen, how would I cope?"</li>
+                      <li>5. <strong>Consider past experiences:</strong> "Have I faced similar situations before? What happened?"</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Probability Assessment -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">2</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Probability Assessment</h3>
+                  <p class="text-gray-300 mb-4">
+                    Train yourself to assess realistic probabilities rather than focusing solely on possibility.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Practice</h4>
+                    <p class="text-gray-300 mb-3">
+                      For each catastrophic thought, ask yourself:
+                    </p>
+                    <ul class="text-gray-300 space-y-2">
+                      <li>• "How many times has this actually happened before?"</li>
+                      <li>• "Out of 100 similar situations, how many would end this way?"</li>
+                      <li>• "What evidence supports this outcome vs. other outcomes?"</li>
+                      <li>• "Am I confusing possibility with probability?"</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Worst-Case, Best-Case, Most-Likely Case -->
+            <div class="bg-gray-800/50 p-6 rounded-lg">
+              <div class="flex items-start">
+                <div class="w-10 h-10 bg-primary-light/20 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                  <span class="text-xl font-bold text-primary-light">3</span>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-3">Worst-Case, Best-Case, Most-Likely Case</h3>
+                  <p class="text-gray-300 mb-4">
+                    This exercise broadens your perspective by considering multiple possible outcomes.
+                  </p>
+                  <div class="bg-gray-700/70 p-4 rounded-lg">
+                    <h4 class="text-lg font-semibold text-white mb-2">Steps</h4>
+                    <ol class="text-gray-300 space-y-2">
+                      <li>1. <strong>Worst-case scenario:</strong> What's the absolute worst that could happen?</li>
+                      <li>2. <strong>Best-case scenario:</strong> What's the absolute best that could happen?</li>
+                      <li>3. <strong>Most likely scenario:</strong> What is most likely to actually happen?</li>
+                      <li>4. <strong>Reality check:</strong> Notice that the most likely scenario is usually between the extremes.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Related Thinking Traps -->
+      <section class="content-section mb-16">
+        <h2 class="section-title">Related Thinking Traps</h2>
+        <p class="text-lg text-gray-300 mb-6">
+          Catastrophizing often appears alongside these other thinking traps:
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a href="fortune-telling.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Fortune Telling</h3>
+            <p class="text-gray-300">Predicting negative outcomes without sufficient evidence to support your prediction.</p>
+          </a>
+          <a href="mind-reading.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Mind Reading</h3>
+            <p class="text-gray-300">Assuming you know what others are thinking without sufficient evidence.</p>
+          </a>
+          <a href="disqualifying-the-positive.html" class="bg-gray-800 rounded-lg p-6 shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-t-2 border-primary-light/70">
+            <h3 class="text-xl font-bold text-white mb-2">Disqualifying the Positive</h3>
+            <p class="text-gray-300">Rejecting positive experiences by insisting they "don't count" for some reason.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section id="conclusion" class="content-section">
+        <h2 class="section-title">Conclusion</h2>
+        <div class="bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg p-8 shadow-lg">
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Catastrophizing can make the world feel like a dangerous and unpredictable place, amplifying anxiety and limiting your ability to engage fully in life. By recognizing this thinking pattern and applying DBT techniques to challenge it, you can develop a more balanced perspective.
+          </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Remember that overcoming catastrophic thinking is a process that takes time and consistent practice. Be patient with yourself and celebrate your progress along the way. With practice, you can learn to distinguish between realistic concerns and catastrophic predictions.
+          </p>
+          <div class="bg-primary-dark p-6 rounded-lg mt-8">
+            <h3 class="text-xl font-bold text-white mb-2">Moving Forward</h3>
+            <p class="text-gray-300 mb-4">Continue your journey toward more balanced thinking by exploring other DBT skills and resources:</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="perception.html" class="bg-primary-light/20 hover:bg-primary-light/30 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Explore Perception Distortions
+              </a>
+              <a href="../modules/distress-tolerance.html" class="bg-gray-700 hover:bg-gray-600 text-white font-medium py-2 px-4 rounded-lg transition-colors">
+                Learn Distress Tolerance Skills
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 mt-20 py-12">
-      <div class="container mx-auto px-4 text-center">
-        <p class="text-gray-400">&copy; 2024 The DBT Resource. Designed with compassion and accessibility in mind.</p>
+    <footer class="bg-gray-900 text-gray-400 py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">The DBT Resource</h3>
+            <p class="mb-4">Tools and resources for emotional wellness and personal growth through Dialectical Behavior Therapy.</p>
+            <p>&copy; 2025 The DBT Resource. Designed for impact and accessibility.</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Quick Links</h3>
+            <ul class="space-y-2">
+              <li><a href="../index.html" class="hover:text-primary-light transition-colors">Home</a></li>
+              <li><a href="../modules/mindfulness.html" class="hover:text-primary-light transition-colors">Mindfulness</a></li>
+              <li><a href="../modules/distress-tolerance.html" class="hover:text-primary-light transition-colors">Distress Tolerance</a></li>
+              <li><a href="../modules/emotion-regulation.html" class="hover:text-primary-light transition-colors">Emotion Regulation</a></li>
+              <li><a href="../modules/interpersonal.html" class="hover:text-primary-light transition-colors">Interpersonal Skills</a></li>
+              <li><a href="index.html" class="hover:text-primary-light transition-colors">Thinking Traps</a></li>
+              <li><a href="../tools/index.html" class="hover:text-primary-light transition-colors">Tools & Resources</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold text-white mb-4">Important Note</h3>
+            <p class="mb-4">The DBT Resource is designed to provide educational information about Dialectical Behavior Therapy skills. This website is not a substitute for professional mental health treatment.</p>
+            <p>If you're in crisis or need immediate support, please contact a mental health professional or crisis line.</p>
+          </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+          <p>Created by Tommy A. Caruso | <a href="#" class="hover:text-primary-light transition-colors">Privacy Policy</a> | <a href="#" class="hover:text-primary-light transition-colors">Terms of Use</a></p>
+        </div>
       </div>
     </footer>
 
